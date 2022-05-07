@@ -1,0 +1,1 @@
+document.body.style.background="#c94e45",window.onload=()=>{document.body.style.background="#f7f5e9",document.querySelector(".box-2").classList.add("loaded"),setTimeout(()=>{document.querySelector(".box-2").classList.add("anim"),document.querySelector(".box-3").classList.add("links")},2800),setTimeout(()=>document.querySelector(".box-2").classList.add("anim2"),4e3)};
