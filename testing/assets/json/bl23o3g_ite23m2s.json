@@ -1,0 +1,165 @@
+[
+  {
+    "id": "p-001",
+    "category": "City",
+    "title": "Arrange Your Apple Devices for the Gram",
+    "titleimage": "/testing/assets/img/p-001.jpg",
+    "titlettemple": "Personally I just make sure that",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered. I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested - https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954",
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "https://images.unsplash.com/photo-1636054351149-663b1c263783?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80", "text": "Without a list of dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-008.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "https://images.unsplash.com/photo-1627467717820-742c149f251a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80", "text": "Dependencies, this can lead to an infinite " }
+    ]
+  },
+  {
+    "id": "p-002",
+    "category": "City",
+    "title": "The Best of Your City",
+    "titleimage": "/testing/assets/img/p-002.jpg",
+    "titlettemple": "Without a list of dependencies",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to \r ========== Curtains.js ------>\r\n https://www.curtainsjs.com/get-started.html#performance-tips",
+    "text2": "I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested",
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/p-001.jpg", "text": "Without a list of dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-003.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 3, "alt": "infinite", "src": "/testing/assets/img/p-007.jpg", "text": "list of dependencies, this can lead to an infinite " }
+    ]
+  },
+  {
+    "id": "p-003",
+    "category": "Photography",
+    "title": "Map Apps for the Superior Mode of Transport",
+    "titleimage": "/testing/assets/img/p-003.jpg",
+    "titlettemple": "instance of Locomotive Scroll we need",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "images": [
+      { "id": 1, "alt": "lead", "src": "/testing/assets/img/p-005.jpg", "text": "I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll" }
+    ]
+  },
+  {
+    "id": "p-004",
+    "category": "Motion Design",
+    "title": "Our Pick of Apps to Help You Escape From Apps",
+    "titleimage": "/testing/assets/img/p-004.jpg",
+    "titlettemple": "our daily rhythms of our movements",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "Cities, buildings, parks and landscapes define the setting of our everyday life. Some are fascinating works of art, and no other man made artefacts document the evolution of social relations, economic trends, technological innovations, philosophical views on man and nature, politics and culture more eloquently than architecture and urbanism. Cities and buildings impact our everyday lives. They define where and how we live, how far we have to travel to reach our working places, our daily rhythms of our movements, the things we see when we are on our way. Their impact on is self-evident – urban planners gave us our sewage systems, architects decent public housing andcare buildings. This master track provides students a rich and varied introduction in the history and theory of architecture and urban planning. Sincecare architecture requires a thorough understanding of the history and theory of architecture, and the world ofy cities can only be analyzed against the background of urbanism, the Expertise Centre Architecture, Urbanism and is embedded in a classical approach of architectural and urban history and theory. It allows students to specialize in classical history and theory, the impacts of architecture and urbanism, or a mixture."
+  },
+  {
+    "id": "p-005",
+    "category": "Photography",
+    "title": "The Latest Ultra-Specific Photography Editing Apps",
+    "titleimage": "/testing/assets/img/p-005.jpg",
+    "titlettemple": "Sincecare architecture requires a thorough",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "This master track provides students a rich and varied introduction in the history and theory of architecture and urban planning. Sincecare architecture requires a thorough understanding of the history and theory of architecture, and the world ofy cities can only be analyzed against the background of urbanism, the Expertise Centre Architecture, Urbanism and is embedded in a classical approach of architectural and urban history and theory. It allows students to specialize in classical history and theory, the impacts of architecture and urbanism, or a mixture.",
+    "images": [
+      { "id": 1, "alt": "lead", "src": "https://images.unsplash.com/photo-1611434995348-6e9c012ed5d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80", "text": "I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll" }
+    ]
+  },
+  {
+    "id": "p-006",
+    "category": "City",
+    "title": "100 Cupcake Apps for the Cupcake Connoisseur",
+    "titleimage": "/testing/assets/img/p-006.jpg",
+    "titlettemple": "epidemic curves and other charts",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text2": "World Health Organization Coronavirus disease situation dashboard presents official daily counts of COVID-19 cases and deaths worldwide, along with vaccination rates and other vaccination data, while providing a hub to other resources. Interactive tools, including maps, epidemic curves and other charts and graphics, with downloadable data, allow users to track and explore the latest trends while providing a hub to other resources. Interactive tools, including maps, epidemic curves and other charts and graphics, with downloadable data, allow users to track and explore the latest trend",
+    "images": [
+      { "id": 1, "alt": "lead", "src": "https://images.unsplash.com/photo-1633033461786-fabe78f731bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80", "text": "I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll" }
+    ]
+  },
+  {
+    "id": "p-007",
+    "category": "City",
+    "title": "Yes, They Are Sociopaths",
+    "titleimage": "/testing/assets/img/p-007.jpg",
+    "titlettemple": "I also added a resize-observer",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to \r ========== Curtains.js ------>\r\n https://www.curtainsjs.com/get-started.html#performance-tips",
+    "text2": "I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested",
+    "images": [
+      { "id": 1, "alt": "infinite", "src": "/testing/assets/img/p-007.jpg", "text": "list of dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-003.jpg", "text": "Dependencies, this can lead to an infinite " }
+    ]
+  },
+  {
+    "id": "p-008",
+    "category": "Motion Design",
+    "title": "Seriously the Only Escape is the Stratosphere",
+    "titleimage": "/testing/assets/img/p-008.jpg",
+    "titlettemple": "to ensure we mount and demount",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/p-001.jpg", "text": "Without a list of dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-0010.jpg", "text": "Dependencies, this can lead to an infinite " }
+    ]
+  },
+  {
+    "id": "p-009",
+    "category": "Design",
+    "title": "Shut up -n- game",
+    "titlesmall": "working process",
+    "titlesmall2": "final result",
+    "titleimage": "/testing/assets/img/p-009.jpg",
+    "titlettemple": "Create logo and poster for Youtube channel",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "<img src=\"/assets/img/p-003.jpg\" alt=\"tool\"/> React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to \r ========== Curtains.js ------>\r\n https://www.curtainsjs.com/get-started.html#performance-tips",
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4653.jpg", "text": "Created three version of logo (Adobe Illustrator)" },
+      { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4654.jpg", "text": "Created poster (Adobe Photoshop, Adobe Illustrator)" }
+    ],
+    "images2": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4655.jpg"},
+      { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/suag/ytb.jpg"}
+    ]
+  },
+  {
+    "id": "p-0010",
+    "category": "Motion Design",
+    "title": "planet of lightning - intro video",
+    "titlesmall": "working process",
+    "titlesmall2": "final result",
+    "titleimage": "/testing/assets/img/p-0010.jpg",
+    "titlettemple": "removes useState which is not",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered. I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested - https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954",
+    "img": "<img src=\"/assets/img/p-003.jpg\" alt=\"tool\"\/>",
+    "imagesParalax":"/testing/assets/img/works/dse_space_intro/img-prlx.jpg",
+    "youtubeEmbed":[
+      { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/DSESpace.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_1.jpg?raw=true" },
+      { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/Scene15.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/img-prlx.jpg?raw=true" }
+    ],
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/script-1.jpg", "text": "Frame-by-frame script for intro video" },
+      { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/work2.jpg", "text": "Process of work (Adobe After Effects)" },
+      { "id": 3, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/work1.jpg", "text": "Process of work (Adobe After Effects)" }
+    ]
+  },
+  {
+    "id": "p-0011",
+    "category": "Motion Design",
+    "title": "Spheres Nature elements",
+    "titlesmall": "working process",
+    "titlesmall2": "final result",
+    "titleimage": "/testing/assets/img/p-0011.jpg",
+    "titlettemple": "LED Media Spheres",
+    "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
+    "text": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered. I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested - https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954",
+    "imagesParalax":"/testing/assets/img/works/sphere_nature_elements/img-prlx.jpg",
+    "images": [
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/sphere_nature_elements/p-006.jpg", "text": "Front of the business center building" },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4651.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 3, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4653.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 4, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4654.jpg", "text": "Anything that is lazyloaded you can attach update" }
+    ],
+    "images2": [
+      { "id": 1, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4651.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4653.jpg", "text": "Dependencies, this can lead to an infinite " },
+      { "id": 3, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4656.jpg", "text": "Anything that is lazyloaded you can attach update" }
+    ]   
+  }
+]
