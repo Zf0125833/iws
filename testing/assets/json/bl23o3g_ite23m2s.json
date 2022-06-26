@@ -131,7 +131,7 @@
     "imagesParalax":"/testing/assets/img/works/dse_space_intro/img-prlx.jpg",
     "youtubeEmbed":[
       { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/DSESpace.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_1.jpg?raw=true" },
-      { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/Scene15.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/img-prlx.jpg?raw=true" }
+      { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/Scene15.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_2.jpg?raw=true" }
     ],
     "images": [
       { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/script-1.jpg", "text": "Frame-by-frame script for intro video" },
