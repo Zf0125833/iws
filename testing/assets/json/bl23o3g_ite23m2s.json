@@ -109,7 +109,7 @@
     "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
     "text": "<img src=\"/assets/img/p-003.jpg\" alt=\"tool\"/> React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to \r ========== Curtains.js ------>\r\n https://www.curtainsjs.com/get-started.html#performance-tips",
     "images": [
-      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4653.jpg", "text": "Created three version of logo (Adobe Illustrator)" },
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4653.jpg", "text": "Created four versions of logo (Adobe Illustrator)" },
       { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4654.jpg", "text": "Created poster (Adobe Photoshop, Adobe Illustrator)" }
     ],
     "images2": [
@@ -134,9 +134,9 @@
       { "url": "https://ivanwebstudio.site/testing/assets/img/works/dse_space_intro/Scene15.mp4", "poster": "https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_2.jpg?raw=true" }
     ],
     "images": [
-      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/script-1.jpg", "text": "Frame-by-frame script for intro video" },
+      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/script-1.jpg", "text": "Frame-by-frame script for intro video (Adobe Photoshop)" },
       { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/work2.jpg", "text": "Process of work (Adobe After Effects)" },
-      { "id": 3, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/work1.jpg", "text": "Process of work (Adobe After Effects)" }
+      { "id": 3, "alt": "Sample", "src": "/testing/assets/img/works/dse_space_intro/work1.jpg", "text": "Process of work (Adobe After Effects, Adobe Premiere Pro)" }
     ]
   },
   {
@@ -148,10 +148,9 @@
     "titleimage": "/testing/assets/img/p-0011.jpg",
     "titlettemple": "LED Media Spheres",
     "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
-    "text": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered. I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested - https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954",
+    "text": "<b>Soft: Blender, Adobe After Effects, Adobe Premiere, Adobe Photoshop</b></br></br> Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered. I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested - <a target=\"_blank\" href='https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954'>https://github.com/locomotivemtl/locomotive-scroll/issues/13#issuecomment-774568954</a> <div class=\"cont-scrll\"><div class=\"cont-img-box\"><img src=\"/testing/assets/img/works/sphere_nature_elements/p-006.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\" style=\"width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; overflow: hidden; object-fit: cover; background: rgb(204, 204, 204); user-select: none;\"></div><p>Front of the business center building</p></div>",
     "imagesParalax":"/testing/assets/img/works/sphere_nature_elements/img-prlx.jpg",
     "images": [
-      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/sphere_nature_elements/p-006.jpg", "text": "Front of the business center building" },
       { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4651.jpg", "text": "Dependencies, this can lead to an infinite " },
       { "id": 3, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4653.jpg", "text": "Dependencies, this can lead to an infinite " },
       { "id": 4, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4654.jpg", "text": "Anything that is lazyloaded you can attach update" }
@@ -159,7 +158,7 @@
     "images2": [
       { "id": 1, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4651.jpg", "text": "Dependencies, this can lead to an infinite " },
       { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4653.jpg", "text": "Dependencies, this can lead to an infinite " },
-      { "id": 3, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4656.jpg", "text": "Anything that is lazyloaded you can attach update" }
+      { "id": 3, "alt": "dependencies", "src": "/testing/assets/img/works/sphere_nature_elements/07_DSC_4656.jpg", "text": "Front of the business center building" }
     ]   
   }
 ]
