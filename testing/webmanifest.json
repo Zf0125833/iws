@@ -1,6 +1,6 @@
 {
-  "short_name": "Gsap Smooth Scroll App",
-  "name": "Gsap Smooth Scroll App",
+  "short_name": "Ivanwebstudio / Web Design And Web Developed",
+  "name": "Ivanwebstudio / Web Design And Web Developed",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#141414",
-  "background_color": "#ffffff"
+  "background_color": "#f7f5e9"
 }
