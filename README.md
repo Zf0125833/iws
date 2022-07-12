@@ -1,1 +1,1 @@
-<img src="https://ivanwebstudio.site/testing/assets/favicon/apple-touch-icon.png"/>
+<img style="position:relative; width:100%;" src="https://ivanwebstudio.site/testing/assets/favicon/fb-poster.jpg"/>
