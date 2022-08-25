@@ -16,7 +16,7 @@
   {
     "id": "p-002",
     "category": "Design",
-    "title": "Hot Pepper Chilli Souse",
+    "title": "Hot Pepper Chilli Sause",
     "titleimage": "/testing/assets/img/p-002.jpg",
     "titlettemple": "Without a list of dependencies",
     "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
