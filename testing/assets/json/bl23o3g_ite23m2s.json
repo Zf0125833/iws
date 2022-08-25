@@ -2,9 +2,9 @@
   {
     "id": "p-001",
     "category": "Design",
-    "title": "Arrange Your Apple Devices for the Gram",
+    "title": "Superman",
     "titleimage": "/testing/assets/img/p-001.jpg",
-    "titlettemple": "Personally I just make sure that",
+    "titlettemple": "Poster",
     "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
     "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4></div>",
     "images": [
@@ -20,12 +20,7 @@
     "titleimage": "/testing/assets/img/p-002.jpg",
     "titlettemple": "Without a list of dependencies",
     "texttemple": "Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered",
-    "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4></div>",
-    "images": [
-      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/p-001.jpg", "text": "Without a list of dependencies, this can lead to an infinite " },
-      { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-003.jpg", "text": "Dependencies, this can lead to an infinite " },
-      { "id": 3, "alt": "infinite", "src": "/testing/assets/img/p-007.jpg", "text": "list of dependencies, this can lead to an infinite " }
-    ]
+    "content": "<div class=\"container\"><p>React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to the useEffect Hook React Hook useEffect contains a call to 'setImgs'. Without a list of dependencies, this can lead to an infinite chain of updates. To fix this, pass [id] as a second argument to <a href=\"https://www.curtainsjs.com/get-started.html#performance-tips\">Curtains.js</a></p>  <p><b>Software:</b> Adobe Illustrator, Adobe Photoshop<p/>   <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/hpcs/07_DSC_4653.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Created four versions of logo (Adobe Illustrator, Adobe Photoshop)</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/hpcs/07_DSC_4654.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Created poster (Adobe Illustrator, Adobe Photoshop)</p></div>  <h3 class=\"cont-scrll-txt\">final result</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/hpcs/07_DSC_4655.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div></div> </div>"
   },
   {
     "id": "p-003",
