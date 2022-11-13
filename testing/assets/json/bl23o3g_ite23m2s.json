@@ -87,6 +87,14 @@
   },
   {
     "id": "p-009",
+    "category": "Motion Design",
+    "title": "planet of lightning - intro video",
+    "titleimage": "/testing/assets/img/p-0010.jpg",
+    "titlettemple": "Intro video for Youtube and other performance",
+    "content": "<div class=\"container\"><p><b>Software:</b> Blender, Adobe After Effects, Adobe Premiere, Adobe Photoshop<p/><p>Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered.</p> <p>I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested</p> <h3 class=\"cont-scrll-txt\">working process</h3><div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/script-1.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Frame-by-frame script for intro video (Adobe Photoshop)</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/work2.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Process of work (Adobe After Effects)</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/work1.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Process of work (Adobe After Effects, Adobe Premiere Pro)</p></div></div> <div class=\"cont-img-prlx\">  <h3>\"Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect.\"</h3>  <img src=\"/testing/assets/img/works/dse_space_intro/img-prlx.jpg\" alt=\"img-prlx\" /></div>  <div class=\"container\"> <h3 class=\"cont-scrll-txt\">final result</h3> <div class=\"v-player cont-scrll\" ><video id=\"v-cont\" controls controlsList=\"noplaybackrate nodownload\" muted disablePictureInPicture={true} poster=\"https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_1.jpg?raw=true\" ><source type=\"video/mp4\" data-reactid=\".0.1.0.0.0\" src=\"/testing/assets/img/works/dse_space_intro/DSESpace.mp4\" /></video></div>     <div class=\"v-player cont-scrll\" ><video id=\"v-cont\" controls controlsList=\"noplaybackrate nodownload\" muted disablePictureInPicture={true} poster=\"https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_2.jpg?raw=true\" ><source type=\"video/mp4\" data-reactid=\".0.1.0.0.0\" src=\"/testing/assets/img/works/dse_space_intro/Scene15.mp4\" /></video></div>    </div>"
+  },
+  {
+    "id": "p-0010",
     "category": "Design",
     "title": "Shut up & game",
     "titleimage": "/testing/assets/img/p-009.jpg",
@@ -95,19 +103,7 @@
     "images": [
       { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4653.jpg", "text": "Created four versions of logo (Adobe Illustrator)" },
       { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4654.jpg", "text": "Created poster (Adobe Photoshop, Adobe Illustrator)" }
-    ],
-    "images2": [
-      { "id": 1, "alt": "Sample", "src": "/testing/assets/img/works/suag/07_DSC_4655.jpg"},
-      { "id": 2, "alt": "Sample", "src": "/testing/assets/img/works/suag/ytb.jpg"}
     ]
-  },
-  {
-    "id": "p-0010",
-    "category": "Motion Design",
-    "title": "planet of lightning - intro video",
-    "titleimage": "/testing/assets/img/p-0010.jpg",
-    "titlettemple": "Intro video for Youtube and other performance",
-    "content": "<div class=\"container\"><p><b>Software:</b> Blender, Adobe After Effects, Adobe Premiere, Adobe Photoshop<p/><p>Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect. So stuff like font loader and location (for route change). Anything that is lazyloaded you can attach update() to it so that it run once the component is rendered.</p> <p>I've made an update using useRef to ensure we mount and demount the one and only instance of Locomotive Scroll we need + it let us removes useState which is not perf in our case. I also added a resize-observer to watch height modifications and update the scroll as @mxmtsk suggested</p> <h3 class=\"cont-scrll-txt\">working process</h3><div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/script-1.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Frame-by-frame script for intro video (Adobe Photoshop)</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/work2.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Process of work (Adobe After Effects)</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\"><img src=\"/testing/assets/img/works/dse_space_intro/work1.jpg\" alt=\"Sample\" data-crsr-zoomout=\"true\"></div><p>Process of work (Adobe After Effects, Adobe Premiere Pro)</p></div></div> <div class=\"cont-img-prlx\">  <h3>\"Personally I just make sure that anything that impacts the height as a callback that I can feed into the instance useEffect.\"</h3>  <img src=\"/testing/assets/img/works/dse_space_intro/img-prlx.jpg\" alt=\"img-prlx\" /></div>  <div class=\"container\"> <h3 class=\"cont-scrll-txt\">final result</h3> <div class=\"v-player cont-scrll\" ><video id=\"v-cont\" controls controlsList=\"noplaybackrate nodownload\" muted disablePictureInPicture={true} poster=\"https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_1.jpg?raw=true\" ><source type=\"video/mp4\" data-reactid=\".0.1.0.0.0\" src=\"/testing/assets/img/works/dse_space_intro/DSESpace.mp4\" /></video></div>     <div class=\"v-player cont-scrll\" ><video id=\"v-cont\" controls controlsList=\"noplaybackrate nodownload\" muted disablePictureInPicture={true} poster=\"https://github.com/Zf0125833/iws/blob/main/testing/assets/img/works/dse_space_intro/video_poster_2.jpg?raw=true\" ><source type=\"video/mp4\" data-reactid=\".0.1.0.0.0\" src=\"/testing/assets/img/works/dse_space_intro/Scene15.mp4\" /></video></div>    </div>"
   },
   {
     "id": "p-0011",
