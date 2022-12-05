@@ -5,7 +5,7 @@
     "title": "Superman",
     "titleimage": "/testing/assets/img/p-001.jpg",
     "titlettemple": "Poster",
-    "content": "<div class=\"container\">  <div class=\"v--plr-src\" data-crsr-zoomout ><img src=\"https://www.amateurphotographer.co.uk/wp-content/uploads/2017/08/Screen-Shot-2017-08-23-at-22.29.18.png\" alt=\"poster\" data-src=\"https://res.cloudinary.com/ifeomaimoh/video/upload/v1650567487/speech_ofvfzq.mp4\" /><p>But why, some say, the moon?</p></div>  </div>",
+    "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4></div>",
     "images": [
       { "id": 1, "alt": "Sample", "src": "https://images.unsplash.com/photo-1636054351149-663b1c263783?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80", "text": "Without a list of dependencies, this can lead to an infinite " },
       { "id": 2, "alt": "dependencies", "src": "/testing/assets/img/p-008.jpg", "text": "Dependencies, this can lead to an infinite " },
