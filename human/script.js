@@ -1,9 +1,9 @@
 const headArr = ["./h_assets/h_head1.svg", "./h_assets/h_head2.svg", "./h_assets/h_head3.svg", "./h_assets/h_head4.svg", "./h_assets/h_head5.svg"]
 const quotesArr = ["./h_assets/h_quote1.svg", "./h_assets/h_quote2.svg", "./h_assets/h_quote3.svg", "./h_assets/h_quote4.svg", "./h_assets/h_quote5.svg"];
 const huMan = document.querySelector(".hu-man");
-const hCont = document.querySelector(".h-cont");
 const hHead = document.querySelector(".h-head");
 const hQuote = document.querySelector(".h-quote");
+const bgChange = document.querySelector(".bg-change");
 
 function randomElem(arr, elem) {
     const rI = Math.floor(Math.random() * arr.length);
@@ -11,12 +11,11 @@ function randomElem(arr, elem) {
 }
 
 huMan.addEventListener("click", () => randomElem(headArr, hHead) ?? randomElem(quotesArr, hQuote));
+bgChange.addEventListener("click", () => document.body.classList.toggle("on"));
 
 randomElem(headArr, hHead) ?? randomElem(quotesArr, hQuote);
 
-window.addEventListener("load", () => {
-    hCont.classList.add("load")
-})
+window.addEventListener("load", () => setTimeout(() => huMan.classList.add("load"), 500))
 
 // let headId = headArr.length;
 // let quoteId = quotesArr.length;
