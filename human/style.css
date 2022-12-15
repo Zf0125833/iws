@@ -43,6 +43,17 @@ body {
     -webkit-user-select: none
 }
 
+.h-cont{
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.h-cont.load{
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 1s ease, transform 1.5s ease;
+}
+
 .hu-man img {
     position: absolute;
     width: 100%;
