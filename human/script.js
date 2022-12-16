@@ -22,3 +22,18 @@ bgChange.addEventListener("click", () => document.body.classList.toggle("on"));
 randomElem(headArr, hHead) ?? randomElem(quotesArr, hQuote) ?? rRotate();
 
 window.addEventListener("load", () => setTimeout(() => huMan.classList.add("load"), 1000))
+
+// let headId = headArr.length;
+// let quoteId = quotesArr.length;
+
+// function nextHead() {
+//     headId++;
+//     if (headId >= headArr.length) headId = 0;
+//     return hHead.src = headArr[headId]
+// }
+
+// function nextQuotes() {
+//     quoteId++;
+//     if (quoteId >= quotesArr.length) quoteId = 0;
+//     return hQuote.src = quotesArr[quoteId]
+// }
