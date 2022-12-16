@@ -63,12 +63,31 @@ body.on {
     transform: scale(1.15);
     opacity: 0;
     overflow: hidden;
+    /* animation: 3s HumanAnim ease infinite; */
+}
+
+@keyframes HumanAnim {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-1%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .hu-man.load {
     transform: scale(1);
     opacity: 1;
     transition: opacity 1s ease, transform 2s ease;
+}
+
+.hu-man.r-on {
+    transform: rotate(180deg);
 }
 
 .hu-man img {
@@ -118,6 +137,6 @@ body.on {
 
 @media screen and (max-width:500px) {
     .hu-man img {
-        bottom: -2%;
+        top: -2%;
     }
 }
