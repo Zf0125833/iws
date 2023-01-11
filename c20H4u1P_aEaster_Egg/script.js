@@ -57,7 +57,7 @@ function drawCircle(object) {
 }
 
 function moveCircle() {
-	context.fillStyle = "#f7f5e9"; 
+	context.fillStyle = "#fffef7"; 
   context.fillRect(0,0,canvas.width,canvas.height);
 
 	for (let i = 0; i < circleArray.length; i++) {
