@@ -41,11 +41,11 @@
   },
   {
     "id": "p-005",
-    "category": "Motion Design",
-    "title": "Space Monkey",
+    "category": "Design",
+    "title": "FBI 80' - Poster",
     "titleimage": "/assets/img/p-005.jpg",
     "titlettemple": "coming soon",
-    "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4></div>"
+    "content": "<div class=\"container\"><p><b>Target:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae tenetur praesentium minus, quia, quibusdam quod exercitationem ullam sed eum debitis doloremque fugiat.</p> </p>  <p><b>Software: </b>Adobe Photoshop<p/>   <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/fbi_80/1.jpg\" alt=\"Sample\"></div><p>Character Creation</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/fbi_80/2.jpg\" alt=\"Sample\"></div><p>Completing character detailing and adding backgrounds</p></div>  <h3 class=\"cont-scrll-txt\">final result</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" style=\"height:81vw\" data-crsr-eye><img src=\"/assets/img/works/fbi_80/3.jpg\" alt=\"Sample\"></div></div> </div>"
   },
   {
     "id": "p-006",
