@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ab-001",
+    "title": "About me",
+    "content": "<div class=\"container\" style=\"margin: 20vh 0 3vw 0\"><h2 style=\"text-align:left;margin-bottom: calc(10px + 3.5vw)\">About me</h2><div class=\"ab-cont\"><h4 style=\"text-align:left\">Hello, i'm Ivanwebstudio!</h4><p></p><p>A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics. I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values. If you are looking for a creative director, designer, motion designer, or frontend developer, you have come to the right place!</p><p></p><div style=\"text-align:left; text-transform:uppercase\"><p><b>You can also contact me anytime via email or social media.<br />Thank you for visiting and I hope to hear from you soon!</b></p></div><p></p><p>There will be more information here soon...</p></div></div></div>"
+  },
+  {
+    "id": "cont-001",
+    "title": "Contact",
+    "content": "<div class=\"container\"><p><b>Target:</b> To develop a logo based on the initials of the first and last name (Vecheslav Ageev), which will be visible on any background, easy to recognize and read from any distance.</p> </p>  <p><b>Software:</b> Adobe Illustrator, Adobe Photoshop<p/>   <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4653.jpg\" alt=\"Sample\"></div><p>Created four versions of logo (Adobe Illustrator, Adobe Photoshop)</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4654.jpg\" alt=\"Sample\"></div><p>Created poster (Adobe Illustrator, Adobe Photoshop)</p></div>  <h3 class=\"cont-scrll-txt\">final result</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4655.jpg\" alt=\"Sample\"></div></div> </div>"
+  }
+]
