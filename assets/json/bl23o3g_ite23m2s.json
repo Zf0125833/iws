@@ -1,22 +1,14 @@
 [
   {
     "id": "p-001",
-    "category": "3D Modeling",
-    "title": "John Frusciante Stratocaster 62s",
-    "titleimage": "/assets/img/p-001.jpg",
-    "titlettemple": "Poster",
-    "content": "<div class=\"container\"><p><p><b>Target: </b>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p>  <p><b>Software: </b>Blender, Adobe Photoshop</p>  <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"two-img\" ><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4651.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Fender Stratocaster</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4650.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4655.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4653.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div></div></div><div class=\"cont-img-prlx\"><img src=\"/assets/img/works/jf_stratocaster/img-prlx.jpg\" alt=\"img-prlx\" /></div>  <div class=\"container\"><h3 class=\"cont-scrll-txt\">final result</h3><div class=\"two-img\" ><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4652.jpg\" alt=\"Sample\"></div><p>Final result</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4654.jpg\" alt=\"Sample\"></div><p>Final result</p></div></div>  <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4656.jpg\" alt=\"Sample\"></div><p>Final result</p></div></div>"
-  },
-  {
-    "id": "p-002",
     "category": "Design",
     "title": "Hot Pepper Chilli Sause",
-    "titleimage": "/assets/img/p-002.jpg",
+    "titleimage": "/assets/img/p-001.jpg",
     "titlettemple": "Without a list of dependencies",
     "content": "<div class=\"container\"><p><b>Target:</b> To develop a logo based on the initials of the first and last name (Vecheslav Ageev), which will be visible on any background, easy to recognize and read from any distance.</p> </p>  <p><b>Software:</b> Adobe Illustrator, Adobe Photoshop</p>   <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4653.jpg\" alt=\"Sample\"></div><p>Created four versions of logo (Adobe Illustrator, Adobe Photoshop)</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4654.jpg\" alt=\"Sample\"></div><p>Created poster (Adobe Illustrator, Adobe Photoshop)</p></div>  <h3 class=\"cont-scrll-txt\">final result</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/hpcs/07_DSC_4655.jpg\" alt=\"Sample\"></div></div> </div>"
   },
   {
-    "id": "p-003",
+    "id": "p-002",
     "category": "Motion Design",
     "title": "O.M.B.",
     "titleimage": "/assets/img/p-003.jpg",
@@ -24,7 +16,7 @@
     "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4><p></p><p></p><div class=\"cont-scrll\"><div class=\"v--plr-src\" data-crsr-play><img src=\"https://i.ytimg.com/vi/c2gB83g_HSc/maxresdefault.jpg\" alt=\"Sintel\" data-src=\"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4\" /></div></div> <p></p><p><b>Sintel</b> is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film.\nThis 15 minute film has been realized in the studio of the Amsterdam Blender Institute, by an international team of artists and developers. In addition to that, several crucial technical and creative targets have been realized online, by developers and artists and teams all over the world - <a target=\"_blank\" href='https://durian.blender.org/'>www.sintel.org</a></p></div>"
   },
   {
-    "id": "p-004",
+    "id": "p-003",
     "category": "Web Design / web developed",
     "title": "Mega Techology",
     "titleimage": "/assets/img/p-004.jpg",
@@ -32,12 +24,20 @@
     "content": "<div class=\"container\"><h4 style=\"text-align:center; color:#c54a37\">coming soon</h4></div>"
   },
   {
-    "id": "p-005",
+    "id": "p-004",
     "category": "Design",
     "title": "FBI Agents 70' - Poster",
     "titleimage": "/assets/img/p-005.jpg",
     "titlettemple": "Create FBI Agents 70's",
     "content": "<div class=\"container\"><p><b>Target:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae tenetur praesentium minus, quia, quibusdam quod exercitationem ullam sed eum debitis doloremque fugiat.</p> </p>  <p><b>Software: </b>Adobe Photoshop</p>   <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/fbi_80/1.jpg\" alt=\"Sample\"></div><p>Character Creation</p></div>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/fbi_80/2.jpg\" alt=\"Sample\"></div><p>Completing character detailing and adding backgrounds</p></div>  <h3 class=\"cont-scrll-txt\">final result</h3>   <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye style=\"height:81vw\"><img src=\"/assets/img/works/fbi_80/3.jpg\" alt=\"Sample\"></div></div> </div>"
+  },
+  {
+    "id": "p-005",
+    "category": "3D Modeling",
+    "title": "Stratocaster 62s",
+    "titleimage": "/assets/img/p-001.jpg",
+    "titlettemple": "Poster",
+    "content": "<div class=\"container\"><p><p><b>Target: </b>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p>  <p><b>Software: </b>Blender, Adobe Photoshop</p>  <h3 class=\"cont-scrll-txt\">working process</h3>   <div class=\"two-img\" ><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4651.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Fender Stratocaster</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4650.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4655.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4653.jpg\" alt=\"Sample\"></div><p>Create 3D model and texturing - Marshall JCM 800</p></div></div></div><div class=\"cont-img-prlx\"><img src=\"/assets/img/works/jf_stratocaster/img-prlx.jpg\" alt=\"img-prlx\" /></div>  <div class=\"container\"><h3 class=\"cont-scrll-txt\">final result</h3><div class=\"two-img\" ><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4652.jpg\" alt=\"Sample\"></div><p>Final result</p></div><div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4654.jpg\" alt=\"Sample\"></div><p>Final result</p></div></div>  <div class=\"cont-scrll\"><div class=\"c-img-box\" data-crsr-eye><img src=\"/assets/img/works/jf_stratocaster/07_DSC_4656.jpg\" alt=\"Sample\"></div><p>Final result</p></div></div>"
   },
   {
     "id": "p-006",
