@@ -9,9 +9,9 @@ face.onload = createCircle;
 //Global settings
 const settings = {
 	maxCount: 40,
-	bounce: 0.02,
+	bounce: 0.008,
 	force: -0.15,
-	gravity: 0.3
+	gravity: 0.15
 }
 
 //Just for my profile background, using the CSS here for it too ;)
