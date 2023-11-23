@@ -5,7 +5,7 @@ const circleArray = [];
 const ballColorSelections = ['#00DAC1', '#94C2A5', '#FD8189', '#92737B', '#363640'];
 const face = new Image(0, 0);
 face.src = 'IMG_20190711_145540.png';
-face.onload = createCircle;
+face.onload = numberSet;
 //Global settings
 const settings = {
 	maxCount: 40,
@@ -20,45 +20,62 @@ document.body.style.overflow = 'hidden';
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
 	canvas.height = window.innerHeight;
 	canvas.width = window.innerWidth;
 });
 
+
 class Circle {
-  constructor() {
-    this.positionX = Math.floor(Math.random() * window.innerWidth);
-    this.positionY = Math.floor(Math.random() * window.innerHeight);
-    this.radius = parseInt(((Math.random() * 160) - 1));
-    this.velocityY = 120;
-    this.velocityX = parseInt(((Math.random() * 20) - 10));
-    this.color = ballColorSelections[Math.floor(Math.random() * 5)];
-    this.angle = 0;
-  }
+	constructor() {
+		this.positionX = Math.floor(Math.random() * window.innerWidth);
+		this.positionY = Math.floor(Math.random() * window.innerHeight);
+		this.radius = parseInt(((Math.random() * 160) - 1));
+		this.velocityY = 120;
+		this.velocityX = parseInt(((Math.random() * 20) - 10));
+		this.color = ballColorSelections[Math.floor(Math.random() * 5)];
+		this.angle = 0;
+	}
 }
 
-function createCircle() {
-	for (let i = 0; i < settings.maxCount; i++) {
-		let circleObject = new Circle;
-		circleObject.id = i;
-		circleArray.push(circleObject);
+function numberSet() {
+	function createCircle(number) {
+		for (let i = 0; i < number; i++) {
+			let circleObject = new Circle;
+			circleObject.id = i;
+			circleArray.push(circleObject);
+		}
+		moveCircle();
 	}
-	moveCircle();
+
+	if (window.innerWidth <= 450) {
+		createCircle(10)
+	} else if (window.innerWidth <= 600) {
+		createCircle(13)
+	} else if (window.innerWidth <= 900) {
+		createCircle(20)
+	} else if (window.innerWidth <= 1200) {
+		createCircle(25);
+	} else if (window.innerWidth <= 1920) {
+		createCircle(30);
+	} else {
+		createCircle(40)
+	}
 }
 
 function drawCircle(object) {
 	for (let i = 0; i < object.length; i++) {
-    context.save();
-    context.translate(object[i].positionX, object[i].positionY);
-    context.rotate(object[i].angle);
-    context.drawImage(face, -object[i].radius, -object[i].radius, object[i].radius * 2, object[i].radius * 2);
-    context.restore();
+		context.save();
+		context.translate(object[i].positionX, object[i].positionY);
+		context.rotate(object[i].angle);
+		context.drawImage(face, -object[i].radius, -object[i].radius, object[i].radius * 2, object[i].radius * 2);
+		context.restore();
 	}
 }
 
 function moveCircle() {
-	context.fillStyle = "#fffef7"; 
-  context.fillRect(0,0,canvas.width,canvas.height);
+	context.fillStyle = "#fffef7";
+	context.fillRect(0, 0, canvas.width, canvas.height);
 
 	for (let i = 0; i < circleArray.length; i++) {
 		collideCircle(circleArray, circleArray[i]);
@@ -66,7 +83,7 @@ function moveCircle() {
 		circleArray[i].positionY += circleArray[i].velocityY;
 		circleArray[i].positionX += circleArray[i].velocityX;
 
-		if(circleArray[i].positionY <= canvas.height - circleArray[i].radius) {
+		if (circleArray[i].positionY <= canvas.height - circleArray[i].radius) {
 			circleArray[i].positionY += circleArray[i].velocityY;
 		} else {
 			circleArray[i].velocityY = settings.force * circleArray[i].velocityY;
@@ -74,14 +91,14 @@ function moveCircle() {
 			circleArray[i].positionY = canvas.height - circleArray[i].radius;
 		}
 
-		if(circleArray[i].positionX >= canvas.width - circleArray[i].radius) {
+		if (circleArray[i].positionX >= canvas.width - circleArray[i].radius) {
 			circleArray[i].positionX = canvas.width - circleArray[i].radius;
 			circleArray[i].velocityX *= settings.force;
-		} else if(circleArray[i].positionX <= 0 + circleArray[i].radius) {
+		} else if (circleArray[i].positionX <= 0 + circleArray[i].radius) {
 			circleArray[i].positionX = 0 + circleArray[i].radius;
 			circleArray[i].velocityX *= settings.force;
 		}
-    circleArray[i].angle += circleArray[i].velocityX * Math.PI / 180;
+		circleArray[i].angle += circleArray[i].velocityX * Math.PI / 180;
 	}
 
 	function collideCircle(collideObject, circleObject) {
@@ -92,34 +109,34 @@ function moveCircle() {
 			let minimumDistance = collideObject[j].radius + circleObject.radius;
 			if (distance <= minimumDistance) {
 				let angle = Math.atan2(distanceY, distanceX);
-        let targetX = circleObject.positionX + Math.cos(angle) * minimumDistance;
-        let targetY = circleObject.positionY + Math.sin(angle) * minimumDistance;
-        let angleX = parseInt((targetX - collideObject[j].positionX) * settings.bounce);
-        let angleY = parseInt((targetY - collideObject[j].positionY) * settings.bounce);
-        circleObject.velocityX -= angleX;
-        circleObject.velocityY -= angleY;
-        collideObject[j].velocityX += angleX;
-        collideObject[j].velocityY += angleY;
+				let targetX = circleObject.positionX + Math.cos(angle) * minimumDistance;
+				let targetY = circleObject.positionY + Math.sin(angle) * minimumDistance;
+				let angleX = parseInt((targetX - collideObject[j].positionX) * settings.bounce);
+				let angleY = parseInt((targetY - collideObject[j].positionY) * settings.bounce);
+				circleObject.velocityX -= angleX;
+				circleObject.velocityY -= angleY;
+				collideObject[j].velocityX += angleX;
+				collideObject[j].velocityY += angleY;
 			}
 
 		}
 	}
 
 	drawCircle(circleArray);
-  
+
 	requestAnimationFrame(moveCircle);
 }
 
 document.addEventListener('click', () => {
-  circleArray.forEach(circle => {
-    circle.velocityX += Math.random() * 20 - 10;
-    circle.velocityY += Math.random() * 20 - 10;
-  });
+	circleArray.forEach(circle => {
+		circle.velocityX += Math.random() * 20 - 10;
+		circle.velocityY += Math.random() * 20 - 10;
+	});
 });
 
 document.addEventListener('keydown', () => {
-  circleArray.forEach(circle => {
-    circle.velocityX = 0;
-    circle.velocityY = 0;
-  });
+	circleArray.forEach(circle => {
+		circle.velocityX = 0;
+		circle.velocityY = 0;
+	});
 })
