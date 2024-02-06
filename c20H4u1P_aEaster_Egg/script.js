@@ -25,7 +25,6 @@ window.addEventListener('resize', function () {
 	canvas.width = window.innerWidth;
 });
 
-
 class Circle {
 	constructor() {
 		this.positionX = Math.floor(Math.random() * window.innerWidth);
@@ -55,9 +54,9 @@ function numberSet() {
 	} else if (window.innerWidth <= 900) {
 		createCircle(20)
 	} else if (window.innerWidth <= 1200) {
-		createCircle(25);
+		createCircle(25)
 	} else if (window.innerWidth <= 1920) {
-		createCircle(30);
+		createCircle(30)
 	} else {
 		createCircle(40)
 	}
