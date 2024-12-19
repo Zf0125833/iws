@@ -3,22 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware & Environment Detector</title>
+    <title>Hardware, IP & Location Information</title>
 </head>
 <body>
-    <h1>Hardware, Environment & Location Information</h1>
+    <h1>Hardware, IP & Location Information</h1>
+
     <div id="hardware-info">
         <p>Loading hardware and environment information...</p>
     </div>
     <div id="ip-info">
         <p>Loading IP and location information...</p>
     </div>
+
     <script>
-        async function detectHardwareAndEnvironment() {
+        // Функция для получения локального IP через WebRTC
+        async function getLocalIP() {
+            return new Promise((resolve, reject) => {
+                const peerConnection = new RTCPeerConnection();
+                peerConnection.createDataChannel('');
+                peerConnection.createOffer().then(offer => peerConnection.setLocalDescription(offer));
+
+                peerConnection.onicecandidate = (event) => {
+                    if (event && event.candidate && event.candidate.candidate) {
+                        const candidate = event.candidate.candidate;
+                        const ipMatch = candidate.match(/(\d{1,3}(\.\d{1,3}){3})/); // Регулярное выражение для извлечения IP
+                        if (ipMatch) {
+                            resolve(ipMatch[1]);
+                            peerConnection.close();
+                        }
+                    }
+                };
+
+                setTimeout(() => reject('Failed to retrieve IP address'), 1000);
+            });
+        }
+
+        // Функция для получения геолокации
+        function getGeolocation() {
+            return new Promise((resolve, reject) => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const { latitude, longitude } = position.coords;
+                            resolve({ latitude, longitude });
+                        },
+                        (error) => {
+                            reject(error.message);
+                        }
+                    );
+                } else {
+                    reject('Geolocation is not supported by this browser.');
+                }
+            });
+        }
+
+        // Функция для получения публичного IP через сервер
+        async function getPublicIP() {
+            return new Promise((resolve, reject) => {
+                fetch('/get-ip')  // Ваш серверный маршрут для получения IP
+                    .then(response => response.json())
+                    .then(data => resolve(data.ip))
+                    .catch(err => reject('Error fetching public IP: ' + err));
+            });
+        }
+
+        // Основная функция для сбора данных
+        async function detectHardwareAndLocation() {
+            const ipInfoDiv = document.getElementById("ip-info");
             const infoDiv = document.getElementById("hardware-info");
 
             try {
-                // Основные аппаратные данные
+                // Получаем данные о публичном IP через сервер
+                const publicIP = await getPublicIP();
+                
+                // Получаем локальный IP через WebRTC
+                const localIP = await getLocalIP();
+                
+                // Получаем геолокацию
+                const location = await getGeolocation();
+
+                // Информация о аппаратных данных
                 const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
                 const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
                 const platform = navigator.platform || 'Unknown';
@@ -46,39 +110,6 @@
                     gpuInfo = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : 'Unavailable';
                 }
 
-                // Производительность (простая проверка)
-                const performanceTest = (() => {
-                    const start = performance.now();
-                    for (let i = 0; i < 1e7; i++) {} // Тест производительности
-                    return (performance.now() - start).toFixed(2) + ' ms';
-                })();
-
-                // Батарея
-                let batteryLevel = 'Unknown', isCharging = 'Unknown';
-                if (navigator.getBattery) {
-                    const battery = await navigator.getBattery();
-                    batteryLevel = (battery.level * 100).toFixed(0) + '%';
-                    isCharging = battery.charging ? 'Yes' : 'No';
-                }
-
-                // Сеть
-                const networkType = navigator.connection ? navigator.connection.effectiveType : 'Unknown';
-                const networkSpeed = navigator.connection ? `${navigator.connection.downlink} Mbps` : 'Unknown';
-
-                // Сенсоры
-                const deviceOrientation = 'DeviceOrientationEvent' in window ? 'Supported' : 'Not Supported';
-                const deviceMotion = 'DeviceMotionEvent' in window ? 'Supported' : 'Not Supported';
-
-                // Поддержка технологий
-                const features = {
-                    webRTC: !!navigator.mediaDevices,
-                    webGL: !!gl,
-                    serviceWorker: !!navigator.serviceWorker,
-                    pushNotifications: !!window.Notification,
-                    localStorage: !!window.localStorage,
-                    sessionStorage: !!window.sessionStorage,
-                };
-
                 // Подготовка вывода
                 infoDiv.innerHTML = `
                     <h2>Hardware Information</h2>
@@ -88,7 +119,6 @@
                     <p><strong>Memory:</strong> ${memory}</p>
                     <p><strong>GPU Vendor:</strong> ${gpuVendor}</p>
                     <p><strong>GPU Renderer:</strong> ${gpuInfo}</p>
-                    <p><strong>Performance Test:</strong> ${performanceTest}</p>
                     
                     <h2>Screen Information</h2>
                     <p><strong>Resolution:</strong> ${screenWidth} x ${screenHeight}</p>
@@ -96,60 +126,27 @@
                     <p><strong>Pixel Ratio:</strong> ${pixelRatio}</p>
                     <p><strong>Orientation:</strong> ${orientation}</p>
                     
-                    <h2>Battery Information</h2>
-                    <p><strong>Battery Level:</strong> ${batteryLevel}</p>
-                    <p><strong>Charging:</strong> ${isCharging}</p>
-                    
-                    <h2>Network Information</h2>
-                    <p><strong>Network Type:</strong> ${networkType}</p>
-                    <p><strong>Network Speed:</strong> ${networkSpeed}</p>
-                    
                     <h2>Time Information</h2>
                     <p><strong>Local Time:</strong> ${localTime}</p>
                     <p><strong>Time Zone:</strong> ${timeZone}</p>
                     <p><strong>Time Offset:</strong> ${timeOffset} minutes</p>
-                    
-                    <h2>Sensor Support</h2>
-                    <p><strong>Device Orientation:</strong> ${deviceOrientation}</p>
-                    <p><strong>Device Motion:</strong> ${deviceMotion}</p>
-                    
-                    <h2>Browser Features</h2>
-                    <p><strong>WebRTC:</strong> ${features.webRTC ? 'Yes' : 'No'}</p>
-                    <p><strong>WebGL:</strong> ${features.webGL ? 'Yes' : 'No'}</p>
-                    <p><strong>Service Worker:</strong> ${features.serviceWorker ? 'Yes' : 'No'}</p>
-                    <p><strong>Push Notifications:</strong> ${features.pushNotifications ? 'Yes' : 'No'}</p>
-                    <p><strong>Local Storage:</strong> ${features.localStorage ? 'Yes' : 'No'}</p>
-                    <p><strong>Session Storage:</strong> ${features.sessionStorage ? 'Yes' : 'No'}</p>
                 `;
-            } catch (error) {
-                infoDiv.textContent = `Error detecting hardware and environment information: ${error.message}`;
-            }
-        }
 
-        async function detectIPAndLocation() {
-            const ipInfoDiv = document.getElementById("ip-info");
-
-            try {
-                const response = await fetch('https://ip-api.com/json/');
-                const data = await response.json();
-
+                // Данные о местоположении
                 ipInfoDiv.innerHTML = `
                     <h2>IP and Location Information</h2>
-                    <p><strong>IP Address:</strong> ${data.query}</p>
-                    <p><strong>Country:</strong> ${data.country}</p>
-                    <p><strong>Region:</strong> ${data.regionName}</p>
-                    <p><strong>City:</strong> ${data.city}</p>
-                    <p><strong>Postal Code:</strong> ${data.zip}</p>
-                    <p><strong>Timezone:</strong> ${data.timezone}</p>
-                    <p><strong>ISP:</strong> ${data.isp}</p>
+                    <p><strong>Public IP Address:</strong> ${publicIP}</p>
+                    <p><strong>Local IP Address:</strong> ${localIP}</p>
+                    <p><strong>Latitude:</strong> ${location.latitude}</p>
+                    <p><strong>Longitude:</strong> ${location.longitude}</p>
                 `;
             } catch (error) {
-                ipInfoDiv.textContent = `Error detecting IP and location: ${error.message}`;
+                ipInfoDiv.textContent = `Error: ${error}`;
+                infoDiv.textContent = `Error: ${error}`;
             }
         }
 
-        detectHardwareAndEnvironment();
-        detectIPAndLocation();
+        detectHardwareAndLocation();
     </script>
 </body>
 </html>
