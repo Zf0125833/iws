@@ -6,9 +6,12 @@
     <title>Hardware & Environment Detector</title>
 </head>
 <body>
-    <h1>Hardware & Environment Information</h1>
+    <h1>Hardware, Environment & Location Information</h1>
     <div id="hardware-info">
-        <p>Loading information...</p>
+        <p>Loading hardware and environment information...</p>
+    </div>
+    <div id="ip-info">
+        <p>Loading IP and location information...</p>
     </div>
     <script>
         async function detectHardwareAndEnvironment() {
@@ -123,7 +126,30 @@
             }
         }
 
+        async function detectIPAndLocation() {
+            const ipInfoDiv = document.getElementById("ip-info");
+
+            try {
+                const response = await fetch('https://ip-api.com/json/');
+                const data = await response.json();
+
+                ipInfoDiv.innerHTML = `
+                    <h2>IP and Location Information</h2>
+                    <p><strong>IP Address:</strong> ${data.query}</p>
+                    <p><strong>Country:</strong> ${data.country}</p>
+                    <p><strong>Region:</strong> ${data.regionName}</p>
+                    <p><strong>City:</strong> ${data.city}</p>
+                    <p><strong>Postal Code:</strong> ${data.zip}</p>
+                    <p><strong>Timezone:</strong> ${data.timezone}</p>
+                    <p><strong>ISP:</strong> ${data.isp}</p>
+                `;
+            } catch (error) {
+                ipInfoDiv.textContent = `Error detecting IP and location: ${error.message}`;
+            }
+        }
+
         detectHardwareAndEnvironment();
+        detectIPAndLocation();
     </script>
 </body>
 </html>
