@@ -14,7 +14,6 @@
         <p>Loading information...</p>
     </div>
     <script>
-
         fetch('https://ipapi.co/json/')
             .then(response => response.json())
             .then(data => {
@@ -23,17 +22,17 @@
                 <p><strong>User's IP address:</strong> ${data.ip}</p>
                 <p><strong>Network:</strong> ${data.network}</p>
                 <p><strong>Version:</strong> ${data.version}</p>
-                <p><strong>Organization:</strong> ${data.org}</p>
                 <p><strong>ASN:</strong> ${data.asn}</p>
+                <p><strong>Organization:</strong> ${data.org}</p>
                 <p><strong>Country:</strong> ${data.country_name}</p>
                 <p><strong>Country Capital:</strong> ${data.country_capital}</p>
                 <p><strong>City:</strong> ${data.city}</p>
                 <p><strong>Region:</strong> ${data.region}</p>
                 <p><strong>Postal:</strong> ${data.postal}</p>
-		        <p><strong>Currency:</strong> ${data.currency}</p>
                 <p><strong>Timezone:</strong> ${data.timezone}</p>
                 <p><strong>UTC Offset:</strong> ${data.utc_offset}</p>
                 <p><strong>Country Calling Code:</strong> ${data.country_calling_code}</p>
+                <p><strong>Currency:</strong> ${data.currency}</p>
                 `;
             })
 
@@ -46,25 +45,25 @@
             const infoDiv = document.getElementById("hardware-info");
 
             try {
-                // Основные аппаратные данные
+                // 
                 const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
                 const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
                 const platform = navigator.platform || 'Unknown';
                 const userAgent = navigator.userAgent || 'Unknown';
 
-                // Разрешение и экран
+                // 
                 const screenWidth = window.screen.width || 'Unknown';
                 const screenHeight = window.screen.height || 'Unknown';
                 const colorDepth = window.screen.colorDepth || 'Unknown';
                 const pixelRatio = window.devicePixelRatio || 'Unknown';
                 const orientation = screen.orientation ? screen.orientation.type : 'Unknown';
 
-                // Время и часовой пояс
+                // 
                 const localTime = new Date().toLocaleString();
                 const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
                 const timeOffset = new Date().getTimezoneOffset();
 
-                // Информация о GPU
+                // 
                 const canvas = document.createElement('canvas');
                 const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
                 let gpuInfo = 'Unknown', gpuVendor = 'Unknown';
@@ -74,14 +73,14 @@
                     gpuInfo = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : 'Unavailable';
                 }
 
-                // Производительность (простая проверка)
+                // 
                 const performanceTest = (() => {
                     const start = performance.now();
-                    for (let i = 0; i < 1e7; i++) { } // Тест производительности
+                    for (let i = 0; i < 1e7; i++) { }
                     return (performance.now() - start).toFixed(2) + ' ms';
                 })();
 
-                // Батарея
+                // 
                 let batteryLevel = 'Unknown', isCharging = 'Unknown';
                 if (navigator.getBattery) {
                     const battery = await navigator.getBattery();
@@ -89,15 +88,15 @@
                     isCharging = battery.charging ? 'Yes' : 'No';
                 }
 
-                // Сеть
+                // 
                 const networkType = navigator.connection ? navigator.connection.effectiveType : 'Unknown';
                 const networkSpeed = navigator.connection ? `${navigator.connection.downlink} Mbps` : 'Unknown';
 
-                // Сенсоры
+                // 
                 const deviceOrientation = 'DeviceOrientationEvent' in window ? 'Supported' : 'Not Supported';
                 const deviceMotion = 'DeviceMotionEvent' in window ? 'Supported' : 'Not Supported';
 
-                // Поддержка технологий
+                // 
                 const features = {
                     webRTC: !!navigator.mediaDevices,
                     webGL: !!gl,
@@ -107,7 +106,7 @@
                     sessionStorage: !!window.sessionStorage,
                 };
 
-                // Подготовка вывода
+                // 
                 infoDiv.innerHTML = `
                     <div class="main">
                         <div class="box">
