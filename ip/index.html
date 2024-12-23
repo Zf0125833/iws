@@ -35,14 +35,6 @@
                 <p><strong>UTC Offset:</strong> ${data.utc_offset}</p>
                 <p><strong>Country Calling Code:</strong> ${data.country_calling_code}</p>
                 `;
-                fetch(`https://dns.google/resolve?name=${data.ip}`)
-                        .then(dnsResponse => dnsResponse.json())
-                        .then(dnsData => {
-                            document.getElementById('dns').textContent = "User's DNS: " + dnsData.Answer[0].data;
-                        })
-                        .catch(dnsError => {
-                            console.error('Error fetching DNS:', dnsError);
-                        });
             })
             
             .catch(error => {
