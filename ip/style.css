@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background: #fffef7;
+}
+
+h1{
+    text-align: center;
+    padding: 100px 30px 30px 30px;
+    text-transform: capitalize;
+    color: #c54a37;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.box{
+    padding: 30px;
+}
+
+.box h2 {
+    margin: 20px 0;
+    color: #c54a37;
+}
+
+p {
+    padding: 2px 0;
+}
+
+@media (min-width: 540px) and (max-height: 450px) {
+    h1{
+        text-align: center;
+        padding: 30px;
+    }
+}
