@@ -1,5 +1,16 @@
+function hidePreloader() {
+    setTimeout(() => {
+        const preoloader = document.querySelector('.preoloader');
+        preoloader.classList.add("not-act");
+        document.body.style.position = "relative";
+        setTimeout(() => preoloader.remove(), 1000);
+    }, 1000)
+}
+window.addEventListener('load', hidePreloader);
+
 async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
+
     try {
         const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
         const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
@@ -100,20 +111,16 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Currency:</strong></div> <div>${data.currency}</div>
             </div>
         `;
-            })
+            }).catch(error => {
+                document.querySelector('.ip').innerHTML = `
+                <h2>IP Information</h2>
+                <div class="box-nav">
+                    <div><strong>Error fetching IP:</strong></div> <div>${error}</div>
+                </div>
+                `;
+            }),
 
-            // <div class="box-nav">
-            //         <div><strong>Languages:</strong></div> <div>${data.languages}</div>
-            // </div>
-
-            .catch(error => {
-                console.error('Error fetching IP:', error);
-            });
-
-        const copyrightIWS = new Date().getFullYear();
-        console.log(copyrightIWS);
-
-        infoDiv.innerHTML = `
+            infoDiv.innerHTML = `
         <div class="box">
             <h1>My IP Address</h1>
             <p class="ip"></p>
@@ -209,9 +216,6 @@ async function detectHardwareAndEnvironment() {
             <div class="box-nav">
                 <div><strong>Device Motion:</strong></div> <div>${deviceMotion}</div>
             </div>
-            <div className="pgs-cprght">
-                <p>${copyrightIWS} © Ivanwebstudio</p>
-            </div>
         </div>
         `;
 
@@ -222,6 +226,11 @@ async function detectHardwareAndEnvironment() {
     } catch (error) {
         infoDiv.textContent = `Error detecting hardware and environment information: ${error.message}`;
     }
+
+    const pgsCprght = document.createElement('div');
+    pgsCprght.className = 'pgs-cprght';
+    pgsCprght.innerHTML = `<a href="https://ivanwebstudio.site" target="_balnk">${new Date().getFullYear()} © Ivanwebstudio</a>`;
+    document.body.appendChild(pgsCprght);
 }
 
 detectHardwareAndEnvironment();
