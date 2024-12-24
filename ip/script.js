@@ -1,121 +1,216 @@
 async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
-
     try {
-        // Fetching IP-related information
-        const ipData = await fetch('https://ipapi.co/json/').then(response => response.json()).catch(error => {
-            console.error('Error fetching IP information:', error);
-            return null;
-        });
+        // Основные параметры
+        const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
+        const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
+        const platform = navigator.platform || 'Unknown';
+        const userAgent = navigator.userAgent || 'Unknown';
 
-        // Rendering IP-related information
-        if (ipData) {
-            document.querySelector('.ip').innerHTML = `
-                <h2>IP Information</h2>
-                ${Object.entries({
-                    'IP Address': ipData.ip,
-                    'Network': ipData.network,
-                    'Version': ipData.version,
-                    'ASN': ipData.asn,
-                    'Organization': ipData.org,
-                    'Country': ipData.country_name,
-                    'Country Capital': ipData.country_capital,
-                    'Region': ipData.region,
-                    'City': ipData.city,
-                    'Postal': ipData.postal,
-                    'Timezone': ipData.timezone,
-                    'UTC Offset': ipData.utc_offset,
-                    'Country Calling Code': ipData.country_calling_code,
-                    'Currency': ipData.currency,
-                })
-                .map(([key, value]) => `
-                    <div class="box-nav">
-                        <div><strong>${key}:</strong></div> <div>${value || 'Unknown'}</div>
-                    </div>
-                `)
-                .join('')}
-            `;
-        }
+        const screenWidth = window.screen.width || 'Unknown';
+        const screenHeight = window.screen.height || 'Unknown';
+        const colorDepth = window.screen.colorDepth || 'Unknown';
+        const pixelRatio = window.devicePixelRatio || 'Unknown';
+        const orientation = screen.orientation ? screen.orientation.type : 'Unknown';
 
-        // Gathering hardware and environment data
-        const hardwareData = {
-            LogicalProcessors: navigator.hardwareConcurrency || 'Unknown',
-            Memory: navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown',
-            Platform: navigator.platform || 'Unknown',
-            UserAgent: navigator.userAgent || 'Unknown',
-            ScreenResolution: `${window.screen.width || 'Unknown'} x ${window.screen.height || 'Unknown'}`,
-            ColorDepth: window.screen.colorDepth || 'Unknown',
-            PixelRatio: window.devicePixelRatio || 'Unknown',
-            Orientation: screen.orientation?.type || 'Unknown',
-            TimeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            TimeOffset: new Date().getTimezoneOffset(),
-        };
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const timeOffset = new Date().getTimezoneOffset();
 
-        // GPU Info
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        let gpuInfo = 'Unknown', gpuVendor = 'Unknown';
         if (gl) {
             const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-            hardwareData.GPUVendor = debugInfo ? gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL) : 'Unavailable';
-            hardwareData.GPURenderer = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : 'Unavailable';
-        } else {
-            hardwareData.GPUVendor = hardwareData.GPURenderer = 'Unknown';
+            gpuVendor = debugInfo ? gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL) : 'Unavailable';
+            gpuInfo = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : 'Unavailable';
         }
 
-        // Performance Test
-        hardwareData.PerformanceTest = (() => {
+        const performanceTest = (() => {
             const start = performance.now();
-            for (let i = 0; i < 1e7; i++) {}
-            return `${(performance.now() - start).toFixed(2)} ms`;
+            for (let i = 0; i < 1e7; i++) { }
+            return (performance.now() - start).toFixed(2) + ' ms';
         })();
 
-        // Battery Info
-        const batteryData = await navigator.getBattery?.();
-        hardwareData.BatteryLevel = batteryData ? `${(batteryData.level * 100).toFixed(0)}%` : 'Unknown';
-        hardwareData.IsCharging = batteryData ? (batteryData.charging ? 'Yes' : 'No') : 'Unknown';
+        let batteryLevel = 'Unknown', isCharging = 'Unknown';
+        if (navigator.getBattery) {
+            const battery = await navigator.getBattery();
+            batteryLevel = (battery.level * 100).toFixed(0) + '%';
+            isCharging = battery.charging ? 'Yes' : 'No';
+        }
 
-        // Network Info
-        const connection = navigator.connection || {};
-        hardwareData.NetworkType = connection.effectiveType || 'Unknown';
-        hardwareData.NetworkSpeed = connection.downlink ? `${connection.downlink} Mbps` : 'Unknown';
+        const networkType = navigator.connection ? navigator.connection.effectiveType : 'Unknown';
+        const networkSpeed = navigator.connection ? `${navigator.connection.downlink} Mbps` : 'Unknown';
 
-        // Features
-        hardwareData.Features = {
-            WebRTC: !!navigator.mediaDevices,
-            WebGL: !!gl,
-            ServiceWorker: !!navigator.serviceWorker,
-            PushNotifications: !!window.Notification,
-            LocalStorage: !!window.localStorage,
-            SessionStorage: !!window.sessionStorage,
+        const deviceOrientation = 'DeviceOrientationEvent' in window ? 'Supported' : 'Not Supported';
+        const deviceMotion = 'DeviceMotionEvent' in window ? 'Supported' : 'Not Supported';
+
+        const features = {
+            webRTC: !!navigator.mediaDevices,
+            webGL: !!gl,
+            serviceWorker: !!navigator.serviceWorker,
+            pushNotifications: !!window.Notification,
+            localStorage: !!window.localStorage,
+            sessionStorage: !!window.sessionStorage,
         };
 
-        // Rendering dynamic hardware and environment information
-        infoDiv.innerHTML = `
-            <div class="box">
-                <h1>My IP Address</h1>
-                <p class="ip"></p>
-
-                <h2>Time Information</h2>
-                <div class="box-nav">
-                    <div><strong>Dynamic Local Time:</strong></div> <div id="dynamic-time"></div>
-                </div>
-                <div class="box-nav">
-                    <div><strong>Time Zone:</strong></div> <div>${hardwareData.TimeZone}</div>
-                </div>
-                <div class="box-nav">
-                    <div><strong>Time Offset:</strong></div> <div>${hardwareData.TimeOffset}</div>
-                </div>
-
-                <h2>Hardware Information</h2>
-                ${Object.entries(hardwareData).map(([key, value]) => `
-                    <div class="box-nav">
-                        <div><strong>${key}:</strong></div> <div>${typeof value === 'object' ? JSON.stringify(value) : value}</div>
-                    </div>
-                `).join('')}
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('.ip').innerHTML = `
+            <h2>IP Information</h2>
+            <div class="box-nav">
+                <div><strong>IP address:</strong></div> <div>${data.ip}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Network:</strong></div> <div>${data.network}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Version:</strong></div> <div>${data.version}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>ASN:</strong></div> <div>${data.asn}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Organization:</strong></div> <div>${data.org}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Country:</strong></div> <div>${data.country_name}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Country Capital:</strong></div> <div>${data.country_capital}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Region:</strong></div> <div>${data.region}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>City:</strong></div> <div>${data.city}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Postal:</strong></div> <div>${data.postal}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Timezone:</strong></div> <div>${data.timezone}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>UTC Offset:</strong></div> <div>${data.utc_offset}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Country Calling Code:</strong></div> <div>${data.country_calling_code}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Currency:</strong></div> <div>${data.currency}</div>
             </div>
         `;
+            })
 
-        // Updating dynamic time every second
+            // <div class="box-nav">
+            //         <div><strong>Languages:</strong></div> <div>${data.languages}</div>
+            // </div>
+
+            .catch(error => {
+                console.error('Error fetching IP:', error);
+            });
+
+        infoDiv.innerHTML = `
+        <div class="box">
+            <h1>My IP Address</h1>
+            <p class="ip"></p>
+
+            <h2>Time Information</h2>
+            <div class="box-nav">
+                <div><strong>Dynamic Local Time:</strong></div> <div id="dynamic-time"></div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Time Zone:</strong></div> <div>${timeZone}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Time Offset:</strong></div> <div>${timeOffset}</div>
+            </div>
+
+            <h2>Hardware Information</h2>
+            <div class="box-nav">
+                <div><strong>User Agent:</strong></div> <div>${userAgent}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Platform:</strong></div> <div>${platform}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Logical Processors:</strong></div> <div>${logicalProcessors}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Memory:</strong></div> <div>${memory}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>GPU Vendor:</strong></div> <div>${gpuVendor}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>GPU Renderer:</strong></div> <div>${gpuInfo}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Performance Test:</strong></div> <div>${performanceTest}</div>
+            </div>
+
+            <h2>Screen Information</h2>
+            <div class="box-nav">
+                <div><strong>Resolution:</strong></div> <div>${screenWidth} x ${screenHeight}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Color Depth:</strong></div> <div>${colorDepth}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Pixel Ratio:</strong></div> <div>${pixelRatio}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Orientation:</strong></div> <div>${orientation}</div>
+            </div>
+
+            <h2>Browser Features</h2>
+            <div class="box-nav">
+                <div><strong>WebRTC:</strong></div> <div>${features.webRTC ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>WebGL:</strong></div> <div>${features.webGL ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Service Worker:</strong></div> <div>${features.serviceWorker ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Push Notifications:</strong></div> <div>${features.pushNotifications ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Local Storage:</strong></div> <div>${features.localStorage ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Session Storage:</strong></div> <div>${features.sessionStorage ? 'Yes' : 'No'}</div>
+            </div>
+
+            <h2>Network Information</h2>
+            <div class="box-nav">
+                <div><strong>Network Type:</strong></div> <div>${networkType}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Network Speed:</strong></div> <div>${networkSpeed}</div>
+            </div>
+
+            <h2>Battery Information</h2>
+            <div class="box-nav">
+                <div><strong>Battery Level:</strong></div> <div>${batteryLevel}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Charging:</strong></div> <div>${isCharging}</div>
+            </div>
+
+            <h2>Sensor Support</h2>
+            <div class="box-nav">
+                <div><strong>Device Orientation:</strong></div> <div>${deviceOrientation}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Device Motion:</strong></div> <div>${deviceMotion}</div>
+            </div>
+        </div>
+        `;
+
+        // Обновление времени
         setInterval(() => {
             document.getElementById("dynamic-time").textContent = new Date().toLocaleString();
         }, 1000);
