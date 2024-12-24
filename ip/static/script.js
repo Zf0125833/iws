@@ -8,14 +8,29 @@ function hidePreloader() {
 }
 window.addEventListener('load', hidePreloader);
 
+////////////////////////////
+
 async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
 
     try {
+        let platformOc;
+        let brands;
+        let browser;
+
+        if (navigator.userAgentData && navigator.userAgentData.brands) {
+            platformOc = navigator.userAgentData.platform || 'Unknown';
+            brands = navigator.userAgentData.brands || 'Unknown';
+            browser = navigator.userAgentData.brands.slice(0, 2).map(brand => `${brand.brand} (ver.${brand.version})`).join(' / ');
+        } else {
+            platformOc = 'Unknown', brands = 'Unknown', browser = 'Unknown';
+        }
+
         const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
         const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
-        const platform = navigator.platform || 'Unknown';
+        const platform = platformOc + " / " + navigator.platform || 'Unknown';
         const userAgent = navigator.userAgent || 'Unknown';
+        const languages = navigator.languages || 'Unknown';
 
         const screenWidth = window.screen.width || 'Unknown';
         const screenHeight = window.screen.height || 'Unknown';
@@ -99,16 +114,16 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Postal:</strong></div> <div>${data.postal}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Timezone:</strong></div> <div>${data.timezone}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>UTC Offset:</strong></div> <div>${data.utc_offset}</div>
-            </div>
-            <div class="box-nav">
                 <div><strong>Country Calling Code:</strong></div> <div>${data.country_calling_code}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Currency:</strong></div> <div>${data.currency}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Time Offset:</strong></div> <div>${data.utc_offset}</div>
             </div>
         `;
             }).catch(error => {
@@ -141,7 +156,13 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>User Agent:</strong></div> <div>${userAgent}</div>
             </div>
             <div class="box-nav">
+                <div><strong>Browser:</strong></div> <div>${browser}</div>
+            </div>
+            <div class="box-nav">
                 <div><strong>Platform:</strong></div> <div>${platform}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Languages:</strong></div> <div>${languages}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Logical Processors:</strong></div> <div>${logicalProcessors}</div>
@@ -157,6 +178,9 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Performance Test:</strong></div> <div>${performanceTest}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Online Status:</strong></div> <div>${navigator.onLine ? 'Online' : 'Offline'}</div>
             </div>
 
             <h2>Screen Information</h2>
@@ -191,6 +215,9 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Session Storage:</strong></div> <div>${features.sessionStorage ? 'Yes' : 'No'}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Geolocation:</strong></div> <div>${navigator.geolocation ? 'Supported' : 'Not Supported'}</div>
             </div>
 
             <h2>Network Information</h2>
