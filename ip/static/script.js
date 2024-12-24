@@ -1,7 +1,6 @@
 async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
     try {
-        // Основные параметры
         const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
         const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
         const platform = navigator.platform || 'Unknown';
@@ -111,6 +110,9 @@ async function detectHardwareAndEnvironment() {
                 console.error('Error fetching IP:', error);
             });
 
+        const copyrightIWS = new Date().getFullYear();
+        console.log(copyrightIWS);
+
         infoDiv.innerHTML = `
         <div class="box">
             <h1>My IP Address</h1>
@@ -118,7 +120,7 @@ async function detectHardwareAndEnvironment() {
 
             <h2>Time Information</h2>
             <div class="box-nav">
-                <div><strong>Dynamic Local Time:</strong></div> <div id="dynamic-time"></div>
+                <div><strong>Local Time:</strong></div> <div id="dynamic-time"></div>
             </div>
             <div class="box-nav">
                 <div><strong>Time Zone:</strong></div> <div>${timeZone}</div>
@@ -207,10 +209,12 @@ async function detectHardwareAndEnvironment() {
             <div class="box-nav">
                 <div><strong>Device Motion:</strong></div> <div>${deviceMotion}</div>
             </div>
+            <div className="pgs-cprght">
+                <p>${copyrightIWS} © Ivanwebstudio</p>
+            </div>
         </div>
         `;
 
-        // Обновление времени
         setInterval(() => {
             document.getElementById("dynamic-time").textContent = new Date().toLocaleString();
         }, 1000);
