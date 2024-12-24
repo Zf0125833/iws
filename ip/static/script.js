@@ -26,6 +26,23 @@ async function detectHardwareAndEnvironment() {
             platformOc = 'Unknown', brands = 'Unknown', browser = 'Unknown';
         }
 
+        function getUTCOffset() {
+            const offset = new Date().getTimezoneOffset();
+            const hours = Math.floor(Math.abs(offset) / 60);
+            const minutes = Math.abs(offset) % 60;
+            const sign = offset <= 0 ? "+" : "-";
+
+            return `UTC${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+        }
+
+        function formatToUTC(offset) {
+            const sign = offset.startsWith('-') ? '-' : '+';
+            const hours = offset.slice(1, 3);
+            const minutes = offset.slice(3, 5);
+
+            return `UTC${sign}${hours}:${minutes}`;
+        }
+
         const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
         const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
         const platform = platformOc + " / " + navigator.platform || 'Unknown';
@@ -39,7 +56,7 @@ async function detectHardwareAndEnvironment() {
         const orientation = screen.orientation ? screen.orientation.type : 'Unknown';
 
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const timeOffset = new Date().getTimezoneOffset();
+        const timeOffset = getUTCOffset();
 
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -123,7 +140,7 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Time Offset:</strong></div> <div>${data.utc_offset}</div>
+                <div><strong>Time Offset:</strong></div> <div>${formatToUTC(data.utc_offset)}</div>
             </div>
         `;
             }).catch(error => {
