@@ -3,6 +3,7 @@ function hidePreloader() {
         const preoloader = document.querySelector('.preoloader');
         preoloader.classList.add("not-act");
         document.body.style.position = "relative";
+        setTimeout(() => document.querySelector("#ip-hardware-info").classList.add("act"), 1000);
         setTimeout(() => preoloader.remove(), 1000);
     }, 1000)
 }
@@ -14,38 +15,11 @@ async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
 
     try {
-        let platformOc;
         let brands;
         let browser;
 
-        if (navigator.userAgentData && navigator.userAgentData.brands) {
-            platformOc = navigator.userAgentData.platform || 'Unknown';
-            brands = navigator.userAgentData.brands || 'Unknown';
-            browser = navigator.userAgentData.brands.slice(0, 2).map(brand => `${brand.brand} (ver.${brand.version})`).join(' / ');
-        } else {
-            platformOc = 'Unknown', brands = 'Unknown', browser = 'Unknown';
-        }
-
-        function getUTCOffset() {
-            const offset = new Date().getTimezoneOffset();
-            const hours = Math.floor(Math.abs(offset) / 60);
-            const minutes = Math.abs(offset) % 60;
-            const sign = offset <= 0 ? "+" : "-";
-
-            return `UTC${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
-        }
-
-        function formatToUTC(offset) {
-            const sign = offset.startsWith('-') ? '-' : '+';
-            const hours = offset.slice(1, 3);
-            const minutes = offset.slice(3, 5);
-
-            return `UTC${sign}${hours}:${minutes}`;
-        }
-
         const logicalProcessors = navigator.hardwareConcurrency || 'Unknown';
         const memory = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : 'Unknown';
-        const platform = platformOc + " / " + navigator.platform || 'Unknown';
         const userAgent = navigator.userAgent || 'Unknown';
         const languages = navigator.languages || 'Unknown';
 
@@ -95,6 +69,57 @@ async function detectHardwareAndEnvironment() {
             sessionStorage: !!window.sessionStorage,
         };
 
+        const parsedData = {
+            browser: /Chrome\/[0-9.]+/.test(userAgent)
+                ? `Chrome ${userAgent.match(/Chrome\/([0-9.]+)/)[1]}`
+                : /Firefox\/[0-9.]+/.test(userAgent)
+                    ? `Firefox ${userAgent.match(/Firefox\/([0-9.]+)/)[1]}`
+                    : /Safari\/[0-9.]+/.test(userAgent) && !/Chrome/.test(userAgent)
+                        ? `Safari ${userAgent.match(/Version\/([0-9.]+)/)[1]}`
+                        : /Edg\/[0-9.]+/.test(userAgent)
+                            ? `Edge ${userAgent.match(/Edg\/([0-9.]+)/)[1]}`
+                            : "Unknown Browser",
+
+            os: /Windows NT/.test(userAgent)
+                ? `Windows ${userAgent.match(/Windows NT ([0-9.]+)/)[1]}`
+                : /Mac OS X/.test(userAgent)
+                    ? `MacOS ${userAgent.match(/Mac OS X ([0-9_]+)/)[1].replace(/_/g, ".")}`
+                    : /Android/.test(userAgent)
+                        ? `Android ${userAgent.match(/Android ([0-9.]+)/)[1]}`
+                        : /iPhone OS/.test(userAgent)
+                            ? `iOS ${userAgent.match(/iPhone OS ([0-9_]+)/)[1].replace(/_/g, ".")}`
+                            : "Unknown OS",
+
+            device: /Mobile/.test(userAgent) ? "Mobile" : "Desktop",
+        };
+
+        if (navigator.userAgentData && navigator.userAgentData.brands) {
+            brands = navigator.userAgentData.brands || 'Unknown';
+            browser = navigator.userAgentData.brands.slice(0, 2).map(brand => `${brand.brand} (ver.${brand.version})`).join(' / ');
+        } else {
+            brands = 'Unknown', browser = parsedData.browser || 'Unknown';
+        }
+
+        function getUTCOffset() {
+            const offset = new Date().getTimezoneOffset();
+            const hours = Math.floor(Math.abs(offset) / 60);
+            const minutes = Math.abs(offset) % 60;
+            const sign = offset <= 0 ? "+" : "-";
+
+            return `UTC${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+        }
+
+        function formatToUTC(offset) {
+            const sign = offset.startsWith('-') ? '-' : '+';
+            const hours = offset.slice(1, 3);
+            const minutes = offset.slice(3, 5);
+
+            return `UTC${sign}${hours}:${minutes}`;
+        }
+
+
+        console.log(parsedData);
+
         fetch('https://ipapi.co/json/')
             .then(response => response.json())
             .then(data => {
@@ -110,10 +135,10 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Version:</strong></div> <div>${data.version}</div>
             </div>
             <div class="box-nav">
-                <div><strong>ASN:</strong></div> <div>${data.asn}</div>
+                <div><strong>Organization:</strong></div> <div>${data.org}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Organization:</strong></div> <div>${data.org}</div>
+                <div><strong>ASN:</strong></div> <div>${data.asn}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Country:</strong></div> <div>${data.country_name}</div>
@@ -145,10 +170,10 @@ async function detectHardwareAndEnvironment() {
         `;
             }).catch(error => {
                 document.querySelector('.ip').innerHTML = `
-                <h2>IP Information</h2>
-                <div class="box-nav">
-                    <div><strong>Error fetching IP:</strong></div> <div>${error}</div>
-                </div>
+                    <h2>IP Information</h2>
+                    <div class="box-nav">
+                        <div><strong>Error fetching IP:</strong></div> <div>${error}</div>
+                    </div>
                 `;
             }),
 
@@ -176,7 +201,7 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Browser:</strong></div> <div>${browser}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Platform:</strong></div> <div>${platform}</div>
+                <div><strong>Platform:</strong></div> <div>${parsedData.device + " / " + parsedData.os}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Languages:</strong></div> <div>${languages}</div>
