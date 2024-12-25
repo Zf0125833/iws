@@ -117,9 +117,6 @@ async function detectHardwareAndEnvironment() {
             return `UTC${sign}${hours}:${minutes}`;
         }
 
-
-        console.log(parsedData);
-
         fetch('https://ipapi.co/json/')
             .then(response => response.json())
             .then(data => {
