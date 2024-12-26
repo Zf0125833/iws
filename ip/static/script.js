@@ -3,8 +3,7 @@ function hidePreloader() {
         const preoloader = document.querySelector('.preoloader');
         preoloader.classList.add("not-act");
         document.body.style.position = "relative";
-        setTimeout(() => document.querySelector("#ip-hardware-info").classList.add("act"), 1000);
-        setTimeout(() => preoloader.remove(), 1000);
+        setTimeout(() => preoloader.remove(), 1200);
     }, 1000)
 }
 window.addEventListener('load', hidePreloader);
@@ -132,10 +131,7 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Version:</strong></div> <div>${data.version}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Organization:</strong></div> <div>${data.org}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>ASN:</strong></div> <div>${data.asn}</div>
+                <div><strong>Organization:</strong></div> <div>${data.asn + ' / ' + data.org}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Country:</strong></div> <div>${data.country_name}</div>
@@ -185,9 +181,6 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Time Zone:</strong></div> <div>${timeZone}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>Time Offset:</strong></div> <div>${timeOffset}</div>
             </div>
 
             <h2>Hardware Information</h2>
@@ -286,7 +279,7 @@ async function detectHardwareAndEnvironment() {
         `;
 
         setInterval(() => {
-            document.getElementById("dynamic-time").textContent = new Date().toLocaleString();
+            document.getElementById("dynamic-time").textContent = new Date().toLocaleString() + " / " + timeOffset;
         }, 1000);
 
     } catch (error) {
