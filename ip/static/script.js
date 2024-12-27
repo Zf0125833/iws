@@ -12,6 +12,7 @@ window.addEventListener('load', hidePreloader);
 
 async function detectHardwareAndEnvironment() {
     const infoDiv = document.getElementById("ip-hardware-info");
+
     try {
         let brands;
         let browser;
@@ -28,7 +29,7 @@ async function detectHardwareAndEnvironment() {
         const orientation = screen.orientation ? screen.orientation.type : 'Unknown';
 
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const timeOffset = getUTCOffset();
+        const timeOffset = getUTCOffset().split('UTC').join(' ');
 
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -142,13 +143,13 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Version:</strong></div> <div>${data.version}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Organization:</strong></div> <div>${data.asn + ' ' + data.org}</div>
+                <div><strong>Organization:</strong></div> <div>${data.asn + ', ' + data.org}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Languages:</strong></div> <div>${data.languages}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Country:</strong></div> <div>${data.country_name}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>Country Capital:</strong></div> <div>${data.country_capital}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Region:</strong></div> <div>${data.region}</div>
@@ -166,13 +167,13 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Currency:</strong></div> <div>${data.currency}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Languages:</strong></div> <div>${data.languages}</div>
-            </div>
-            <div class="box-nav">
                 <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Local Time:</strong></div> <div>${addUTCOffset(data.utc_offset).toUTCString().slice(5, -1).split('GM').join(' ') + ' / ' + formatToUTC(data.utc_offset)}</div>
+                <div><strong>Local Time:</strong></div> <div>${addUTCOffset(data.utc_offset).toUTCString()}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>UTC:</strong></div> <div>${formatToUTC(data.utc_offset).split('UTC').join(' ')}</div>
             </div>
         `;
             }).catch(error => {
@@ -187,17 +188,20 @@ async function detectHardwareAndEnvironment() {
             infoDiv.innerHTML = `
         <div class="box">
             <div class="hello">
-                <h1>My IP Address</h1>
+                <h1>IP Address</h1>
                 <p>Here you can find out what information your browser reveals.</p>
             </div>
             <p class="ip"></p>
 
             <h2>Time Information</h2>
             <div class="box-nav">
+                <div><strong>Time Zone:</strong></div> <div>${timeZone}</div>
+            </div>
+            <div class="box-nav">
                 <div><strong>Local Time:</strong></div> <div id="dynamic-time"></div>
             </div>
             <div class="box-nav">
-                <div><strong>Time Zone:</strong></div> <div>${timeZone}</div>
+                <div><strong>UTC:</strong></div> <div>${timeOffset}</div>
             </div>
 
             <h2>Hardware Information</h2>
@@ -298,7 +302,10 @@ async function detectHardwareAndEnvironment() {
         </div>
         `;
         setInterval(() => {
-            document.getElementById("dynamic-time").textContent = new Date().toLocaleString() + " / " + timeOffset;
+            let date = new Date();
+            let offsetMinutes = date.getTimezoneOffset();
+            date.setMinutes(date.getMinutes() - offsetMinutes);
+            document.getElementById("dynamic-time").textContent = date.toUTCString();
         }, 1000);
 
     } catch (error) {
