@@ -61,6 +61,7 @@ h1 {
 .box {
     padding: 30px;
     max-width: 700px;
+    overflow-wrap: break-word;
 }
 
 .box h2 {
@@ -81,6 +82,7 @@ h1 {
 .box-nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-bottom: 1px #dddcd7 dashed;
 }
 
@@ -109,9 +111,21 @@ h1 {
     color: #000;
 }
 
-@media (min-width: 540px) and (max-height: 450px) {
+.color-pos {
+    color: #4185aa
+}
+
+.color-unpos {
+    color: #c54a37
+}
+
+@media (min-width: 400px) {
     h1 {
         text-align: center;
         padding: 0px 10px 0px 10px;
+    }
+
+    .box {
+        padding: 10px 30px 10px 30px;
     }
 }

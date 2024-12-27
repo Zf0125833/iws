@@ -131,7 +131,7 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Version:</strong></div> <div>${data.version}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Organization:</strong></div> <div>${data.asn + ' / ' + data.org}</div>
+                <div><strong>Organization:</strong></div> <div>${data.asn + ' ' + data.org}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Country:</strong></div> <div>${data.country_name}</div>
@@ -153,6 +153,9 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Currency:</strong></div> <div>${data.currency}</div>
+            </div>
+            <div class="box-nav">
+                <div><strong>Languages:</strong></div> <div>${data.languages}</div>
             </div>
             <div class="box-nav">
                 <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
