@@ -29,7 +29,7 @@ async function detectHardwareAndEnvironment() {
         const orientation = screen.orientation ? screen.orientation.type : 'Unknown';
 
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const timeOffset = getUTCOffset().split('UTC').join(' ');
+        const timeOffset = getUTCOffset();
 
         const canvas = document.createElement('canvas');
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -105,7 +105,7 @@ async function detectHardwareAndEnvironment() {
             const minutes = Math.abs(offset) % 60;
             const sign = offset <= 0 ? "+" : "-";
 
-            return `UTC${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+            return `${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
         }
 
         function formatToUTC(offset) {
@@ -113,7 +113,7 @@ async function detectHardwareAndEnvironment() {
             const hours = offset.slice(1, 3);
             const minutes = offset.slice(3, 5);
 
-            return `UTC${sign}${hours}:${minutes}`;
+            return `${sign}${hours}:${minutes}`;
         }
 
         function addUTCOffset(offset) {
@@ -170,10 +170,7 @@ async function detectHardwareAndEnvironment() {
                 <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
             </div>
             <div class="box-nav">
-                <div><strong>Local Time:</strong></div> <div>${addUTCOffset(data.utc_offset).toUTCString()}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>UTC:</strong></div> <div>${formatToUTC(data.utc_offset).split('UTC').join(' ')}</div>
+                <div><strong>Local Time:</strong></div> <div>${addUTCOffset(data.utc_offset).toUTCString() + ' ' + formatToUTC(data.utc_offset)}</div>
             </div>
         `;
             }).catch(error => {
@@ -199,9 +196,6 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Local Time:</strong></div> <div id="dynamic-time"></div>
-            </div>
-            <div class="box-nav">
-                <div><strong>UTC:</strong></div> <div>${timeOffset}</div>
             </div>
 
             <h2>Hardware Information</h2>
@@ -305,7 +299,7 @@ async function detectHardwareAndEnvironment() {
             let date = new Date();
             let offsetMinutes = date.getTimezoneOffset();
             date.setMinutes(date.getMinutes() - offsetMinutes);
-            document.getElementById("dynamic-time").textContent = date.toUTCString();
+            document.getElementById("dynamic-time").textContent = date.toUTCString() + ' ' + timeOffset;
         }, 1000);
 
     } catch (error) {
