@@ -135,6 +135,13 @@ async function detectHardwareAndEnvironment() {
             return date.toUTCString() + ' ' + timeOffset
         }
 
+        if (!navigator.onLine) {
+            const offlineSt = document.createElement('div');
+            offlineSt.className = 'offline-st';
+            document.body.appendChild(offlineSt);
+            document.querySelector('.offline-st').innerHTML = `<h1 style="margin-bottom:20px">OFFLINE</h1><p>You are currently offline, so some features of this page may be unavailable. <br/>Please check your internet connection and refresh the page to continue.</p>`;
+        }
+
         fetch('https://ipapi.co/json/')
             .then(response => response.json())
             .then(data => {
@@ -272,9 +279,6 @@ async function detectHardwareAndEnvironment() {
             </div>
             <div class="box-nav">
                 <div><strong>Geolocation:</strong></div> <div>${navigator.geolocation ? 'Supported' : 'Not Supported'}</div>
-            </div>
-            <div class="box-nav">
-                <div><strong>Referrer:</strong></div> <div>${document.referrer || "Unknown"}</div>
             </div>
 
             <h2>Network Information</h2>
