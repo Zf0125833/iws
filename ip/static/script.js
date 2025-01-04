@@ -4,7 +4,7 @@ function hidePreloader() {
         preoloader.classList.add("not-act");
         document.body.style.position = "relative";
         setTimeout(() => preoloader.remove(), 1200);
-    }, 1000)
+    }, 600)
 }
 window.addEventListener('load', hidePreloader);
 
