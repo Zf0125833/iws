@@ -2,7 +2,7 @@ function hidePreloader() {
     setTimeout(() => {
         const preoloader = document.querySelector('.preoloader');
         preoloader.classList.add("not-act");
-        document.body.style.position = "relative";
+        document.body.style.position = "static";
         setTimeout(() => preoloader.remove(), 1200);
     }, 600)
 }
