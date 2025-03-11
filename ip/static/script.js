@@ -142,7 +142,7 @@ async function detectHardwareAndEnvironment() {
             document.querySelector('.offline-st').innerHTML = `<h1 style="margin-bottom:20px">OFFLINE</h1><p>You are currently offline, so some features of this page may be unavailable. <br/>Please check your internet connection and refresh the page to continue.</p>`;
         }
 
-        fetch('https://ipapi.co/json/', { mode: 'no-cors' })
+        fetch('https://ipapi.co/json/')
             .then(response => response.json())
             .then(data => {
                 document.querySelector('.ip').innerHTML = `
