@@ -143,7 +143,12 @@ async function detectHardwareAndEnvironment() {
         }
 
         fetch('https://ipapi.co/json/')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ошибка при запросе: ' + response.status);
+                }
+                return response.json();
+            })
             .then(data => {
                 document.querySelector('.ip').innerHTML = `
             <h2>IP Information</h2>
@@ -188,12 +193,26 @@ async function detectHardwareAndEnvironment() {
             </div>
         `;
             }).catch(error => {
-                document.querySelector('.ip').innerHTML = `
+                console.warn('ipapi.co:', error.message);
+            return fetch('https://api64.ipify.org?format=json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('ipify.org: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.querySelector('.ip').innerHTML = `
                     <h2>IP Information</h2>
                     <div class="box-nav">
-                        <div><strong>Error fetching IP:</strong></div> <div>${error}</div>
+                        <div><strong>IP address:</strong></div> <div>${data.ip}</div>
                     </div>
                 `;
+                })
+                .catch(fallbackError => {
+                    console.error('api.ipify.org:', fallbackError.message);
+                    return null;
+                });
             }),
 
             infoDiv.innerHTML = `
