@@ -128,23 +128,6 @@ async function detectHardwareAndEnvironment() {
             return adjustedDate;
         }
 
-        function getTimeInTimezone(timezone) {
-            const options = {
-                timeZone: timezone,
-                weekday: 'short',
-                year: 'numeric',
-                month: 'long', 
-                day: '2-digit', 
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit',
-                hour12: false, 
-                timeZoneName: 'short' 
-            };
-            const time = new Date().toLocaleString('en-GB', options);
-            return time;
-        }
-
         const localTime = () => {
             let date = new Date();
             let offsetMinutes = date.getTimezoneOffset();
@@ -162,7 +145,7 @@ async function detectHardwareAndEnvironment() {
         fetch('https://ipapi.co/json/')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Ошибка при запросе: ' + response.status);
+                    throw new Error('ipapi.co: ' + response.status);
                 }
                 return response.json();
             })
@@ -211,7 +194,7 @@ async function detectHardwareAndEnvironment() {
         `;
             }).catch(error => {
                 console.warn('ipapi.co:', error.message);
-                return fetch('http://ip-api.com/json/')
+                return fetch('https://api64.ipify.org?format=json')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('ip-api.com: ' + response.status);
@@ -220,38 +203,14 @@ async function detectHardwareAndEnvironment() {
                     })
                     .then(data => {
                         document.querySelector('.ip').innerHTML = `
-                    <h2>IP Information</h2>
-                     <div class="box-nav">
-                        <div><strong>IP address:</strong></div> <div>${data.query}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Organization:</strong></div> <div>${data.org + ', ' + data.as}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Country:</strong></div> <div>${data.country}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Region:</strong></div> <div>${data.regionName}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>City:</strong></div> <div>${data.city}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Postal:</strong></div> <div>${data.zip}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Country Calling Code:</strong></div> <div>${data.countryCode}</div>
-                    </div>
-                    <div class="box-nav">
-                        <div><strong>Time Zone:</strong></div> <div>${data.timezone}</div>
-                    </div> 
-                    <div class="box-nav">
-                        <div><strong>Time Zone:</strong></div> <div>${getTimeInTimezone(data.timezone)}</div>
-                    </div> 
-                `;
+                                <h2>IP Information</h2>
+                                <div class="box-nav">
+                                    <div><strong>IP address:</strong></div> <div>${data.ip}</div>
+                                </div>
+                            `;
                     })
                     .catch(fallbackError => {
-                        console.error('ip-api.com:', fallbackError.message);
+                        console.error('ipify.org:', fallbackError.message);
                         return null;
                     });
             }),
