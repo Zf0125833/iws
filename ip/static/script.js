@@ -242,6 +242,15 @@ async function detectHardwareAndEnvironment() {
                 <h2>Sensor Support</h2>
                 <div class="box-nav"><div><strong>Device Orientation:</strong></div> <div>${deviceOrientation}</div></div>
                 <div class="box-nav"><div><strong>Device Motion:</strong></div> <div>${deviceMotion}</div></div>
+
+                <h2>Other Links</h2>
+                <div class="box-nav links"><div><strong>Browserleaks:</strong></div> <div><a href="https://browserleaks.com/" target="_balnk">browserleaks.com</a></div></div>
+                <div class="box-nav links"><div><strong>Whoer:</strong></div> <div><a href="https://whoer.net/" target="_balnk">whoer.net</a></div></div>
+                <div class="box-nav links"><div><strong>Dnsleaktest:</strong></div> <div><a href="https://dnsleaktest.com/" target="_balnk">dnsleaktest.com</a></div></div>
+                
+                <h2>internet Speed Test</h2>
+                <div class="box-nav links"><div><strong>speedtest:</strong></div> <div><a href="https://www.speedtest.net" target="_balnk">speedtest.net</a></div></div>
+                <div class="box-nav links"><div><strong>Fast:</strong></div> <div><a href="https://fast.com/" target="_balnk">fast.com</a></div></div>
             </div>
         `;
 
@@ -274,4 +283,3 @@ async function detectHardwareAndEnvironment() {
 }
 
 detectHardwareAndEnvironment();
-// ...existing code...
