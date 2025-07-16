@@ -245,6 +245,7 @@ async function detectHardwareAndEnvironment() {
 
                 <h2>Other Links</h2>
                 <div class="box-nav links"><div><strong>Browserleaks:</strong></div> <div><a href="https://browserleaks.com/" target="_balnk">browserleaks.com</a></div></div>
+		<div class="box-nav links"><div><strong>whatismyipaddress:</strong></div> <div><a href="https://whatismyipaddress.com/" target="_balnk">whatismyipaddress.com</a></div></div>
                 <div class="box-nav links"><div><strong>Whoer:</strong></div> <div><a href="https://whoer.net/" target="_balnk">whoer.net</a></div></div>
                 <div class="box-nav links"><div><strong>Dnsleaktest:</strong></div> <div><a href="https://dnsleaktest.com/" target="_balnk">dnsleaktest.com</a></div></div>
                 
