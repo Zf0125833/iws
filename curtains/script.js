@@ -8,6 +8,8 @@ function hidePreloader() {
     };
 }
 
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 // Get a reference to the canvas element and its 2D context
 const canvas = document.getElementById('distortionCanvas');
 const ctx = canvas.getContext('2d', { willReadFrequently: true });
@@ -18,7 +20,7 @@ let currentImageData = null;
 
 // drawTextOverlay теперь использует текст из DOM
 function drawTextOverlay(offsetX = 0, offsetY = 0) {
-    const glitchText = document.getElementById('glitchText')?.innerText.trim() || '';
+    const glitchText = document.getElementById('glitchText')?.innerText.trim() || 'Hello World!';
     ctx.save();
     ctx.font = "bold calc(30px + 10vw) Arial";
     ctx.fillStyle = "#f1f1f1";
@@ -38,6 +40,7 @@ function drawTextOverlay(offsetX = 0, offsetY = 0) {
 const distortionRadius = 150; // Radius of the distortion area
 const maxShift = 25; // Maximum shift for color channels (in pixels)
 const lerpSpeed = 0.1; // Speed of the mouse position interpolation
+
 let mouseX = -999; // Initialize mouse coordinates off-screen
 let mouseY = -999;
 let distortX = -999;
@@ -53,8 +56,14 @@ function animateDistortion() {
 
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
-    parallaxX += (((mouseX - centerX) / centerX) * imageParallaxStrength - parallaxX) * 0.1;
-    parallaxY += (((mouseY - centerY) / centerY) * imageParallaxStrength - parallaxY) * 0.1;
+    
+    if (!isMobile) {
+        parallaxX += (((mouseX - centerX) / centerX) * imageParallaxStrength - parallaxX) * 0.1;
+        parallaxY += (((mouseY - centerY) / centerY) * imageParallaxStrength - parallaxY) * 0.1;
+    } else {
+        parallaxX = 0;
+        parallaxY = 0;
+    }
 
     if (originalImageData) {
         // Update the image and text positions based on parallax effect
@@ -70,8 +79,8 @@ function animateDistortion() {
 
 // Set canvas size to match the window size
 function resizeCanvas() {
-    canvas.width = window.innerWidth * window.devicePixelRatio;
-    canvas.height = window.innerHeight * window.devicePixelRatio;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     parallaxX = 0;
     parallaxY = 0;
     if (img.complete && img.naturalWidth !== 0) {
@@ -186,8 +195,8 @@ if (img.complete && img.naturalWidth !== 0) {
 // Mouse move event handler
 canvas.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
-    mouseX = (e.clientX - rect.left) * window.devicePixelRatio;
-    mouseY = (e.clientY - rect.top) * window.devicePixelRatio;
+    mouseX = (e.clientX - rect.left) * (canvas.width / rect.width);
+    mouseY = (e.clientY - rect.top) * (canvas.height / rect.height);
 });
 
 // Mouse leave event handler
@@ -198,6 +207,25 @@ canvas.addEventListener('mouseleave', () => {
         ctx.putImageData(originalImageData, 0, 0);
     }
 });
+
+if (isMobile) {
+    canvas.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches.length > 0) {
+            const rect = canvas.getBoundingClientRect();
+            mouseX = (e.touches[0].clientX - rect.left) * (canvas.width / rect.width);
+            mouseY = (e.touches[0].clientY - rect.top) * (canvas.height / rect.height);
+        }
+    });
+
+    canvas.addEventListener('touchend', () => {
+        mouseX = canvas.width / 2;
+        mouseY = canvas.height / 2;
+    });
+
+    mouseX = canvas.width / 2;
+    mouseY = canvas.height / 2;
+}
+
 
 // Window resize handler to adapt the canvas
 window.addEventListener('resize', resizeCanvas);
