@@ -12,37 +12,57 @@ function hidePreloader() {
 const canvas = document.getElementById('distortionCanvas');
 const ctx = canvas.getContext('2d', { willReadFrequently: true });
 const img = document.getElementById('sourceImage');
-const glitchText = document.getElementById('glitchText').innerText.trim();
 
 let originalImageData = null;
 let currentImageData = null;
 
 // drawTextOverlay теперь использует текст из DOM
-function drawTextOverlay() {
+function drawTextOverlay(offsetX = 0, offsetY = 0) {
+    const glitchText = document.getElementById('glitchText')?.innerText.trim() || '';
     ctx.save();
     ctx.font = "bold calc(30px + 10vw) Arial";
     ctx.fillStyle = "#f1f1f1";
     ctx.textAlign = "center";
+    ctx.letterSpacing = "-0.07em";
     ctx.textBaseline = "bottom";
     ctx.shadowColor = "black";
-    ctx.fillText(glitchText, canvas.width / 2, canvas.height - 40);
+    ctx.fillText(
+        glitchText,
+        canvas.width / 2 + offsetX,
+        canvas.height - 40 + offsetY
+    );
     ctx.restore();
 }
 
 // Distortion parameters
 const distortionRadius = 150; // Radius of the distortion area
 const maxShift = 25; // Maximum shift for color channels (in pixels)
+const lerpSpeed = 0.1; // Speed of the mouse position interpolation
 let mouseX = -999; // Initialize mouse coordinates off-screen
 let mouseY = -999;
 let distortX = -999;
 let distortY = -999;
-const lerpSpeed = 0.05; // Speed of the mouse position interpolation
+
+let parallaxX = 0, parallaxY = 0;
+const imageParallaxStrength = 10;
+const textParallaxStrength = 25;
 
 function animateDistortion() {
     distortX += (mouseX - distortX) * lerpSpeed;
     distortY += (mouseY - distortY) * lerpSpeed;
 
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    parallaxX += (((mouseX - centerX) / centerX) * imageParallaxStrength - parallaxX) * 0.1;
+    parallaxY += (((mouseY - centerY) / centerY) * imageParallaxStrength - parallaxY) * 0.1;
+
     if (originalImageData) {
+        // Update the image and text positions based on parallax effect
+        loadImageAndInitialize(
+            parallaxX, parallaxY,
+            parallaxX * (textParallaxStrength / imageParallaxStrength),
+            parallaxY * (textParallaxStrength / imageParallaxStrength)
+        );
         drawDistortedImage();
     }
     requestAnimationFrame(animateDistortion);
@@ -50,21 +70,19 @@ function animateDistortion() {
 
 // Set canvas size to match the window size
 function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    // If the image is already loaded, redraw it to fit the new size
+    canvas.width = window.innerWidth * window.devicePixelRatio;
+    canvas.height = window.innerHeight * window.devicePixelRatio;
+    parallaxX = 0;
+    parallaxY = 0;
     if (img.complete && img.naturalWidth !== 0) {
         loadImageAndInitialize();
     }
 }
 
-// Safely get the pixel value from the original data
-// x, y: pixel coordinates
-// channel: 0=Red, 1=Green, 2=Blue, 3=Alpha
+// Safely get the pixel value from the original data / x, y: pixel coordinates / channel: 0=Red, 1=Green, 2=Blue, 3=Alpha
 function getPixelValue(x, y, channel) {
-    // Check bounds to avoid errors
     if (x < 0 || x >= canvas.width || y < 0 || y >= canvas.height) {
-        return 0; // Return 0 for out-of-bounds pixels
+        return 0;
     }
     const index = (Math.floor(y) * canvas.width + Math.floor(x)) * 4;
     return originalImageData.data[index + channel];
@@ -109,42 +127,43 @@ function drawDistortedImage() {
 }
 
 // Load the image and initialize data
-function loadImageAndInitialize() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+function loadImageAndInitialize(imgOffsetX = 0, imgOffsetY = 0, textOffsetX = 0, textOffsetY = 0) {
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Calculate size and position for "contain"
     const imgAspect = img.width / img.height;
     const canvasAspect = canvas.width / canvas.height;
+    const scale = 1.05; // Scale factor for the image
     let drawWidth, drawHeight, offsetX, offsetY;
 
     if (imgAspect > canvasAspect) {
-        // Image is wider (относительно canvas) — растягиваем по высоте
-        drawHeight = canvas.height;
-        drawWidth = canvas.height * imgAspect;
+        drawHeight = canvas.height * scale;
+        drawWidth = drawHeight * imgAspect;
         offsetX = (canvas.width - drawWidth) / 2;
-        offsetY = 0;
+        offsetY = (canvas.height - drawHeight) / 2;
     } else {
-        // Image is выше (относительно canvas) — растягиваем по ширине
-        drawWidth = canvas.width;
-        drawHeight = canvas.width / imgAspect;
-        offsetX = 0;
+        drawWidth = canvas.width * scale;
+        drawHeight = drawWidth / imgAspect;
+        offsetX = (canvas.width - drawWidth) / 2;
         offsetY = (canvas.height - drawHeight) / 2;
     }
 
-    // Draw the image with preserved aspect ratio and centering
-    ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+    ctx.drawImage(
+        img,
+        offsetX + imgOffsetX,
+        offsetY + imgOffsetY,
+        drawWidth,
+        drawHeight
+    );
 
-    drawTextOverlay();
+    drawTextOverlay(textOffsetX, textOffsetY);
 
-    // Get the original pixel data of the entire image
     originalImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     currentImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    drawDistortedImage();
+    // drawDistortedImage();
 
-    // Remove the image and text from the DOM after loading
     if (img.parentNode) img.parentNode.removeChild(img);
-    const glitchTextDiv = document.getElementById('glitchText');
-    if (glitchTextDiv && glitchTextDiv.parentNode) glitchTextDiv.parentNode.removeChild(glitchTextDiv);
+    // const glitchTextDiv = document.getElementById('glitchText');
+    // if (glitchTextDiv && glitchTextDiv.parentNode) glitchTextDiv.parentNode.removeChild(glitchTextDiv);
 }
 
 // When the image is loaded, initialize the canvas
@@ -166,16 +185,15 @@ if (img.complete && img.naturalWidth !== 0) {
 
 // Mouse move event handler
 canvas.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    // drawDistortedImage(); // Больше не вызываем здесь, анимация сама обновит
+    const rect = canvas.getBoundingClientRect();
+    mouseX = (e.clientX - rect.left) * window.devicePixelRatio;
+    mouseY = (e.clientY - rect.top) * window.devicePixelRatio;
 });
 
 // Mouse leave event handler
 canvas.addEventListener('mouseleave', () => {
     mouseX = -999;
     mouseY = -999;
-    // drawDistortedImage(); // Больше не вызываем здесь
     if (originalImageData) {
         ctx.putImageData(originalImageData, 0, 0);
     }
