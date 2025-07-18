@@ -20,8 +20,8 @@ let currentImageData = null;
 // drawTextOverlay теперь использует текст из DOM
 function drawTextOverlay() {
     ctx.save();
-    ctx.font = "bold 10vw Arial";
-    ctx.fillStyle = "#f9f9f9";
+    ctx.font = "bold calc(30px + 10vw) Arial";
+    ctx.fillStyle = "#f1f1f1";
     ctx.textAlign = "center";
     ctx.textBaseline = "bottom";
     ctx.shadowColor = "black";
@@ -91,11 +91,11 @@ function drawDistortedImage() {
                 const strength = (1 - normalizedDist) * maxShift;
 
                 const sourceX_R = x + strength;
-                const sourceY_R = y;
+                const sourceY_R = y + strength;
                 const sourceX_G = x;
                 const sourceY_G = y;
                 const sourceX_B = x - strength;
-                const sourceY_B = y;
+                const sourceY_B = y - strength;
 
                 const index = (y * canvas.width + x) * 4;
                 pixels[index] = getPixelValue(sourceX_R, sourceY_R, 0);
