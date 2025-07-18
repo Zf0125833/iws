@@ -18,21 +18,47 @@ const img = document.getElementById('sourceImage');
 let originalImageData = null;
 let currentImageData = null;
 
-// drawTextOverlay теперь использует текст из DOM
+// Function to draw text overlay on the canvas
 function drawTextOverlay(offsetX = 0, offsetY = 0) {
     const glitchText = document.getElementById('glitchText')?.innerText.trim() || 'Hello World!';
     ctx.save();
-    ctx.font = "bold calc(30px + 10vw) Arial";
+    ctx.font = "bold calc(70px + 7vw) Arial, sans-serif";
     ctx.fillStyle = "#f1f1f1";
     ctx.textAlign = "center";
-    ctx.letterSpacing = "-0.07em";
     ctx.textBaseline = "bottom";
     ctx.shadowColor = "black";
-    ctx.fillText(
-        glitchText,
-        canvas.width / 2 + offsetX,
-        canvas.height - 40 + offsetY
-    );
+
+    const words = glitchText.split(' ');
+    const lines = [];
+    let currentLine = words[0] || '';
+    const maxWidth = canvas.width * 0.9;
+
+    for (let i = 1; i < words.length; i++) {
+        const testLine = currentLine + ' ' + words[i];
+        const testWidth = ctx.measureText(testLine).width;
+        if (testWidth > maxWidth) {
+            lines.push(currentLine);
+            currentLine = words[i];
+        } else {
+            currentLine = testLine;
+        }
+    }
+    lines.push(currentLine);
+
+    const fontSizeMatch = ctx.font.match(/(\d+)px/);
+    const fontSize = fontSizeMatch ? parseInt(fontSizeMatch[1]) : 70;
+    const lineHeight = fontSize * 1;
+
+    let y = canvas.height - 40 + offsetY - (lines.length - 1) * lineHeight;
+
+    for (let i = 0; i < lines.length; i++) {
+        ctx.fillText(
+            lines[i],
+            canvas.width / 2 + offsetX,
+            y + i * lineHeight
+        );
+    }
+
     ctx.restore();
 }
 
@@ -56,7 +82,7 @@ function animateDistortion() {
 
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
-    
+
     if (!isMobile) {
         parallaxX += (((mouseX - centerX) / centerX) * imageParallaxStrength - parallaxX) * 0.1;
         parallaxY += (((mouseY - centerY) / centerY) * imageParallaxStrength - parallaxY) * 0.1;
@@ -86,6 +112,10 @@ function resizeCanvas() {
     if (img.complete && img.naturalWidth !== 0) {
         loadImageAndInitialize();
     }
+    if (isMobile) {
+        mouseX = canvas.width / 2;
+        mouseY = canvas.height / 2;
+    }
 }
 
 // Safely get the pixel value from the original data / x, y: pixel coordinates / channel: 0=Red, 1=Green, 2=Blue, 3=Alpha
@@ -100,6 +130,11 @@ function getPixelValue(x, y, channel) {
 // Draw the distorted image
 function drawDistortedImage() {
     if (!originalImageData) return;
+    // Если distortX вне canvas, не искажаем
+    if (distortX < 0 || distortY < 0 || distortX > canvas.width || distortY > canvas.height) {
+        ctx.putImageData(originalImageData, 0, 0);
+        return;
+    }
     currentImageData.data.set(originalImageData.data);
 
     const pixels = currentImageData.data;
@@ -137,7 +172,7 @@ function drawDistortedImage() {
 
 // Load the image and initialize data
 function loadImageAndInitialize(imgOffsetX = 0, imgOffsetY = 0, textOffsetX = 0, textOffsetY = 0) {
-   ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const imgAspect = img.width / img.height;
     const canvasAspect = canvas.width / canvas.height;
@@ -193,7 +228,7 @@ if (img.complete && img.naturalWidth !== 0) {
 }
 
 // Mouse move event handler
-canvas.addEventListener('mousemove', (e) => {
+window.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
     mouseX = (e.clientX - rect.left) * (canvas.width / rect.width);
     mouseY = (e.clientY - rect.top) * (canvas.height / rect.height);
@@ -201,8 +236,8 @@ canvas.addEventListener('mousemove', (e) => {
 
 // Mouse leave event handler
 canvas.addEventListener('mouseleave', () => {
-    mouseX = -999;
-    mouseY = -999;
+    distortX = -999;
+    distortY = -999;
     if (originalImageData) {
         ctx.putImageData(originalImageData, 0, 0);
     }
