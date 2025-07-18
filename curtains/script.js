@@ -3,8 +3,11 @@ function hidePreloader() {
     const preloader = document.querySelector('.preloader');
     if (preloader) {
         preloader.classList.add('hidden');
-        setTimeout(() => preloader.remove(), 1000);
-        setTimeout(() => canvas.classList.add('anim'), 1000);
+        setTimeout(() => {
+            preloader.remove();
+            document.body.classList.remove('loading');
+            canvas.classList.add('anim')
+        }, 1000);
     };
 }
 
