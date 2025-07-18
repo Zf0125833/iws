@@ -118,17 +118,17 @@ function loadImageAndInitialize() {
     let drawWidth, drawHeight, offsetX, offsetY;
 
     if (imgAspect > canvasAspect) {
-        // Image is wider than canvas
-        drawWidth = canvas.width;
-        drawHeight = canvas.width / imgAspect;
-        offsetX = 0;
-        offsetY = (canvas.height - drawHeight) / 2;
-    } else {
-        // Image is taller than canvas
+        // Image is wider (относительно canvas) — растягиваем по высоте
         drawHeight = canvas.height;
         drawWidth = canvas.height * imgAspect;
         offsetX = (canvas.width - drawWidth) / 2;
         offsetY = 0;
+    } else {
+        // Image is выше (относительно canvas) — растягиваем по ширине
+        drawWidth = canvas.width;
+        drawHeight = canvas.width / imgAspect;
+        offsetX = 0;
+        offsetY = (canvas.height - drawHeight) / 2;
     }
 
     // Draw the image with preserved aspect ratio and centering
