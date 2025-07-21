@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/js/static/css/main.c30f2c53.css",
-    "main.js": "/js/static/js/main.f8937636.js",
+    "main.js": "/js/static/js/main.ed2b7cf6.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
+    "static/media/ComfyUI_temp_hzpce_00003_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00003_.e8cde3c569197fffbcb1.jpg",
+    "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.34303a99ae1eba4f8b44.jpg",
     "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.87aa37f670d557fdc30f.jpg",
     "index.html": "/js/index.html"
   },
   "entrypoints": [
     "static/css/main.c30f2c53.css",
-    "static/js/main.f8937636.js"
+    "static/js/main.ed2b7cf6.js"
   ]
 }
