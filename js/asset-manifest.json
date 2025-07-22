@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.c30f2c53.css",
-    "main.js": "/js/static/js/main.ed2b7cf6.js",
+    "main.css": "/js/static/css/main.3aa90f0f.css",
+    "main.js": "/js/static/js/main.449194b2.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/ComfyUI_temp_hzpce_00003_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00003_.e8cde3c569197fffbcb1.jpg",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.34303a99ae1eba4f8b44.jpg",
     "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.87aa37f670d557fdc30f.jpg",
+    "static/media/Climb Regular.ttf": "/js/static/media/Climb Regular.46612e81bae387fdd183.ttf",
     "index.html": "/js/index.html"
   },
   "entrypoints": [
-    "static/css/main.c30f2c53.css",
-    "static/js/main.ed2b7cf6.js"
+    "static/css/main.3aa90f0f.css",
+    "static/js/main.449194b2.js"
   ]
 }
