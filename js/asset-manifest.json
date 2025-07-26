@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.cf4c3907.css",
-    "main.js": "/js/static/js/main.816ab02d.js",
+    "main.css": "/js/static/css/main.07db5c03.css",
+    "main.js": "/js/static/js/main.ccc78472.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.2e42baa612db86bd4939.jpg",
     "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.edbba285b376f3e62648.jpg",
@@ -21,7 +21,7 @@
     "index.html": "/js/index.html"
   },
   "entrypoints": [
-    "static/css/main.cf4c3907.css",
-    "static/js/main.816ab02d.js"
+    "static/css/main.07db5c03.css",
+    "static/js/main.ccc78472.js"
   ]
 }
