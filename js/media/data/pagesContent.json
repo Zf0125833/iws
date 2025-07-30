@@ -1,0 +1,68 @@
+{
+    "about": {
+        "title": "About Me",
+        "paragraphs": [
+            "A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.",
+            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values.",
+            "If you are looking for a creative director, designer, motion designer, or frontend developer, you have come to the right place!",
+            "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
+        ],
+        "image": {
+            "fileName": "media/images/about/ComfyUI_858407ffe11d59a60700.jpg",
+            "alt": "About Page Image",
+            "className": "about-image"
+        },
+        "moreContent": {
+            "title": "More Content",
+            "text": "Adding more content to make the page scrollable and test the behavior of Scroll across different pages."
+        }
+    },
+    "works": {
+        "title": "My Works",
+        "intro": "Here you can see a selection of my projects. Each of them is a story of collaboration, creativity, and technical skill.",
+        "projects": [
+            {
+                "id": "project-one",
+                "title": "Project One",
+                "description": "A brief description of Project One, showcasing skills in web development and modern design principles.",
+                "fullDescription": "<p><b>This project involved creating</b> a fully responsive and interactive single-page application using React and GSAP for animations. The goal was to create a seamless user experience with fluid transitions and engaging micro-interactions. We focused on performance optimization, ensuring smooth animations even on low-powered devices. The backend is powered by a lightweight Node.js server, serving data through a RESTful API.</p><img src='media/images/rgthree.compare._temp_xjlkz_00001_.jpg' alt='Project One Image' class='project-image' />",
+                "image": "iws_00010_.jpg",
+                "tags": [
+                    "React",
+                    "Motion Design"
+                ]
+            },
+            {
+                "id": "project-two",
+                "title": "Corporate Branding",
+                "description": "Complete rebranding for a tech startup, including logo, style guide, and marketing materials.",
+                "image": "iws_00006_.jpg",
+                "tags": [
+                    "Branding",
+                    "UI/UX",
+                    "Adobe Illustrator"
+                ]
+            },
+            {
+                "id": "project-three",
+                "title": "E-commerce Platform",
+                "description": "An interactive e-commerce website with a custom CMS, focusing on performance and user experience.",
+                "image": "rgthree.compare._temp_eyolp_00001_.jpg",
+                "tags": [
+                    "Web Development",
+                    "React"
+                ]
+            },
+             {
+                "id": "project-four",
+                "title": "Commerce Platform",
+                "description": "An interactive e-commerce website with a custom CMS, focusing on performance and user experience.",
+                "image": "ComfyUI_00633_.jpg",
+                "tags": [
+                    "Web Development",
+                    "React"
+                ]
+            }
+        ]
+    }
+}
