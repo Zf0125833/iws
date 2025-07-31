@@ -8,7 +8,7 @@
             "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
         ],
         "image": {
-            "fileName": "media/images/about/ComfyUI_858407ffe11d59a60700.jpg",
+            "fileName": "js/media/images/about/ComfyUI_858407ffe11d59a60700.jpg",
             "alt": "About Page Image",
             "className": "about-image"
         },
@@ -22,11 +22,15 @@
         "intro": "Here you can see a selection of my projects. Each of them is a story of collaboration, creativity, and technical skill.",
         "projects": [
             {
-                "id": "project-one",
-                "title": "Project One",
+                "id": "a-stroll-on-the-beach",
+                "title": "A Stroll On The Beach",
                 "description": "A brief description of Project One, showcasing skills in web development and modern design principles.",
-                "fullDescription": "<p><b>This project involved creating</b> a fully responsive and interactive single-page application using React and GSAP for animations. The goal was to create a seamless user experience with fluid transitions and engaging micro-interactions. We focused on performance optimization, ensuring smooth animations even on low-powered devices. The backend is powered by a lightweight Node.js server, serving data through a RESTful API.</p><img src='media/images/rgthree.compare._temp_xjlkz_00001_.jpg' alt='Project One Image' class='project-image' />",
-                "image": "iws_00010_.jpg",
+                "workingProcess" : "Working Process",
+                "fullDescriptionOne": "<p><b>Target: </b>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p> </br> <p><b>Software: </b>Zbrush, Blender, Adobe Photoshop</p> <div style='margin-top: 3rem' class='project-details-img-two'> <img src='js/media/images/projects/pr1/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4654.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4655.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4656.webp' alt='Image' class='project-image' /> </div>",
+                "imageParalax": "pr1/img-prlx.webp",
+                "finalResult":"Final Result",
+                "fullDescriptionTwo": "<p><b>Software: </b>Zbrush, Blender, Adobe Photoshop</p> <img src='js/media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' />",
+                "image": "intro1.webp",
                 "tags": [
                     "React",
                     "Motion Design"
@@ -36,7 +40,7 @@
                 "id": "project-two",
                 "title": "Corporate Branding",
                 "description": "Complete rebranding for a tech startup, including logo, style guide, and marketing materials.",
-                "image": "iws_00006_.jpg",
+                "image": "iws_00006_.webp",
                 "tags": [
                     "Branding",
                     "UI/UX",
@@ -47,17 +51,17 @@
                 "id": "project-three",
                 "title": "E-commerce Platform",
                 "description": "An interactive e-commerce website with a custom CMS, focusing on performance and user experience.",
-                "image": "rgthree.compare._temp_eyolp_00001_.jpg",
+                "image": "rgthree.compare._temp_eyolp_00001_.webp",
                 "tags": [
                     "Web Development",
                     "React"
                 ]
             },
-             {
+            {
                 "id": "project-four",
                 "title": "Commerce Platform",
                 "description": "An interactive e-commerce website with a custom CMS, focusing on performance and user experience.",
-                "image": "ComfyUI_00633_.jpg",
+                "image": "ComfyUI_00633_.webp",
                 "tags": [
                     "Web Development",
                     "React"
