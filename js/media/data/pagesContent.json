@@ -8,7 +8,7 @@
             "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
         ],
         "image": {
-            "fileName": "js/media/images/about/ComfyUI_858407ffe11d59a60700.jpg",
+            "fileName": "media/images/about/ComfyUI_858407ffe11d59a60700.jpg",
             "alt": "About Page Image",
             "className": "about-image"
         },
@@ -26,7 +26,7 @@
                 "title": "A Stroll On The Beach",
                 "description": "A brief description of Project One, showcasing skills in web development and modern design principles.",
                 "workingProcess" : "Working Process",
-                "fullDescriptionOne": "<p><b>Target: </b>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p> </br> <p><b>Software: </b>Zbrush, Blender, Adobe Photoshop</p> <div style='margin-top: 3rem' class='project-details-img-two'> <img src='js/media/images/projects/pr1/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4654.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4655.webp' alt='Image' class='project-image' /><img src='js/media/images/projects/pr1/07_DSC_4656.webp' alt='Image' class='project-image' /> </div>",
+                "fullDescriptionOne": "<p><b>Target: </b>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p> </br> <p><b>Software: </b>Zbrush, Blender, Adobe Photoshop</p> <div style='margin-top: 3rem' class='project-details-img-two'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4655.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' class='project-image' /> </div>",
                 "imageParalax": "pr1/img-prlx.webp",
                 "finalResult":"Final Result",
                 "fullDescriptionTwo": "<p><b>Software: </b>Zbrush, Blender, Adobe Photoshop</p> <img src='js/media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' />",
