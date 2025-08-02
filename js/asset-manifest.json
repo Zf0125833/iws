@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.3e07c043.css",
-    "main.js": "/js/static/js/main.7c58171e.js",
+    "main.css": "/js/static/css/main.afcbcaf4.css",
+    "main.js": "/js/static/js/main.c55b1d71.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.2e42baa612db86bd4939.jpg",
     "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.edbba285b376f3e62648.jpg",
@@ -12,16 +12,16 @@
     "static/media/node.svg": "/js/static/media/node.1736f3d1a5cafb02ff9338cc1d769b0a.svg",
     "static/media/html.svg": "/js/static/media/html.a7590e35849660eedba5a323cbaa2ead.svg",
     "static/media/photoshop.svg": "/js/static/media/photoshop.bdab8d690c7e769685bcd484805e4d99.svg",
+    "index.html": "/js/index.html",
     "static/media/aftereffects.svg": "/js/static/media/aftereffects.363a10106a164b1d904a4c85a7c27a25.svg",
     "static/media/davinci-resolve.svg": "/js/static/media/davinci-resolve.a93b19aa39c970a342def2445aea0195.svg",
     "static/media/Threejs-logo.svg": "/js/static/media/Threejs-logo.e0ad7ca37b7db2fc9764422c3f9fa9a9.svg",
     "static/media/illustrator.svg": "/js/static/media/illustrator.b9c393ac60bfe13a21e7062f9eeec540.svg",
     "static/media/lamp.svg": "/js/static/media/lamp.a43864202d112afae4b0bc1d951a05ee.svg",
-    "static/media/css3.svg": "/js/static/media/css3.e0f2b51c52a545b4dcaea195834a087b.svg",
-    "index.html": "/js/index.html"
+    "static/media/css3.svg": "/js/static/media/css3.e0f2b51c52a545b4dcaea195834a087b.svg"
   },
   "entrypoints": [
-    "static/css/main.3e07c043.css",
-    "static/js/main.7c58171e.js"
+    "static/css/main.afcbcaf4.css",
+    "static/js/main.c55b1d71.js"
   ]
 }
