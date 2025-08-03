@@ -49,6 +49,7 @@
                 "fullDescriptionTwo": "<img src='media/images/projects/pr3/07_DSC_4654.webp' alt='Image' class='project-image' /> <div style='margin-top: 3rem' class='project-details-img-two'> <img src='media/images/projects/pr3/07_DSC_4651.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr3/07_DSC_4653.webp' alt='Image' class='project-image' /> </div> <img src='media/images/projects/pr3/07_DSC_4656.webp' alt='Image' class='project-image' />",
                 "tags": [
                     "Motion Design",
+                    "Web Design",
                     "3D Modeling"
                 ]
             },
@@ -59,7 +60,8 @@
                 "image": "rgthree.compare._temp_eyolp_00001_.webp",
                 "tags": [
                     "Web Development",
-                    "React"
+                    "Web Design",
+                    "Ai"
                 ]
             },
             {
@@ -69,7 +71,7 @@
                 "image": "ComfyUI_00633_.webp",
                 "tags": [
                     "Web Development",
-                    "React"
+                    "Ai"
                 ]
             }
         ]
