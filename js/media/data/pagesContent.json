@@ -30,7 +30,7 @@
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p></div></div><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Zbrush, Blender, Adobe Photoshop</p></div></div><br/> <div style='margin-top: 3rem' class='project-details-img-two'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4655.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' class='project-image' /> </div>",
                 "imageParalax": "pr1/img-prlx.webp",
                 "finalResult": "Final Result",
-                "fullDescriptionTwo": "<img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' />",
+                "fullDescriptionTwo": "<div class='v--plr-src' data-title='A Stroll On The Beach' data-src='media/images/projects/pr1/GS_02510.webm'><img src='media/images/projects/pr1/video_poster_1.webp' alt='Image' class='project-image' /></div> <img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' />",
                 "tags": [
                     "3D Modeling",
                     "Graphic Design"
