@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.61b529dc.css",
-    "main.js": "/js/static/js/main.d6ca455c.js",
+    "main.css": "/js/static/css/main.b8b6ad5b.css",
+    "main.js": "/js/static/js/main.b2368b0a.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
-    "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.b89a9020809450c16186.jpg",
+    "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.2b4d6aec57c5b188071a.jpg",
     "static/media/ComfyUI_temp_hzpce_00003_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00003_.de7a8d1cb381612f2098.jpg",
     "static/media/QeicaRegular.woff": "/js/static/media/QeicaRegular.fc603cae9926b8d0ce5c.woff",
     "static/media/QeicaRegular.woff2": "/js/static/media/QeicaRegular.6302e90c7d679ecda921.woff2",
@@ -22,7 +22,7 @@
     "static/media/css3.svg": "/js/static/media/css3.e0f2b51c52a545b4dcaea195834a087b.svg"
   },
   "entrypoints": [
-    "static/css/main.61b529dc.css",
-    "static/js/main.d6ca455c.js"
+    "static/css/main.b8b6ad5b.css",
+    "static/js/main.b2368b0a.js"
   ]
 }
