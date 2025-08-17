@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.e27590be.css",
-    "main.js": "/js/static/js/main.3b3ca691.js",
+    "main.css": "/js/static/css/main.ade2b80f.css",
+    "main.js": "/js/static/js/main.600db9d3.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
+    "static/media/bucket_01.png": "/js/static/media/bucket_01.a71da3b6c9859d070f50.png",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
     "static/media/ComfyUI_temp_hzpce_00001_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00001_.2b4d6aec57c5b188071a.jpg",
     "static/media/ComfyUI_temp_hzpce_00003_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00003_.de7a8d1cb381612f2098.jpg",
+    "static/media/bucket_011.png": "/js/static/media/bucket_011.5bad60cc55622ac3e85c.png",
     "static/media/QeicaRegular.woff": "/js/static/media/QeicaRegular.fc603cae9926b8d0ce5c.woff",
     "static/media/QeicaRegular.woff2": "/js/static/media/QeicaRegular.6302e90c7d679ecda921.woff2",
     "static/media/logo-react.svg": "/js/static/media/logo-react.749afd9dc7fdedaacf45f1f4b44f545c.svg",
@@ -22,7 +24,7 @@
     "static/media/css3.svg": "/js/static/media/css3.e0f2b51c52a545b4dcaea195834a087b.svg"
   },
   "entrypoints": [
-    "static/css/main.e27590be.css",
-    "static/js/main.3b3ca691.js"
+    "static/css/main.ade2b80f.css",
+    "static/js/main.600db9d3.js"
   ]
 }
