@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/js/static/css/main.ade2b80f.css",
-    "main.js": "/js/static/js/main.5289fd68.js",
+    "main.js": "/js/static/js/main.41d3ba45.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/bucket_01.png": "/js/static/media/bucket_01.a71da3b6c9859d070f50.png",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.ade2b80f.css",
-    "static/js/main.5289fd68.js"
+    "static/js/main.41d3ba45.js"
   ]
 }
