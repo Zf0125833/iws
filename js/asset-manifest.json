@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.1d37aa5b.css",
-    "main.js": "/js/static/js/main.e1ea80fa.js",
+    "main.css": "/js/static/css/main.1f2f7510.css",
+    "main.js": "/js/static/js/main.f1838340.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/bucket_01.png": "/js/static/media/bucket_01.a71da3b6c9859d070f50.png",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -10,21 +10,22 @@
     "static/media/bucket_011.png": "/js/static/media/bucket_011.5bad60cc55622ac3e85c.png",
     "static/media/QeicaRegular.woff": "/js/static/media/QeicaRegular.fc603cae9926b8d0ce5c.woff",
     "static/media/QeicaRegular.woff2": "/js/static/media/QeicaRegular.6302e90c7d679ecda921.woff2",
-    "static/media/logo-react.svg": "/js/static/media/logo-react.749afd9dc7fdedaacf45f1f4b44f545c.svg",
-    "static/media/blender.svg": "/js/static/media/blender.f7d3bd03a75b3b33f4d4ea925c133e09.svg",
+    "static/media/logo-react.svg": "/js/static/media/logo-react.dcc4fc366f77d09adcaf0b6694f82a69.svg",
+    "static/media/davinci-resolve.svg": "/js/static/media/davinci-resolve.415e745779d8204b5cc3b25287a82308.svg",
     "static/media/node.svg": "/js/static/media/node.1736f3d1a5cafb02ff9338cc1d769b0a.svg",
-    "static/media/html.svg": "/js/static/media/html.a7590e35849660eedba5a323cbaa2ead.svg",
-    "static/media/photoshop.svg": "/js/static/media/photoshop.bdab8d690c7e769685bcd484805e4d99.svg",
+    "static/media/blender.svg": "/js/static/media/blender.d2afcd4ae14043258a936d0df53e1989.svg",
+    "static/media/next-js.svg": "/js/static/media/next-js.1b2b52c044b9dcea988e68b966864c5a.svg",
+    "static/media/html.svg": "/js/static/media/html.b75b28f9ded16419e24f9bfb489df690.svg",
+    "static/media/photoshop.svg": "/js/static/media/photoshop.8c7d9b16813ba5a452acbf0067ef2fce.svg",
     "index.html": "/js/index.html",
-    "static/media/aftereffects.svg": "/js/static/media/aftereffects.363a10106a164b1d904a4c85a7c27a25.svg",
-    "static/media/davinci-resolve.svg": "/js/static/media/davinci-resolve.a93b19aa39c970a342def2445aea0195.svg",
-    "static/media/Threejs-logo.svg": "/js/static/media/Threejs-logo.e0ad7ca37b7db2fc9764422c3f9fa9a9.svg",
-    "static/media/illustrator.svg": "/js/static/media/illustrator.b9c393ac60bfe13a21e7062f9eeec540.svg",
-    "static/media/lamp.svg": "/js/static/media/lamp.a43864202d112afae4b0bc1d951a05ee.svg",
-    "static/media/css3.svg": "/js/static/media/css3.e0f2b51c52a545b4dcaea195834a087b.svg"
+    "static/media/aftereffects.svg": "/js/static/media/aftereffects.38304fb5c8a23f4778a48758bbfd3d32.svg",
+    "static/media/lamp.svg": "/js/static/media/lamp.b4c46ba464f75841c60ff9154ed42351.svg",
+    "static/media/illustrator.svg": "/js/static/media/illustrator.c971328211d416c6933d88d1977c2c0d.svg",
+    "static/media/Threejs-logo.svg": "/js/static/media/Threejs-logo.29bd7ff169ef8f06ea72fa57826c9543.svg",
+    "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.1d37aa5b.css",
-    "static/js/main.e1ea80fa.js"
+    "static/css/main.1f2f7510.css",
+    "static/js/main.f1838340.js"
   ]
 }
