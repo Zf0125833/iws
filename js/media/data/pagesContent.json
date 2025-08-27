@@ -25,7 +25,7 @@
                 "id": "pj-a-stroll-on-the-beach",
                 "title": "A Stroll On The Beach",
                 "image": "pr1/intro1.webp",
-                "description": "A brief description of Project One, showcasing skills in web development and modern design principles.",
+                "description": "Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios.",
                 "workingProcess": "Working Process",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p></div></div><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Zbrush, Blender, Adobe Photoshop</p></div></div><br/> <div style='margin-top: 2rem' class='project-details-img-two'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' class='project-image' /> </div>",
                 "imageParalax": "pr1/img-prlx.webp",
@@ -56,11 +56,11 @@
                 "id": "pj-shut_up-and-game",
                 "title": "Shut Up & Game",
                 "image": "pr3/intro.webp",
-                "description": "Create logo and poster for youTube channel.",
+                "description": "Create logo and poster for YouTube channel.",
                 "workingProcess": "Working Process",
-                "fullDescriptionOne": "<p>This project is a comprehensive visual design initiative aimed at creating a distinctive and stylish visual identity for a gaming-focused YouTube channel — \"Shut up & game\". The scope of the project includes the development of a logo, a poster, and various visual elements using professional design tools such as Adobe Illustrator and Adobe Photoshop.</p> <br/> <p>The primary goal of this project is to establish a bold and memorable brand style that effectively conveys the channel’s gaming theme, engages the target audience, and helps it stand out in the competitive world of gaming media.</p> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop</p></div></div><br/>  <div style='margin-top: 2rem' class='project-details-img-two'> <img src='media/images/projects/pr3/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr3/07_DSC_4654.webp' alt='Image' class='project-image' /> </div>",
+                "fullDescriptionOne": "<p>This project is a comprehensive visual design initiative aimed at creating a distinctive and stylish visual identity for a gaming-focused YouTube channel — \"Shut up & game\". The scope of the project includes the development of a logo, a poster, and various visual elements using professional design tools such as Adobe Illustrator and Adobe Photoshop.</p> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop</p></div></div><br/>  <div style='margin-top: 2rem' class='project-details-img-two'> <img src='media/images/projects/pr3/07_DSC_4653.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr3/07_DSC_4654.webp' alt='Image' class='project-image' /> </div>",
                 "finalResult": "Final Result",
-                "fullDescriptionTwo": "<img src='media/images/projects/pr3/07_DSC_4655.webp' alt='Image' class='project-image' /> <img src='media/images/projects/pr3/ytb.webp' alt='Image' class='project-image' />",
+                "fullDescriptionTwo": "<p>The primary goal of this project is to establish a bold and memorable brand style that effectively conveys the channel’s gaming theme, engages the target audience, and helps it stand out in the competitive world of gaming media.</p> <img src='media/images/projects/pr3/07_DSC_4655.webp' alt='Image' class='project-image' /> <img src='media/images/projects/pr3/ytb.webp' alt='Image' class='project-image' />",
                 "tags": [
                     "Graphic Design"
                 ]
