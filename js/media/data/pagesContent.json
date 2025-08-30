@@ -22,21 +22,6 @@
         "intro": "Here you can see a selection of my projects. Each of them is a story of collaboration, creativity, and technical skill.",
         "projects": [
             {
-                "id": "pj-a-stroll-on-the-beach",
-                "title": "A Stroll On The Beach",
-                "image": "pr1/intro1.webp",
-                "description": "Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios.",
-                "workingProcess": "Working Process",
-                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p></div></div><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Zbrush, Blender, Adobe Photoshop</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' data-alt='Created 3D model (Zbrush, Blender)' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' data-alt='Adding armature, hair, eyes, eyebrows, teeth and more ditals' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' data-alt='Created texures from texure paint and add more ditals' class='project-image' /> </div>",
-                "imageParalax": "pr1/img-prlx.webp",
-                "finalResult": "Final Result",
-                "fullDescriptionTwo": "<img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' /> <div class='v--plr-src' data-title='A Stroll On The Beach' data-src='media/images/projects/pr1/GS_02510.webm'><img src='media/images/projects/pr1/video_poster_1.webp' alt='Image' class='project-image' /></div>",
-                "tags": [
-                    "3D Modeling",
-                    "Graphic Design"
-                ]
-            },
-            {
                 "id": "pj-spheres",
                 "title": "Spheres",
                 "image": "pr2/p-0012.webp",
@@ -53,6 +38,37 @@
                 ]
             },
             {
+                "id": "pj-a-stroll-on-the-beach",
+                "title": "A Stroll On The Beach",
+                "image": "pr1/intro1.webp",
+                "description": "Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios.",
+                "workingProcess": "Working Process",
+                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios. The personage should be similar in appearance and character to the client's daughter. The main requirements are beach sand, bright lighting, a happy expression, balloons, shells, starfish...</p></div></div><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Zbrush, Blender, Adobe Photoshop</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' data-alt='Created 3D model (Zbrush, Blender)' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' data-alt='Adding armature, hair, eyes, eyebrows, teeth and more ditals' class='project-image' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' data-alt='Created texures from texure paint and add more ditals' class='project-image' /> </div>",
+                "imageParalax": "pr1/img-prlx.webp",
+                "finalResult": "Final Result",
+                "fullDescriptionTwo": "<img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' /> <div class='v--plr-src' data-title='A Stroll On The Beach' data-src='media/images/projects/pr1/GS_02510.webm'><img src='media/images/projects/pr1/video_poster_1.webp' alt='Image' class='project-image' /></div>",
+                "tags": [
+                    "3D Modeling",
+                    "Graphic Design"
+                ]
+            },
+            {
+                "id": "pj-theatre-atx",
+                "title": "Theatre ATX",
+                "image": "pr5/img-prlx.webp",
+                "description": "\"Theatre ATX (Academy of Theater Arts) - was founded in Russia, Saratov City on November 20, 1988. The first (and only) president (artistic director) of the \"Academy\" Ivan Ivanovich Verkhovykh, a graduate of the acting department of the I.A. Slonov and the directing department of the Higher Theater School named after B.V. Shchukin. While still an actor of the Saratov Youth Theater, he created three theater studios in Saratov, from which the theater arose over time: eight of the then studio members became a kind of core of the team.\" - Theatre ATX",
+                "workingProcess": "Working Process",
+                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>The main idea was to create a website that would look like it was made in the early 2000s, using the tools and techniques that were available at that time. I wanted to recreate the aesthetic and functionality of websites from that era, such as the use of frames, tables, animated GIFs, marquees, pop-ups, and so on.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Denwer, Visual Studio Code, CMS Joomla, Adobe Illustrator, Adobe Photoshop</p></div></div><br/> <img src='media/images/projects/pr5/logo_restyle.webp' alt='Image' data-alt='Restyle logo (convert to vector, color correction and add text)' class='project-image' />",
+                "imageParalax": "pr5/img-prlx.webp",
+                "TextParalax": "<h1>\"Freedom will become law, and law will become freedom. You will return and never be a slave. Neither you, nor your children.\"</h1><p>I. Verkhovoy (Theatre ATX)</p>",
+                "finalResult": "Final Result",
+                "fullDescriptionTwo": "<p>The theater's style is influenced by Suprematism and Bauhaus, two artistic movements that emphasized geometric shapes, colors and functionality. I incorporated some elements from these movements into the site design, such as the use of black, white and yellow, the contrast between straight and curved lines, and the balance between form and content. The site has a retro feel, but also a modern touch. It showcases the theater's history, vision and performances in a clear and engaging way.</p> <img src='media/images/projects/pr5/tatx1.webp' alt='Image' data-alt='Home page (autorisation, navigation, slider, posters, news)' class='project-image pos-top' />  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr5/tatx3.webp' alt='Image' data-alt='Photo archive - categories (gallery)' class='project-image pos-top' /> <img src='media/images/projects/pr5/tatx2.webp' alt='Image' data-alt='Photo archive - open categorie (gallery)' class='project-image pos-top' /> <img src='media/images/projects/pr5/tatx5.webp' alt='Image' data-alt='About (History of Theatre ATX)' class='project-image pos-top' /> <img src='media/images/projects/pr5/tatx8.webp' alt='Image' data-alt='Artistic director and actors' class='project-image pos-top' /> <img src='media/images/projects/pr5/tatx4.webp' alt='Image' data-alt='Authors (categories)' class='project-image pos-top' /> <img src='media/images/projects/pr5/tatx6.webp' alt='Image' data-alt='Contact (contact form)' class='project-image pos-top' /></div> <br/><br/><br/><p> Photos are taken from the official website of - <a href='https://www.theatre-atx.ru' target='_blank'>Theatre ATX</a></p>",
+                "tags": [
+                    "Web Design",
+                    "Web Development"
+                ]
+            },
+            {
                 "id": "pj-shut_up-and-game",
                 "title": "Shut Up & Game",
                 "image": "pr3/07_DSC_4655.webp",
@@ -66,9 +82,9 @@
                 ]
             },
             {
-                "id": "js-stratocaster",
+                "id": "pj-js-stratocaster",
                 "title": "Sound Design",
-                "image": "pr4/07_DSC_4656.webp",
+                "image": "pr4/intro.webp",
                 "description": "A photorealistic digital image of a old Fender Stratocaster guitar connected to a Marshall amplifier, for a poster.",
                 "workingProcess": "Working Process",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Develop a photorealistic digital art depicting a old Fender Stratocaster guitar plugged into a Marshall amplifier. The workflow involves creating 3D models and setting up the scene in Blender, then refining the image to perfection using post-processing tools in Photoshop.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Blender, Adobe Photoshop</p></div></div><br/>  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr4/07_DSC_4651.webp' alt='Image' data-alt='Create 3D model and texturing - Fender Stratocaster Guitar' class='project-image' /><img src='media/images/projects/pr4/07_DSC_4653.webp' alt='Image' class='project-image' /> <img src='media/images/projects/pr4/07_DSC_4650.webp' alt='Image' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' /><img src='media/images/projects/pr4/07_DSC_4655.webp' alt='Image' class='project-image' /></div>",
@@ -76,9 +92,8 @@
                 "finalResult": "Final Result",
                 "fullDescriptionTwo": "<p>Accurate 3D models of the Fender Stratocaster guitar and Marshall amplifier were created. Special attention was paid to the details, from the shape of the guitar body to the texture of the amplifier's vinyl covering and its knobs. The image was refined in Photoshop for maximum photorealism, transforming the 3D render into a complete artistic composition.</p> <div class='v--plr-src' data-src='media/images/projects/pr4/001_0400_1080p.mp4'><img src='media/images/projects/pr4/videoposter.webp' alt='Image' data-alt='3D demonstration of a guitar and amplifier' class='project-image' /></div> <img src='media/images/projects/pr4/07_DSC_4656.webp' alt='Image' class='project-image' /> ",
                 "tags": [
-                    "Web Development",
-                    "Web Design",
-                    "Ai"
+                    "3D Modeling",
+                    "Graphic Design"
                 ]
             }
         ]
