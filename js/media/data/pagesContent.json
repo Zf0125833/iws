@@ -1,17 +1,16 @@
 {
     "about": {
         "title": "About Me",
-        "paragraphs": [
-            "A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.",
-            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values.",
-            "If you are looking for a creative director, designer, motion designer, or frontend developer, you have come to the right place!",
-            "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
-        ],
         "image": {
             "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
             "alt": "About Page Image",
             "className": "about-image"
         },
+        "description": "<h2>Creative director, mentor, designer, web developer, 3D visualizator and digital artist</h2><br /><br /><p>My passion lies at the intersection of design and technology, where I create interactive, aesthetic, and immersive experiences...<br/><br/>A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.</p>",
+        "text": [
+            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values.<br /><br />",
+            "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
+        ],
         "moreContent": {
             "title": "More Content",
             "text": "Adding more content to make the page scrollable and test the behavior of Scroll across different pages."
