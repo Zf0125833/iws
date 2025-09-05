@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация облаков Three.js</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #87ceeb; }
+    </style>
+</head>
+<body>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+
+        // Инициализация сцены, камеры и рендерера
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        camera.position.z = 5;
+
+        // Загрузчик текстур
+        const textureLoader = new THREE.TextureLoader();
+
+        // Массив для хранения облаков
+        const clouds = [];
+        const numClouds = 15;
+        const cloudSpeed = 0.006;
+        
+        const cloudTextures = [
+            'Gemini_Generated_Image_quq9xcquq9xcquq9.png',
+            'Gemini_Generated_Image_56rkb256rkb256rk.png',
+            'Gemini_Generated_Image_51cx9251cx9251cx.png'
+        ];
+
+        const cloudTypes = [];
+
+        // Асинхронная функция для загрузки всех текстур и создания облаков
+        async function init() {
+            // Загружаем все текстуры параллельно
+            const loadedTextures = await Promise.all(
+                cloudTextures.map(url => textureLoader.loadAsync(url))
+            );
+
+            // Создаем материалы и сохраняем информацию о типах облаков
+            loadedTextures.forEach(texture => {
+                const material = new THREE.MeshBasicMaterial({
+                    map: texture,
+                    alphaMap: texture,
+                    transparent: true,
+                    opacity: 0.8, // Начальная непрозрачность, будет меняться для каждого облака
+                    depthWrite: false
+                });
+                const aspectRatio = texture.image.width / texture.image.height;
+                cloudTypes.push({ material, aspectRatio });
+            });
+
+            // Функция для создания одного облака
+            function createCloud() {
+                // Случайно выбираем тип облака
+                const cloudType = cloudTypes[Math.floor(Math.random() * cloudTypes.length)];
+
+                const cloudHeight = Math.random() * 3 + 2; // Случайная высота от 2 до 5
+                const cloudWidth = cloudHeight * cloudType.aspectRatio; // Ширина, основанная на соотношении сторон
+                const geometry = new THREE.PlaneGeometry(cloudWidth, cloudHeight); 
+                
+                // Клонируем материал, чтобы у каждого облака была своя уникальная непрозрачность
+                const material = cloudType.material.clone();
+                const cloudMesh = new THREE.Mesh(geometry, material);
+
+                // Добавляем кастомные свойства для "живой" анимации
+                cloudMesh.baseScale = new THREE.Vector3(1, 1, 1);
+                cloudMesh.animationOffset = Math.random() * Math.PI * 2; // Случайное смещение для асинхронности
+                cloudMesh.baseOpacity = 0.4 + Math.random() * 0.4; // Базовая непрозрачность (0.4 - 0.8)
+                cloudMesh.material.opacity = cloudMesh.baseOpacity;
+
+                return cloudMesh;
+            }
+
+            // Заполнение сцены начальными облаками
+            for (let i = 0; i < numClouds; i++) {
+                const cloud = createCloud();
+                // Случайное начальное положение за пределами левого края
+                cloud.position.x = Math.random() * 25 - 15;
+                cloud.position.y = Math.random() * 4 - 2;
+                cloud.position.z = Math.random() * 6 - 3;
+                clouds.push(cloud);
+                scene.add(cloud);
+            }
+
+            // Запускаем анимацию только после создания облаков
+            animate();
+        }
+
+        init(); // Запускаем инициализацию
+
+        // Функция для получения видимой ширины сцены на определённой дистанции от камеры
+        function getVisibleWidthAtZ(depth) {
+            // Угол обзора камеры в радианах
+            const cameraFov = THREE.MathUtils.degToRad(camera.fov);
+            // Видимая высота на дистанции depth
+            const height = 2 * Math.tan(cameraFov / 1.5) * depth;
+            // Видимая ширина, основанная на соотношении сторон камеры
+            return height * camera.aspect;
+        }
+
+        // Цикл анимации
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const time = performance.now() * 0.0003; // Общее время для анимации
+
+            const frustumWidth = getVisibleWidthAtZ(camera.position.z);
+            const rightBoundary = frustumWidth / 2 + 5; // Правая граница + буфер
+            const leftBoundary = -rightBoundary;       // Левая граница
+
+            clouds.forEach(cloud => {
+                cloud.quaternion.copy(camera.quaternion);
+
+                // Анимация "дыхания" облака
+                const scaleAnimation = Math.sin(time + cloud.animationOffset) * 0.08 + 1; // колеблется между 0.95 и 1.05
+                cloud.scale.copy(cloud.baseScale).multiplyScalar(scaleAnimation);
+
+                // Анимация прозрачности
+                cloud.material.opacity = cloud.baseOpacity * (Math.sin(time * 0.7 + cloud.animationOffset) * 0.2 + 0.8); // колеблется в пределах 20% от базовой
+
+                cloud.position.x += cloudSpeed;
+                if (cloud.position.x > rightBoundary) {
+                    cloud.position.x = leftBoundary;
+                    cloud.position.y = Math.random() * 4 - 2;
+                }
+            });
+            renderer.render(scene, camera);
+        }
+
+        // Обработка изменения размера окна
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+
+    </script>
+</body>
+</html>
