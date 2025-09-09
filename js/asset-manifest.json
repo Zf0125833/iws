@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/js/static/css/main.cd128bc4.css",
-    "main.js": "/js/static/js/main.6bce0ed9.js",
+    "main.js": "/js/static/js/main.f2d3a569.js",
     "static/js/206.f05ed80e.chunk.js": "/js/static/js/206.f05ed80e.chunk.js",
     "static/media/hirmz_00003.png": "/js/static/media/hirmz_00003.711d91f3ba2fb23a660a.png",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.cd128bc4.css",
-    "static/js/main.6bce0ed9.js"
+    "static/js/main.f2d3a569.js"
   ]
 }
