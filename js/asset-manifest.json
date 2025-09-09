@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.0e0caf47.css",
+    "main.css": "/js/static/css/main.4a7c6cfb.css",
     "main.js": "/js/static/js/main.cf92b0c2.js",
     "static/js/206.f05ed80e.chunk.js": "/js/static/js/206.f05ed80e.chunk.js",
     "static/media/hirmz_00001.png": "/js/static/media/hirmz_00001.0ff9d2cd568472afdb21.png",
@@ -30,7 +30,7 @@
     "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.0e0caf47.css",
+    "static/css/main.4a7c6cfb.css",
     "static/js/main.cf92b0c2.js"
   ]
 }
