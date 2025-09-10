@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.3898bfb5.css",
-    "main.js": "/js/static/js/main.89d0bbb0.js",
+    "main.css": "/js/static/css/main.2ea8cd06.css",
+    "main.js": "/js/static/js/main.8c2101ba.js",
     "static/js/206.f05ed80e.chunk.js": "/js/static/js/206.f05ed80e.chunk.js",
     "static/media/hirmz_00003.png": "/js/static/media/hirmz_00003.711d91f3ba2fb23a660a.png",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -30,7 +30,7 @@
     "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.3898bfb5.css",
-    "static/js/main.89d0bbb0.js"
+    "static/css/main.2ea8cd06.css",
+    "static/js/main.8c2101ba.js"
   ]
 }
