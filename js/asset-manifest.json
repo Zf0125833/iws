@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.3070b73e.css",
+    "main.css": "/js/static/css/main.ab107460.css",
     "main.js": "/js/static/js/main.bfce838f.js",
     "static/js/206.2606fd05.chunk.js": "/js/static/js/206.2606fd05.chunk.js",
     "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -29,7 +29,7 @@
     "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.3070b73e.css",
+    "static/css/main.ab107460.css",
     "static/js/main.bfce838f.js"
   ]
 }
