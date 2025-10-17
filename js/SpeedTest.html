@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест скорости интернета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #progress {
+            width: 100%;
+            height: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        #progress-bar {
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест скорости интернета</h1>
+    <p>Нажмите кнопку, чтобы начать тест загрузки. Тест скачивает тестовый файл размером 10 МБ.</p>
+    <button id="startBtn" onclick="startDownloadTest()">Начать тест загрузки</button>
+    <div id="progress-container" class="hidden">
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <p>Скачивание...</p>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        async function startDownloadTest() {
+            const startBtn = document.getElementById('startBtn');
+            const progressContainer = document.getElementById('progress-container');
+            const progressBar = document.getElementById('progress-bar');
+            const result = document.getElementById('result');
+
+            startBtn.disabled = true;
+            startBtn.textContent = 'Тестирование...';
+            progressContainer.classList.remove('hidden');
+            result.textContent = '';
+
+            // URL тестового файла (10 МБ, публичный файл для теста скорости)
+            const testUrl = 'https://speed.hetzner.de/100MB.bin'; // Пример публичного тестового файла
+            const fileSize = 100 * 1024 * 1024; // 100 МБ в байтах (адаптируйте под файл)
+
+            let startTime = performance.now();
+            let receivedBytes = 0;
+            let totalBytes = 0;
+
+            try {
+                const response = await fetch(testUrl);
+                const reader = response.body.getReader();
+                const contentLength = response.headers.get('content-length') || fileSize;
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    receivedBytes += value.length;
+                    totalBytes = parseInt(contentLength, 10);
+
+                    // Обновление прогресса
+                    const progress = (receivedBytes / totalBytes) * 100;
+                    progressBar.style.width = progress + '%';
+
+                    // Промежуточная скорость (каждые 100 мс)
+                    setTimeout(() => {
+                        const elapsed = (performance.now() - startTime) / 1000;
+                        const speed = (receivedBytes * 8 / elapsed / 1024 / 1024).toFixed(2); // Мбит/с
+                        document.querySelector('#progress-container p').textContent = `Скачивание... ${speed} Мбит/с`;
+                    }, 100);
+                }
+
+                const endTime = performance.now();
+                const duration = (endTime - startTime) / 1000;
+                const speedMbps = ((totalBytes * 8) / duration / 1024 / 1024).toFixed(2);
+
+                result.textContent = `Скорость загрузки: ${speedMbps} Мбит/с`;
+                result.style.color = 'green';
+
+            } catch (error) {
+                result.textContent = 'Ошибка при тесте: ' + error.message;
+                result.style.color = 'red';
+            } finally {
+                startBtn.disabled = false;
+                startBtn.textContent = 'Начать тест загрузки';
+                progressContainer.classList.add('hidden');
+                progressBar.style.width = '0%';
+            }
+        }
+
+        // Для теста загрузки (upload) можно добавить аналогичный код, но он требует сервера.
+        // Здесь упрощенная версия с отправкой данных на echo-сервер.
+        async function startUploadTest() {
+            // Похожая логика, но с POST-запросом на https://httpbin.org/post
+            // Генерируем случайные данные для загрузки
+            const data = new Uint8Array(10 * 1024 * 1024); // 10 МБ
+            crypto.getRandomValues(data);
+
+            // ... (аналогично download, но с fetch(testUrl, {method: 'POST', body: data}))
+            // Для простоты опущено, добавьте по аналогии.
+        }
+    </script>
+</body>
+</html>
