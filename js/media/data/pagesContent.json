@@ -27,11 +27,7 @@
         "text": [
             "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values.<br /><br />",
             "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
-        ],
-        "moreContent": {
-            "title": "More Content",
-            "text": "Adding more content to make the page scrollable and test the behavior of Scroll across different pages."
-        }
+        ]
     },
     "works": {
         "title": "My Portfolio",
