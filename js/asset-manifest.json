@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.1269d998.css",
-    "main.js": "/js/static/js/main.8fb68315.js",
+    "main.css": "/js/static/css/main.dba5c365.css",
+    "main.js": "/js/static/js/main.549e7eca.js",
     "static/js/206.f05ed80e.chunk.js": "/js/static/js/206.f05ed80e.chunk.js",
-    "static/media/ComfyUI_temp_hzpce_00002_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00002_.32b68978a485221a75e7.jpg",
-    "static/media/ComfyUI_temp_hzpce_00003_.jpg": "/js/static/media/ComfyUI_temp_hzpce_00003_.de7a8d1cb381612f2098.jpg",
+    "static/media/ComfyUI_temp_hzpce_00002_.webp": "/js/static/media/ComfyUI_temp_hzpce_00002_.01615b86c335d659cd5b.webp",
     "static/media/hzpce_00006.webp": "/js/static/media/hzpce_00006.2a2375e3d766d723f344.webp",
     "static/media/hzpce_00007.webp": "/js/static/media/hzpce_00007.ea1c3dfad729be546a85.webp",
     "static/media/hzpce_00005.webp": "/js/static/media/hzpce_00005.a61fc1e70684f66953e5.webp",
@@ -33,7 +32,7 @@
     "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.1269d998.css",
-    "static/js/main.8fb68315.js"
+    "static/css/main.dba5c365.css",
+    "static/js/main.549e7eca.js"
   ]
 }
