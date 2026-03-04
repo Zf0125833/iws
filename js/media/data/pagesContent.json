@@ -23,9 +23,8 @@
             "alt": "About Page Image",
             "className": "about-image"
         },
-        "description": "<h2>Let's tell your next untold story together</h2><br /><br /><p>* Ready to bring your next story to life? <br/>Fill out the form or email us at sayhello@email.email — and let's make it happen.</p>",
+        "description": "<h2>Let's tell your next untold story together</h2><br /><br /><p class='project-intro'>* Ready to bring your next story to life? <br/>Fill out the form or email me — and let's make it happen.</p>",
         "text": [
-            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values.<br /><br />",
             "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
         ]
     },
