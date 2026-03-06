@@ -2,9 +2,9 @@
     "about": {
         "title": "About Me",
         "image": {
-            "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
-            "alt": "About Page Image",
-            "className": "about-image"
+            "image1": "media/images/about/qhpgq_0001.webp",
+            "image2": "media/images/about/qhpgq_0002.webp",
+            "image3": "media/images/about/qhpgq_0003.webp"
         },
         "description": "<h2>Creative director, mentor, designer, UX/UI-designer, web developer, 3D visualizator, digital artist and prompt engineering</h2><br /><br /><p>My passion lies at the intersection of design and technology, where I create interactive, aesthetic, and immersive experiences...<br/><br/>A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.</p>",
         "text": [
