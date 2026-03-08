@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/js/static/css/main.830b39ff.css",
+    "main.css": "/js/static/css/main.8562f976.css",
     "main.js": "/js/static/js/main.d998a686.js",
     "static/js/206.f05ed80e.chunk.js": "/js/static/js/206.f05ed80e.chunk.js",
     "static/media/hzpce_00002_.jpg": "/js/static/media/hzpce_00002_.32b68978a485221a75e7.jpg",
@@ -33,7 +33,7 @@
     "static/media/css3.svg": "/js/static/media/css3.dadecb23cb9390f8af964e2851a6ef56.svg"
   },
   "entrypoints": [
-    "static/css/main.830b39ff.css",
+    "static/css/main.8562f976.css",
     "static/js/main.d998a686.js"
   ]
 }
