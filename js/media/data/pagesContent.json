@@ -1,4 +1,32 @@
 {
+    "home": {
+        "indexDark": [
+            "Design & Build Digital Experiences",
+            "Ideate & Solve Digital Hurdles",
+            "Coding & Logic Behind the Apps",
+            "Launch & Grow Digital Presence",
+            "Engine & Craft Digital Systems",
+            "Sketch & Brand Digital Worlds",
+            "Visual & Story Digital Content"
+        ],
+        "indexLight": [
+            "Visual & Story Digital Content",
+            "Sketch & Brand Digital Worlds",
+            "Create & Innovate Digital Solutions"
+        ],
+        "content": {
+            "secondTitle": "I Combine Creative Vision With Technical Skills To Craft Functional & Aesthetically Pleasing Solutions",
+            "experience": {
+                "title": "Seamless Design & Execution",
+                "text": "<p>Blending design and development, I bring concepts to life as finished products.</p><p>My passion for learning makes mastering new technologies as effortless and engaging as watching a favorite series.</p>",
+                "button": "Learn More About"
+            },
+            "look": {
+                "title": "I Look At Things From A Slightly Different Angle",
+                "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
+            }
+        }
+    },
     "about": {
         "title": "About Me",
         "image": {
