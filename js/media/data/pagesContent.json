@@ -1,56 +1,4 @@
 {
-    "home": {
-        "indexDark": [
-            "Design & Build Digital Experiences",
-            "Ideate & Solve Digital Hurdles",
-            "Coding & Logic Behind the Apps",
-            "Launch & Grow Digital Presence",
-            "Engine & Craft Digital Systems",
-            "Sketch & Brand Digital Worlds",
-            "Visual & Story Digital Content"
-        ],
-        "indexLight": [
-            "Visual & Story Digital Content",
-            "Sketch & Brand Digital Worlds",
-            "Create & Innovate Digital Solutions"
-        ],
-        "content": {
-            "secondTitle": "I Combine Creative Vision With Technical Skills To Craft Functional & Aesthetically Pleasing Solutions",
-            "experience": {
-                "title": "Seamless Design & Execution",
-                "text": "<p>Blending design and development, I bring concepts to life as finished products.</p><p>My passion for learning makes mastering new technologies as effortless and engaging as watching a favorite series.</p>",
-                "button": "Learn More About"
-            },
-            "look": {
-                "title": "I Look At Things From A Slightly Different Angle",
-                "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
-            }
-        }
-    },
-    "about": {
-        "title": "About Me",
-        "image": {
-            "image1": "media/images/about/qhpgq_0001.webp",
-            "image2": "media/images/about/qhpgq_0002.webp",
-            "image3": "media/images/about/qhpgq_0003.webp"
-        },
-        "description": "<h2>Creative director, mentor, designer, UX/UI-designer, web developer, 3D visualizator, digital artist and prompt engineering</h2><br /><br /><p>My passion lies at the intersection of design and technology, where I create interactive, aesthetic, and immersive experiences...<br/><br/>A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.</p>",
-        "text": [
-            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values."
-        ]
-    },
-    "contact": {
-        "title": "Say Hello!",
-        "image": {
-            "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
-            "alt": "About Page Image",
-            "className": "about-image"
-        },
-        "description": "<h2>Let's tell your next untold story together</h2><br /><br /><p class='project-intro'>* Ready to bring your next story to life? <br/>Fill out the form or email me — and let's make it happen.</p>",
-        "text": [
-            "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
-        ]
-    },
     "works": {
         "title": "Projects",
         "intro": "Here you can see a selection of my projects. Each of them is a story of collaboration, creativity, and technical skill.",
@@ -59,6 +7,7 @@
                 "id": "pj-a-stroll-on-the-beach",
                 "title": "A Stroll On The Beach",
                 "image": "pr1/intro1.webp",
+                "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios.",
                 "workingProcess": "Working Process",
@@ -76,6 +25,7 @@
                 "id": "pj-spheres",
                 "title": "Spheres",
                 "image": "pr2/p-0012.webp",
+                "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Creating immersive 360° video content specifically designed for LED media spheres to deliver a fully captivating and dynamic visual experience.",
                 "workingProcess": "Working Process",
@@ -92,6 +42,7 @@
             {
                 "id": "pj-theatre-atx",
                 "title": "Theatre ATX",
+                "favorite": true,
                 "image": "pr5/cvopz_00002_.webp",
                 "description": "Website design and development for the 'Academy of Theater Arts' with a retro aesthetic inspired by the early 2000s.",
                 "workingProcess": "Working Process",
@@ -125,6 +76,7 @@
                 "id": "pj-js-stratocaster",
                 "title": "Sound Design",
                 "image": "pr4/intro.webp",
+                "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "A photorealistic digital image of a old Fender Stratocaster guitar connected to a Marshall amplifier, for a poster.",
                 "workingProcess": "Working Process",
@@ -148,6 +100,63 @@
                     "AI Graphic"
                 ]
             }
+        ]
+    },
+    "home": {
+        "indexDark": [
+            "Design & Build Digital Experiences",
+            "Ideate & Solve Digital Hurdles",
+            "Coding & Logic Behind the Apps",
+            "Launch & Grow Digital Presence",
+            "Engine & Craft Digital Systems",
+            "Sketch & Brand Digital Worlds",
+            "Visual & Story Digital Content"
+        ],
+        "indexLight": [
+            "Visual & Story Digital Content",
+            "Sketch & Brand Digital Worlds",
+            "Create & Innovate Digital Solutions"
+        ],
+        "content": {
+            "secondTitle": "I Combine Creative Vision With Technical Skills To Craft Functional & Aesthetically Pleasing Solutions",
+            "experience": {
+                "title": "Seamless Design & Execution",
+                "text": "<p>Blending design and development, I bring concepts to life as finished products.</p><p>My passion for learning makes mastering new technologies as effortless and engaging as watching a favorite series.</p>",
+                "button": "Learn More About"
+            },
+            "look": {
+                "title": "I Look At Things From A Slightly Different Angle",
+                "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
+            },
+            "favorite": {
+                "title": "Featured Projects: Clarity by Design, Growth by Result",
+                "text": "text",
+                "button": "See More Works"
+            }
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "image": {
+            "image1": "media/images/about/qhpgq_0001.webp",
+            "image2": "media/images/about/qhpgq_0002.webp",
+            "image3": "media/images/about/qhpgq_0003.webp"
+        },
+        "description": "<h2>Creative director, mentor, designer, UX/UI-designer, web developer, 3D visualizator, digital artist and prompt engineering</h2><br /><br /><p>My passion lies at the intersection of design and technology, where I create interactive, aesthetic, and immersive experiences...<br/><br/>A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.</p>",
+        "text": [
+            "I have more than 11 years of experience in various fields of design, animation, and web development. I love to craft beautiful and engaging solutions for different kinds of projects, from branding and logo design to motion graphics and interactive websites. I'm always eager to learn new skills and technologies to enhance my creative potential and expand my portfolio. I love to collaborate with clients and partners who share my vision and values."
+        ]
+    },
+    "contact": {
+        "title": "Say Hello!",
+        "image": {
+            "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
+            "alt": "About Page Image",
+            "className": "about-image"
+        },
+        "description": "<h2>Let's tell your next untold story together</h2><br /><br /><p class='project-intro'>* Ready to bring your next story to life? <br/>Fill out the form or email me — and let's make it happen.</p>",
+        "text": [
+            "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
         ]
     }
 }
