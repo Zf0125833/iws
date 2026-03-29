@@ -2,7 +2,7 @@
     "works": {
         "title": "Projects",
         "intro": "Here you can see a selection of my projects. Each of them is a story of collaboration, creativity, and technical skill.",
-        "buttonLoadMore": "<h3>Load more works</h3><p class='project-intro'>See More</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>",
+        "buttonLoadMore": "<h3>Load more works</h3><p class='project-intro'>See more</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>",
         "projects": [
             {
                 "id": "pj-a-stroll-on-the-beach",
@@ -146,7 +146,7 @@
             "experience": {
                 "title": "Seamless Design & Execution",
                 "text": "<p>Blending design and development, I bring concepts to life as finished products.</p><p>My passion for learning makes mastering new technologies as effortless and engaging as watching a favorite series.</p>",
-                "button": "Learn More About"
+                "button": "Learn more about"
             },
             "look": {
                 "title": "I Look At Things From A Slightly Different Angle",
@@ -155,7 +155,7 @@
             "favorite": {
                 "title": "Featured Projects: Where Clarity is Built by Design & Growth is Proven by Result",
                 "text": "text",
-                "button": "<h3>View all projects</h3><p class='project-intro'>See More</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
+                "button": "<h3>View all projects</h3><p class='project-intro'>See more</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
             },
             "contact": {
                 "title": "Let's tell your next untold story together"
@@ -178,7 +178,7 @@
         "title": "Say Hello!",
         "image": {
             "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
-            "alt": "About Page Image",
+            "alt": "About page",
             "className": "about-image"
         },
         "description": "<h2>Let's tell your next untold story together</h2><br /><br /><p class='project-intro'>* Ready to bring your next story to life? <br/>Fill out the form or email me — and let's make it happen.</p>",
