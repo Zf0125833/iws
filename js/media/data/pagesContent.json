@@ -74,6 +74,23 @@
                 ]
             },
             {
+                "id": "pj-js-planet-lightning",
+                "title": "A Planet Wreathed In Lightning",
+                "image": "pr9/p-009.webp",
+                "description": "This work spans a series of multimedia projects where motion design, 3D modeling, and graphic design come together to produce visually engaging and technically polished content. Each project is driven by a strong creative vision, technical precision, and a well-structured workflow across industry-standard software tools.",
+                "workingProcess": "Working Process",
+                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Produce two intro animations. The first should feature planet Earth being enveloped by lightning bolts that converge to reveal the company logo. The second will serve as a 'viewer recommendation' or disclaimer video.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Blender, Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop.</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr9/script-1.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work2.webp' alt='Image' data-alt='Process of work (Adobe After Effects)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr9/work1.webp' alt='Image' data-alt='Process of work (Adobe After Effects, Adobe Premiere Pro)' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work3.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /></div>",
+                "imageParalax": "pr9/img-prlx.webp",
+                "TextParalax": "",
+                "finalResult": "Final Result",
+                "fullDescriptionTwo": "<p><b>DSE Intro</b> - This project is a high-energy intro video developed using Blender, Adobe After Effects, Premiere Pro, and Photoshop. It follows a frame-by-frame storyboard approach and a clearly defined production pipeline. The result is a powerful visual sequence that blends cinematic 3D animation with dynamic motion graphics and detailed post-production effects.</p> <div class='v--plr-src' data-src='media/images/projects/pr9/Space.webm'><img src='media/images/projects/pr9/video_poster_1.webp' alt='Image' class='project-image' /></div> <br/><br/> <p><b>DSE (Recommendation)</b> -  A brand-focused project featuring intro videos and visual recommendations designed to enhance audience engagement. The work highlights the use of cohesive branding, rhythmic editing, and motion-based storytelling to represent the identity of <a href=\"https://diamondsoundentertainment.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Diamond Sound Entertainment</a></p> <div class='v--plr-src' data-src='media/images/projects/pr9/Scene2.mp4'><img src='media/images/projects/pr9/video_poster_2.webp' alt='Image' class='project-image' /></div>",
+                "tags": [
+                    "Motion Design",
+                    "3D Modeling",
+                    "Graphic Design"
+                ]
+            },
+            {
                 "id": "fallout-forum",
                 "title": "Fallout UI - UFA V Forum",
                 "image": "pr7/p-007.webp",
