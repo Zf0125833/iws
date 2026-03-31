@@ -141,7 +141,7 @@
                 ]
             },
             {
-                "id": "pj-a-v",
+                "id": "pj-av",
                 "title": "AV - Logo Design",
                 "image": "pr10/p-008.webp",
                 "description": "This project focuses on developing a clean, memorable logo built from the initials Vecheslav Ageev. Designed specifically for a professional photographer, the goal was to create a versatile mark that functions perfectly as a watermark. It remains instantly recognizable across any background—from high-contrast portraits to textured landscapes—scales effortlessly, and communicates clarity even from a distance.",
@@ -173,21 +173,13 @@
             }
         ]
     },
+    "menu": {
+        "index": "Index",
+        "about": "About",
+        "projects": "Works",
+        "contact": "Contact"
+    },
     "home": {
-        "indexDark": [
-            "Design & Build Digital Experiences",
-            "Ideate & Solve Digital Hurdles",
-            "Coding & Logic Behind the Apps",
-            "Launch & Grow Digital Presence",
-            "Engine & Craft Digital Systems",
-            "Sketch & Brand Digital Worlds",
-            "Visual & Story Digital Content"
-        ],
-        "indexLight": [
-            "Visual & Story Digital Content",
-            "Sketch & Brand Digital Worlds",
-            "Create & Innovate Digital Solutions"
-        ],
         "content": {
             "secondTitle": "I Combine Creative Vision With Technical Skills To Craft Functional & Aesthetically Pleasing Solutions",
             "experience": {
@@ -232,5 +224,25 @@
         "text": [
             "<b>You can also contact me anytime via email or social media. <br />Thank you for visiting and I hope to hear from you soon!</b>"
         ]
-    }
+    },
+    "footer": {
+        "index": "Index",
+        "about": "About Me",
+        "projects": "Works",
+        "contact": "Contact"
+    },
+    "indexDark": [
+        "Design & Build Digital Experiences",
+        "Ideate & Solve Digital Hurdles",
+        "Coding & Logic Behind the Apps",
+        "Launch & Grow Digital Presence",
+        "Engine & Craft Digital Systems",
+        "Sketch & Brand Digital Worlds",
+        "Visual & Story Digital Content"
+    ],
+    "indexLight": [
+        "Visual & Story Digital Content",
+        "Sketch & Brand Digital Worlds",
+        "Create & Innovate Digital Solutions"
+    ]
 }
