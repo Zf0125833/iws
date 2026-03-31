@@ -18,8 +18,7 @@
                 "finalResult": "Final Result",
                 "fullDescriptionTwo": "<p>The final step was to add some balloons and pose the character in a happy expression. I used a curve modifier to make the balloons look like they are floating in the air and attached them to the character's hand with a string. I also adjusted the facial features and body posture of the character to make her look cheerful and excited.</p> <img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' /> <div class='v--plr-src' data-title='A Stroll On The Beach' data-src='media/images/projects/pr1/GS_02510.webm'><img src='media/images/projects/pr1/video_poster_1.webp' alt='Image' class='project-image' /></div>",
                 "tags": [
-                    "3D Modeling",
-                    "Graphic Design"
+                    "3D Modeling"
                 ]
             },
             {
@@ -91,7 +90,7 @@
                 ]
             },
             {
-                "id": "fallout-forum",
+                "id": "pj-js-fallout-forum",
                 "title": "Fallout UI - UFA V Forum",
                 "image": "pr7/p-007.webp",
                 "description": "Fallout UI/UX design: Retrofuturistic forum design with custom animations for Proboards.",
@@ -121,7 +120,38 @@
                 "finalResult": "Final Result",
                 "fullDescriptionTwo": "<p>Accurate 3D models of the Fender Stratocaster guitar and Marshall amplifier were created. Special attention was paid to the details, from the shape of the guitar body to the texture of the amplifier's vinyl covering and its knobs. The image was refined in Photoshop for maximum photorealism, transforming the 3D render into a complete artistic composition.</p> <div class='v--plr-src' data-src='media/images/projects/pr4/001_0400_1080p.mp4'><img src='media/images/projects/pr4/videoposter.webp' alt='Image' data-alt='3D demonstration of a guitar and amplifier' class='project-image' /></div> <img src='media/images/projects/pr4/07_DSC_4656.webp' alt='Image' class='project-image' /> ",
                 "tags": [
-                    "3D Modeling",
+                    "3D Modeling"
+                ]
+            },
+            {
+                "id": "pj-js-claycow",
+                "title": "Claycow",
+                "image": "pr8/img-prlx.webp",
+                "imageMenuColorChange": true,
+                "description": "The official web-based storefront for \"Claycow\", built with a focus on scalable architecture, dynamic inventory management, and a responsive product catalog.",
+                "workingProcess": "Desktop Version",
+                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Created a responsive web application for \"Claycow\" using WordPress, implementing a bespoke layout aligned with the brand's visual identity and specific client needs. Includes a digital catalog with real-time search functionality.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Visual Studio Code, WordPress, Adobe Photoshop, Adobe Illustrator</p></div></div><br/><br/><p>The desktop version showcases a wide-screen approach to design: large typography, generous margins, and a clear block hierarchy allow users to easily navigate key sections—from the homepage to product categories and news items.</p><img src='media/images/projects/pr8/cl1.webp' alt='Image' data-alt='Home page' class='project-image pos-top' /> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr8/cl3.webp' alt='Image' data-alt='Product page (category)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/cl2.webp' alt='Image' data-alt='News page' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div> <img src='media/images/projects/pr8/cl4.webp' alt='Image' data-alt='Product from a specific category of goods' class='project-image pos-top' />",
+                "imageParalax": "pr8/vqhpv_00021_.webp",
+                "TextParalax": "",
+                "finalResult": "Mobile Version",
+                "fullDescriptionTwo": "<p>The Claycow mobile version features a lightweight, fast, and intuitive interface optimized for vertical format and gesture control.</p> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr8/clm1.webp' alt='Image' data-alt='Home page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm2.webp' alt='Image' data-alt='Category page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm4.webp' alt='Image' data-alt='News page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm5.webp' alt='Image' data-alt='Mobile slide-out menu' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm3.webp' alt='Image' data-alt='Mobile footer' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
+                "tags": [
+                    "Web Design",
+                    "Web Development"
+                ]
+            },
+            {
+                "id": "pj-a-v",
+                "title": "AV - Vecheslav Ageev",
+                "image": "pr10/p-008.webp",
+                "description": "This project focuses on developing a clean, memorable logo built from the initials Vecheslav Ageev. Designed specifically for a professional photographer, the goal was to create a versatile mark that functions perfectly as a watermark. It remains instantly recognizable across any background—from high-contrast portraits to textured landscapes—scales effortlessly, and communicates clarity even from a distance.",
+                "workingProcess": "Working Process",
+                "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p> To develop a logo based on the initials of the first and last name (Vecheslav Ageev), which will be visible on any background, easy to recognize and read from any distance.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop</p></div></div><br/> <img src='media/images/projects/pr10/01_DSC_24.webp' alt='Image' class='project-image' />",
+                "imageParalax": "",
+                "TextParalax": "",
+                "finalResult": "Final Result",
+                "fullDescriptionTwo": "<p>Working with Adobe Illustrator and Adobe Photoshop, the design process explored geometric forms, contrast, and readability to establish a strong personal brand presence.</p> <img src='media/images/projects/pr10/02_DSC_24.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr10/03_DSC_24.webp' alt='Image' class='project-image' />",
+                "tags": [
                     "Graphic Design"
                 ]
             },
