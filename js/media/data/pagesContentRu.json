@@ -2,20 +2,26 @@
     "works": {
         "title": "Проекты",
         "intro": "Здесь вы можете увидеть подборку моих проектов. Каждый из них — это история сотрудничества, творчества и технического мастерства.",
-        "buttonLoadMore": "<h3>Увидеть Больше?</h3><p class='project-intro'>Загрузить ещё</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>",
+        "buttonLoadMore": "<h3>Увидеть Больше?</h3><p class='project-intro'>ещё</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>",
+        "next": "Следующий проект: ",
+        "buttonTanx": {
+            "title": "Спасибо за просмотр",
+            "text": "← Назад к работам"
+        },
+        "tag": "Все проекты",
         "projects": [
             {
                 "id": "pj-a-stroll-on-the-beach",
-                "title": "Прогулка По Пляжу",
+                "title": "Прогулка по пляжу",
                 "image": "pr1/intro1.webp",
                 "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Создание 3D-модели и плаката в стиле мультфильмов студии Pixar Animation Studios.",
-                "workingProcess": "Рабочий Процесс",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Создание 3D-модели и плаката в стиле мультфильмов студии Pixar. Персонаж должен быть похож по внешности и характеру на дочь заказчика. Основные требования: пляжный песок, яркое освещение, счастливое выражение лица, воздушные шары, ракушки, морские звезды...</p></div></div><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Zbrush, Blender, Adobe Photoshop</p></div></div><br/><br/> <p>Первым шагом было найти фотографию дочери клиента и набросать её лицо и фигуру в мультяшном стиле. Для создания 3D-модели я использовал программу Blender, применив к ней базовые материалы и текстуры. Также я добавил детали волос и одежды, чтобы сделать её более реалистичной.</p> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr1/07_DSC_4653.webp' alt='Image' data-alt='Created 3D model (Zbrush, Blender)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr1/07_DSC_4654.webp' alt='Image' data-alt='Adding armature, hair, eyes, eyebrows, teeth and more ditals' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr1/07_DSC_4656.webp' alt='Image' data-alt='Created texures from texure paint and add more ditals' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "imageParalax": "pr1/img-prlx.webp",
                 "TextParalax": "",
-                "finalResult": "Финальный Результат",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>Финальным шагом было добавление несколько воздушных шариков. придание персонажу счастливого и удивленного выражения лица. Я использовала модификатор кривой, чтобы шарики выглядели парящими в воздухе, и прикрепил их к руке персонажа с помощью нитки. Я также скорректировал черты лица и позу персонажа, чтобы она выглядела жизнерадостной и восторженной.</p> <img src='media/images/projects/pr1/07_DSC_4659.webp' alt='Image' class='project-image' /> <div class='v--plr-src' data-title='A Stroll On The Beach' data-src='media/images/projects/pr1/GS_02510.webm'><img src='media/images/projects/pr1/video_poster_1.webp' alt='Image' class='project-image' /></div>",
                 "tags": [
                     "3D Моделирование"
@@ -28,11 +34,11 @@
                 "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Создание захватывающего 360° видеоконтента, специально разработанного для LED медиасфер, для обеспечения по-настоящему увлекательного и динамичного визуального восприятия.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Creating video content on the topic of \"natural elements\" in 360° (VR) format. This would be a great way to showcase the beauty and diversity of nature, as well as to provide an immersive and educational experience for the viewers.<br/>The project would involve using software such as \"Blender\", \"After Effects\" and \"Premiere Pro\" to create realistic and stunning 3D models and animations of various natural elements, such as water, fire, earth, and air.<br/>The final product would be compatible with VR devices and platforms, such as LED Media-Spheres.</p></div></div><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p> Blender, Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop</p></div></div><br/> <img src='media/images/projects/pr2/02_DSC_4654.webp' alt='Image' data-alt='Customer-approved options 3D spheres' class='project-image' /> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr2/01_DSC_4654.webp' alt='Image' data-alt='Create 3D spheres with procedural textures and geometry nodes technologies' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr2/03_DSC_4654.webp' alt='Image' data-alt='Render looped animation in VR 360° video format' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div> <div class='v--plr-src' data-src='media/images/projects/pr2/Blender_LED_Sphere_interior.mp4'><img src='media/images/projects/pr2/04_DSC_4654.webp' alt='Image' data-alt='Blender - LED media spheres in virtual 3D interior' class='project-image' /></div>",
                 "imageParalax": "pr2/img-prlx.webp",
                 "TextParalax": "<h1>\"At the entrance of the building, screen balls are placed under the ceiling, which broadcast 360° of environmental content...\"</h1><p>UNK corporate interiors</p>",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>\"...The architects preferred not to continue the idea of green facades in the interior literally - at the expense of living plants. Therefore, the eco-theme is embodied here by figurative means. The project is based on the idea of biomes (biological environments such as, for example, desert, tundra, ocean, etc.). At the entrance of the building, screen balls are placed under the ceiling, which broadcast 360 degrees of environmental content specially created for the project (each ball has its own biome).\" - <a target='_blank' rel='noopener noreferrer' href='https://unkci.ru/projects/entrance-lobbies/biznes-centr-zemelniy'>UNK corporate interiors</a></p><br/> <img src='media/images/projects/pr2/07_DSC_4654.webp' alt='Image' data-alt='LED media spheres in the real interior' class='project-image' /> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr2/07_DSC_4651.webp' alt='Image' data-alt='LED media spheres in the interior during the day' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr2/07_DSC_4653.webp' alt='Image' data-alt='LED media spheres in the interior during the night' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div> <img src='media/images/projects/pr2/07_DSC_4656.webp' alt='Image' data-alt='Front of the business center building' class='project-image' />  <div class='v--plr-src' data-src='media/images/projects/pr2/LED_Sphere_1.mp4'><img src='media/images/projects/pr2/poster2.webp' alt='Image' data-alt='LED media spheres in the day' class='project-image' /></div>  <div class='v--plr-src' data-src='media/images/projects/pr2/LED_Sphere_2.mp4'><img src='media/images/projects/pr2/poster3.webp' alt='Image' data-alt='LED media spheres in the night' class='project-image' /></div>  <br/><br/><br/><p>Full project review - <a target='_blank' rel='noopener noreferrer' href='https://unkci.ru/projects/entrance-lobbies/biznes-centr-zemelniy'>UNK corporate interiors</a>, <a target='_blank' rel='noopener noreferrer' href='https://www.officenext.ru/projects/project-57109-bts-zemelnyy/'>Officenext</a></p>",
                 "tags": [
                     "Моушн Дизайн",
@@ -45,11 +51,11 @@
                 "favorite": true,
                 "image": "pr5/cvopz_00002_.webp",
                 "description": "Website design and development for the 'Academy of Theater Arts' with a retro aesthetic inspired by the early 2000s.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<p>\"Theatre ATX (Academy of Theater Arts) - was founded in Russia, Saratov City on November 20, 1988. The first (and only) president (artistic director) of the \"Academy\" Ivan Ivanovich Verkhovykh, a graduate of the acting department of the I.A. Slonov and the directing department of the Higher Theater School named after B.V. Shchukin. While still an actor of the Saratov Youth Theater, he created three theater studios in Saratov, from which the theater arose over time: eight of the then studio members became a kind of core of the team.\" - Theatre ATX</p><br/><div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>The main idea was to create a website that would look like it was made in the early 2000s, using the tools and techniques that were available at that time. I wanted to recreate the aesthetic and functionality of websites from that era, such as the use of frames, tables, animated GIFs, marquees, pop-ups, and so on.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Denwer, Visual Studio Code, CMS Joomla, Adobe Illustrator, Adobe Photoshop</p></div></div><br/> <img src='media/images/projects/pr5/logo_restyle.webp' alt='Image' data-alt='Restyle logo (convert to vector, color correction and add text)' class='project-image' />",
                 "imageParalax": "pr5/img-prlx.webp",
-                "TextParalax": "<h1>\"Freedom will become law, and law will become freedom. You will return and never be a slave. Neither you, nor your children.\"</h1><p>I. Verkhovoy (Theatre ATX)</p>",
-                "finalResult": "Final Result",
+                "TextParalax": "<h1>\"Свобода  станет законом, а закон свободой. Ты вернешься и никогда не будешь рабом. Ни ты, ни твои дети.\"</h1><p>И. Верховых (Theatre ATX)</p>",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>The theater's style is influenced by Suprematism and Bauhaus, two artistic movements that emphasized geometric shapes, colors and functionality. I incorporated some elements from these movements into the site design, such as the use of black, white and yellow, the contrast between straight and curved lines, and the balance between form and content. The site has a retro feel, but also a modern touch. It showcases the theater's history, vision and performances in a clear and engaging way.</p> <img src='media/images/projects/pr5/tatx1.webp' alt='Image' data-alt='Home page (autorisation, navigation, slider, posters, news)' class='project-image pos-top' />  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr5/tatx3.webp' alt='Image' data-alt='Photo archive - categories (gallery)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx2.webp' alt='Image' data-alt='Photo archive - open categorie (gallery)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx5.webp' alt='Image' data-alt='About (History of Theatre ATX)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx8.webp' alt='Image' data-alt='Artistic director and actors' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx4.webp' alt='Image' data-alt='Authors (categories)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx6.webp' alt='Image' data-alt='Contact (contact form)' data-sizes='(max-width: 1024px) 40vw, 25vw' class='project-image pos-top' /></div> <br/><br/><br/><p> Photos are taken from the official website of - <a href='https://www.theatre-atx.ru' target='_blank' rel='noopener noreferrer'>Theatre ATX</a></p>",
                 "tags": [
                     "Веб Дизайн",
@@ -62,11 +68,11 @@
                 "image": "pr3/intro.webp",
                 "imageMenuColorChange": true,
                 "description": "Create logo and poster for YouTube channel.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<p>This project is a comprehensive visual design initiative aimed at creating a distinctive and stylish visual identity for a gaming-focused YouTube channel — \"Shut up & game\". The scope of the project includes the development of a logo, a poster, and various visual elements using professional design tools such as Adobe Illustrator and Adobe Photoshop.</p> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop</p></div></div><br/>  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr3/07_DSC_4653.webp' alt='Image' data-alt='Created four versions of logo (Adobe Illustrator)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr3/07_DSC_4654.webp' alt='Image' data-alt='Created poster (Adobe Photoshop, Adobe Illustrator)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "imageParalax": "",
                 "TextParalax": "",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>The primary goal of this project is to establish a bold and memorable brand style that effectively conveys the channel's gaming theme, engages the target audience, and helps it stand out in the competitive world of gaming media.</p> <img src='media/images/projects/pr3/07_DSC_4655.webp' alt='Image' class='project-image' />",
                 "tags": [
                     "Графический Дизайн"
@@ -77,11 +83,11 @@
                 "title": "Молнии",
                 "image": "pr9/p-009.webp",
                 "description": "This work spans a series of multimedia projects where motion design, 3D modeling, and graphic design come together to produce visually engaging and technically polished content. Each project is driven by a strong creative vision, technical precision, and a well-structured workflow across industry-standard software tools.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Produce two intro animations. The first should feature planet Earth being enveloped by lightning bolts that converge to reveal the company logo. The second will serve as a 'viewer recommendation' or disclaimer video.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Blender, Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop.</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr9/script-1.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work2.webp' alt='Image' data-alt='Process of work (Adobe After Effects)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr9/work1.webp' alt='Image' data-alt='Process of work (Adobe After Effects, Adobe Premiere Pro)' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work3.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /></div>",
                 "imageParalax": "pr9/img-prlx.webp",
                 "TextParalax": "",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p><b>DSE Intro</b> - This project is a high-energy intro video developed using Blender, Adobe After Effects, Premiere Pro, and Photoshop. It follows a frame-by-frame storyboard approach and a clearly defined production pipeline. The result is a powerful visual sequence that blends cinematic 3D animation with dynamic motion graphics and detailed post-production effects.</p> <div class='v--plr-src' data-src='media/images/projects/pr9/Space.webm'><img src='media/images/projects/pr9/video_poster_1.webp' alt='Image' class='project-image' /></div> <br/><br/> <p><b>DSE (Recommendation)</b> -  A brand-focused project featuring intro videos and visual recommendations designed to enhance audience engagement. The work highlights the use of cohesive branding, rhythmic editing, and motion-based storytelling to represent the identity of <a href=\"https://diamondsoundentertainment.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Diamond Sound Entertainment</a></p> <div class='v--plr-src' data-src='media/images/projects/pr9/Scene2.mp4'><img src='media/images/projects/pr9/video_poster_2.webp' alt='Image' class='project-image' /></div>",
                 "tags": [
                     "Моушн Дизайн",
@@ -94,11 +100,11 @@
                 "title": "Fallout UI - UFA V Форум",
                 "image": "pr7/p-007.webp",
                 "description": "Fallout UI/UX design: Retrofuturistic forum design with custom animations for Proboards.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<p>\"Fallout is a series of post-apocalyptic role-playing video games and later action role-playing games created by Interplay Entertainment. The series is set during the 21st, 22nd and 23rd centuries, and its atompunk retrofuturistic setting and art work are influenced by the post-war culture of 1950s United States, with its combination of hope for the promises of technology and the lurking fear of nuclear annihilation.\" - wikipedia.org</p> <br/><br/> <div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>To develop a visual design for a forum page in the Fallout aesthetic (retropunk/post-apocalyptic). The design should incorporate signature elements such as intricate wiring, terminal displays, radio equipment, and robotics. <br/> Graphic assets adaptation and interface animation tailored for the Proboards Tools engine.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p> Adobe Illustrator, Adobe Photoshop, Visual Studio Code, Proboards tools engine</p></div></div><br/><img src='media/images/projects/pr7/01_DSC_24.webp' alt='Image' data-alt='Create signature and icons (Adobe Illustrator, Adobe Photoshop)' class='project-image' /> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr7/02_DSC_24.webp' alt='Image' data-alt='Create \"header\" for forum page (Adobe Illustrator, Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr7/03_DSC_24.webp' alt='Image' data-alt='Create prototype \"header\" for forum page. Coding: HTML, CSS, JavaScript, PHP (Visual Studio Code)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "imageParalax": "pr7/img-prlx.webp",
                 "TextParalax": "<h1>\"Humanity is so resilient, to cling to life despite all of this\"</h1><p>Fallout (video game)</p> <img src='media/images/projects/pr7/01_DSC_24.webp' alt='Image' class='project-image' />",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>A visual overhaul of a forum pages inspired by the iconic Fallout universe. This project blends a rugged post-apocalyptic aesthetic with modern interface functionality.</p> <img src='media/images/projects/pr7/07_DSC_24.webp' alt='Image' data-alt='Home page (music player, navigation, autorisation, date & time, news and other components)' class='project-image pos-top' /> <img src='media/images/projects/pr7/08_DSC_24.webp' alt='Image' data-alt='Other pages (profile, search, calendar, messages and other)' class='project-image pos-top' />",
                 "tags": [
                     "Графический Дизайн",
@@ -108,16 +114,16 @@
             },
             {
                 "id": "pj-js-stratocaster",
-                "title": "Звуковой Дизайн",
+                "title": "Звуковой дизайн",
                 "image": "pr4/intro.webp",
                 "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "A photorealistic digital image of a old Fender Stratocaster guitar connected to a Marshall amplifier, for a poster.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Develop a photorealistic digital art depicting a old Fender Stratocaster guitar plugged into a Marshall amplifier. The workflow involves creating 3D models and setting up the scene in Blender, then refining the image to perfection using post-processing tools in Photoshop.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Blender, Adobe Photoshop</p></div></div><br/>  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr4/07_DSC_4651.webp' alt='Image' data-alt='Create 3D model and texturing - Fender Stratocaster Guitar' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr4/07_DSC_4653.webp' alt='Image' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr4/07_DSC_4650.webp' alt='Image' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr4/07_DSC_4655.webp' alt='Image' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /></div>",
                 "imageParalax": "pr4/img-prlx.webp",
                 "TextParalax": "",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>Accurate 3D models of the Fender Stratocaster guitar and Marshall amplifier were created. Special attention was paid to the details, from the shape of the guitar body to the texture of the amplifier's vinyl covering and its knobs. The image was refined in Photoshop for maximum photorealism, transforming the 3D render into a complete artistic composition.</p> <div class='v--plr-src' data-src='media/images/projects/pr4/001_0400_1080p.mp4'><img src='media/images/projects/pr4/videoposter.webp' alt='Image' data-alt='3D demonstration of a guitar and amplifier' class='project-image' /></div> <img src='media/images/projects/pr4/07_DSC_4656.webp' alt='Image' class='project-image' /> ",
                 "tags": [
                     "3D Моделирование"
@@ -142,14 +148,14 @@
             },
             {
                 "id": "pj-av",
-                "title": "AV - Создание Логотипа",
+                "title": "AV - Создание логотипа",
                 "image": "pr10/p-008.webp",
                 "description": "This project focuses on developing a clean, memorable logo built from the initials Vecheslav Ageev. Designed specifically for a professional photographer, the goal was to create a versatile mark that functions perfectly as a watermark. It remains instantly recognizable across any background—from high-contrast portraits to textured landscapes—scales effortlessly, and communicates clarity even from a distance.",
-                "workingProcess": "Working Process",
+                "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p> To develop a logo based on the initials of the first and last name (Vecheslav Ageev), which will be visible on any background, easy to recognize and read from any distance.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop</p></div></div><br/> <img src='media/images/projects/pr10/01_DSC_24.webp' alt='Image' class='project-image' />",
                 "imageParalax": "",
                 "TextParalax": "",
-                "finalResult": "Final Result",
+                "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>Working with Adobe Illustrator and Adobe Photoshop, the design process explored geometric forms, contrast, and readability to establish a strong personal brand presence.</p> <img src='media/images/projects/pr10/02_DSC_24.webp' alt='Image' class='project-image' /><img src='media/images/projects/pr10/03_DSC_24.webp' alt='Image' class='project-image' />",
                 "tags": [
                     "Графический Дизайн"
@@ -157,7 +163,7 @@
             },
             {
                 "id": "pj-ai-artwork",
-                "title": "ИИ Работы",
+                "title": "AI работы",
                 "image": "pr6/rgthree.compare._temp_pmmuq_00001_.webp",
                 "favorite": false,
                 "description": "This gallery showcases my digital generative artwork, created over a period of time.",
@@ -168,16 +174,19 @@
                 "finalResult": "",
                 "fullDescriptionTwo": "",
                 "tags": [
-                    "AI Graphic"
+                    "AI Images"
                 ]
             }
         ]
     },
-    "menu": {
-        "index": "Индекс",
-        "about": "Обо Мне",
-        "projects": "Работы",
-        "contact": "Связь"
+    "navigation": {
+        "menu": {
+            "index": "Индекс",
+            "about": "Кто я",
+            "projects": "Работы",
+            "contact": "Связь"
+        },
+        "theme": "смена темы"
     },
     "home": {
         "indexDark": [
@@ -195,48 +204,81 @@
             "Create & Innovate Digital Solutions"
         ],
         "content": {
-            "secondTitle": "Я сочетаю творческое видение с техническими навыками для создания функциональных и эстетически привлекательных решений.",
+            "secondTitle": "Сочетание творчества и базы для разработки полезного и стильного продукта",
             "experience": {
-                "title": "Безупречное проектирование и исполнение",
-                "text": "<p>Сочетая дизайн и разработку, я воплощаю концепции в жизнь в виде готовых продуктов.</p><p>Моя страсть к обучению делает освоение новых технологий таким же легким и увлекательным, как просмотр любимого сериала.</p>",
-                "button": "Узнайте больше"
+                "title": "Бесшовный процесс от чертежа до готового продукта",
+                "text": "<p>Сочетая дизайн и разработку, воплощаю концепции в жизнь в виде готовых продуктов.</p><p>Моя страсть к обучению делает освоение новых технологий таким же легким и увлекательным, как просмотр любимого сериала.</p>",
+                "button": "Подробнее"
             },
             "look": {
                 "title": "Я Смотрю На Вещи Под Несколько Иным Углом.",
                 "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
             },
             "favorite": {
-                "title": "Представленные проекты: где ясность создается с помощью дизайна, а рост подтверждается результатами.",
+                "title": "Проекты: где дизайн вносит ясность, а результаты — рост",
                 "text": "текст",
-                "button": "<h3>Все Проекты</h3><p class='project-intro'>Увидеть больше</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
+                "button": "<h3>Все проекты</h3><p class='project-intro'>Увидеть больше</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
             },
             "contact": {
-                "title": "Давайте вместе расскажем Вашу следующую историю."
+                "title": "Давайте создадим Вашу новую невероятную историю вместе."
             }
         }
     },
     "about": {
-        "title": "Обо Мне",
+        "title": "Обо мне",
         "image": {
             "image1": "media/images/about/qhpgq_0001.webp",
             "image2": "media/images/about/qhpgq_0002.webp",
             "image3": "media/images/about/qhpgq_0003.webp"
         },
-        "description": "<h2>Креативный директор, наставник, дизайнер, UX/UI-дизайнер, веб-разработчик, специалист по 3D-визуализации, цифровой художник и промт-инженер</h2><br /><br /><p>Моя страсть лежит на стыке дизайна и технологий, где я создаю интерактивные, эстетичные и захватывающие впечатления...<br/><br/>Разносторонний и увлеченный своим делом создатель контента, способный справиться с различными аспектами производства цифрового медиаконтента. Будь то разработка потрясающих визуальных эффектов или создание захватывающей моушн-графики.</p>",
+        "description": "<h2>Креативный директор, ментор, дизайнер, UX/UI-дизайнер, веб-разработчик, 3D-визуализатор, цифровой художник и промт-инженер</h2><br /><br /><p>Моя страсть лежит на стыке дизайна и технологий, где я создаю интерактивные, эстетичные и захватывающие впечатления...<br/><br/>Разносторонний и увлеченный своим делом создатель контента, способный справиться с различными аспектами производства цифрового медиаконтента. Будь то разработка потрясающих визуальных эффектов или создание захватывающей моушн-графики.</p>",
         "text": [
             "У меня более 11 лет опыта работы в различных областях дизайна, анимации и веб-разработки. Я люблю создавать красивые и привлекательные решения для самых разных проектов, от брендинга и разработки логотипов до моушн-графики и интерактивных веб-сайтов. Я всегда стремлюсь осваивать новые навыки и технологии, чтобы раскрыть свой творческий потенциал и расширить портфолио. Мне нравится сотрудничать с клиентами и партнерами, которые разделяют мое видение и ценности."
         ]
     },
     "contact": {
-        "title": "Скажи Привет!",
+        "title": "Скажите Привет!",
         "image": {
             "fileName": "media/images/about/ComfyUI_temp_tqdll_00002_.webp",
             "alt": "About page",
             "className": "about-image"
         },
-        "description": "<h2>Давайте вместе расскажем Вашу следующую историю.</h2><br /><br /><p class='project-intro'>* Готовы воплотить свою следующую историю в жизнь? <br/>Заполните форму или напишите мне по электронной почте — и давайте это осуществим.</p>",
+        "description": "<h2>Давайте создадим Вашу новую невероятную историю вместе.</h2><br /><br /><p class='project-intro'>* Готовы воплотить свою следующую историю в жизнь? <br/>Заполните форму или напишите мне по электронной почте — и давайте это осуществим.</p>",
         "text": [
-            "<b>Вы также можете связаться со мной в любое время по электронной почте или через социальные сети. <br />Спасибо за визит, и надеюсь на скорый ответ!</b>"
-        ]
+            "<b>Спасибо, что заглянули. Надеюсь на скорую связь!</b>"
+        ],
+        "contactForm": {
+            "title": "Контактная форма",
+            "name": "Ваше имя",
+            "email": "Ваш email",
+            "message": "Ваше сообщение",
+            "nameError": "* Напишите свое имя",
+            "emailError": "* Напишите свой email",
+            "messageError": "* Напишите свое сообщение",
+            "emailErrorInvalid": "* Неверный формат email",
+            "sendButton": "Отправить",
+            "sendStatus": "Отправка...",
+            "successMessage": "Сообщение отправлено!",
+            "errorMessage": "Упс! Что-то пошло не так"
+        }
+    },
+    "moreContent" :{
+        "title": "Интересно",
+        "works": "Работы",
+        "about": "Обо мне",
+        "contact": "Связь"
+    },
+    "footer": {
+        "title": "Давайте общаться:",
+        "contactSocialLinks": [
+            "<p><a href='https: //www.github.com/' target='_blank' rel='noopener noreferrer'><svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path d='M16,2.345c7.735,0,14,6.265,14,14-.002,6.015-3.839,11.359-9.537,13.282-.7,.14-.963-.298-.963-.665,0-.473,.018-1.978,.018-3.85,0-1.312-.437-2.152-.945-2.59,3.115-.35,6.388-1.54,6.388-6.912,0-1.54-.543-2.783-1.435-3.762,.14-.35,.63-1.785-.14-3.71,0,0-1.173-.385-3.85,1.435-1.12-.315-2.31-.472-3.5-.472s-2.38,.157-3.5,.472c-2.677-1.802-3.85-1.435-3.85-1.435-.77,1.925-.28,3.36-.14,3.71-.892,.98-1.435,2.24-1.435,3.762,0,5.355,3.255,6.563,6.37,6.913-.403,.35-.77,.963-.893,1.872-.805,.368-2.818,.963-4.077-1.155-.263-.42-1.05-1.452-2.152-1.435-1.173,.018-.472,.665,.017,.927,.595,.332,1.277,1.575,1.435,1.978,.28,.787,1.19,2.293,4.707,1.645,0,1.173,.018,2.275,.018,2.607,0,.368-.263,.787-.963,.665-5.719-1.904-9.576-7.255-9.573-13.283,0-7.735,6.265-14,14-14Z'></path></svg></a></p>",
+            "<p class='click-null'><a href='/' rel='noopener noreferrer'><svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 1024 1024'><path d='M765.748,167.568L598.331,0.151,425.5-.016-0.016,425.5v173L167.4,765.915,295.753,637.563,170.191,512,512,170.191,637.563,295.753Z'/><path d='M512.9,339.5l173,173L512.5,685.9l-173-173Z'/><path d='M258.252,856.432L425.669,1023.85l172.83,0.17L1024.02,598.5v-173L856.6,258.085,728.247,386.437,853.809,512,512,853.809,386.437,728.247Z'/></svg></a></p>",
+            "<p class='click-null'><a href='/' rel='noopener noreferrer'><svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 1024 1024'><path d='M765.748,167.568L598.331,0.151,425.5-.016-0.016,425.5v173L167.4,765.915,295.753,637.563,170.191,512,512,170.191,637.563,295.753Z'/><path d='M512.9,339.5l173,173L512.5,685.9l-173-173Z'/><path d='M258.252,856.432L425.669,1023.85l172.83,0.17L1024.02,598.5v-173L856.6,258.085,728.247,386.437,853.809,512,512,853.809,386.437,728.247Z'/></svg></a></p>",
+            "<p class='click-null'><a href='/' rel='noopener noreferrer'><svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 1024 1024'><path d='M765.748,167.568L598.331,0.151,425.5-.016-0.016,425.5v173L167.4,765.915,295.753,637.563,170.191,512,512,170.191,637.563,295.753Z'/><path d='M512.9,339.5l173,173L512.5,685.9l-173-173Z'/><path d='M258.252,856.432L425.669,1023.85l172.83,0.17L1024.02,598.5v-173L856.6,258.085,728.247,386.437,853.809,512,512,853.809,386.437,728.247Z'/></svg></a></p>",
+            "<p class='click-null'><a href='/' rel='noopener noreferrer'><svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 1024 1024'><path d='M765.748,167.568L598.331,0.151,425.5-.016-0.016,425.5v173L167.4,765.915,295.753,637.563,170.191,512,512,170.191,637.563,295.753Z'/><path d='M512.9,339.5l173,173L512.5,685.9l-173-173Z'/><path d='M258.252,856.432L425.669,1023.85l172.83,0.17L1024.02,598.5v-173L856.6,258.085,728.247,386.437,853.809,512,512,853.809,386.437,728.247Z'/></svg></a></p>"
+        ],
+        "rightsLinks": null,
+        "rightsReserved": "Все права защищены",
+        "contact": "Contact"
     }
 }
