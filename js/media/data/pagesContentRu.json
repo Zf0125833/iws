@@ -263,7 +263,7 @@
             "errorMessage": "Упс! Что-то пошло не так"
         }
     },
-    "moreContent" :{
+    "moreContent": {
         "title": "Интересно",
         "works": "Работы",
         "about": "Кто я",
@@ -281,5 +281,6 @@
         "rightsLinks": null,
         "rightsReserved": "Все права защищены",
         "contact": "Contact"
-    }
+    },
+    "preloader": "Загрузка..."
 }

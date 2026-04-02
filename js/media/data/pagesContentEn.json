@@ -249,7 +249,7 @@
             "errorMessage": "Error sending message"
         }
     },
-    "moreContent" :{
+    "moreContent": {
         "title": "More Content",
         "works": "Works",
         "about": "About",
@@ -280,5 +280,6 @@
         "Visual & Story Digital Content",
         "Sketch & Brand Digital Worlds",
         "Create & Innovate Digital Solutions"
-    ]
+    ],
+    "preloader": "Loading..."
 }
