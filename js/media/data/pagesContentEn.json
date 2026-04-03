@@ -281,5 +281,11 @@
         "Sketch & Brand Digital Worlds",
         "Create & Innovate Digital Solutions"
     ],
-    "preloader": "Loading..."
+    "preloader": "Loading...",
+    "consentModal": {
+        "title": "Storage and Cookies Usage",
+        "text":"We use technologies like local, session storage and cookies to enhance your experience on our site.<br />This includes remembering your theme preferences, selected filters, positions of elements on the screen, efficient loading of images and other convenient features.<br /><br />By clicking \"Accept\", you agree to the use of these technologies.",
+        "btnDecline": "Decline",
+        "btnAccept": "Accept"
+    }
 }
