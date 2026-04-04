@@ -14,7 +14,6 @@
                 "id": "pj-a-stroll-on-the-beach",
                 "title": "Прогулка по пляжу",
                 "image": "pr1/intro1.webp",
-                "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Создание 3D-модели и плаката в стиле мультфильмов студии Pixar Animation Studios.",
                 "workingProcess": "Рабочий процесс",
@@ -82,6 +81,7 @@
                 "id": "pj-js-planet-lightning",
                 "title": "Молнии",
                 "image": "pr9/p-009.webp",
+                "favorite": true,
                 "description": "Эта работа охватывает серию мультимедийных проектов, в которых моушн-дизайн, 3D-моделирование и графический дизайн объединяются для создания визуально привлекательного и технически совершенного контента. Каждый проект основан на четком творческом замысле, технической точности и хорошо структурированном рабочем процессе с использованием стандартных программных инструментов.",
                 "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Создайте две вступительные анимации. В первой должна быть показана планета Земля, окутанная молниями, которые сходятся, являя логотип компании. Вторая будет служить в качестве «рекомендации для зрителей» или видео с предупреждением.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Blender, Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop.</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr9/script-1.webp' alt='Image' data-alt='Покадровый сценарий для вступительного видеоролика (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work2.webp' alt='Image' data-alt='Процесс работы (Adobe After Effects)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr9/work1.webp' alt='Image' data-alt='Рабочий процесс (Adobe After Effects, Adobe Premiere Pro)' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work3.webp' alt='Image' data-alt='Покадровый сценарий для вступительного видеоролика (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /></div>",
@@ -205,7 +205,7 @@
         ],
         "scrollDown": "Прокрутите вниз",
         "content": {
-            "secondTitle": "Сочетание творчества и базы для разработки полезного и стильного продукта",
+            "secondTitle": "Сочетание творчества и технологий, для разработки полезного и стильного продукта",
             "experience": {
                 "title": "Бесшовный процесс от чертежа до готового продукта",
                 "text": "<p>Сочетая дизайн и разработку, воплощаю концепции в жизнь в виде готовых продуктов.</p><p>Моя страсть к обучению делает освоение новых технологий таким же легким и увлекательным, как просмотр любимого сериала.</p>",
@@ -216,9 +216,14 @@
                 "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
             },
             "favorite": {
-                "title": "Проекты: где дизайн вносит ясность, а результаты — рост",
+                "title": "Cоздание дизайна, который не просто красиво выглядит, а еще работает на результат",
                 "text": "текст",
                 "button": "<h3>Все проекты</h3><p class='project-intro'>Увидеть больше</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
+            },
+            "capabilities": {
+                "title": "Увлеченный создатель контента",
+                "text": "Разносторонний и увлеченный своим делом, способный справиться с различными аспектами производства цифрового медиаконтента. Будь то разработка потрясающих визуальных эффектов или создание захватывающей моушн-графики.",
+                "list": "<div class='capability-item'><h3>Брендинг</h3><p>Стратегия выхода на рынок</p><p>Стратегия бренда</p><p>Визуальная идентичность</p><p>Руководство по фирменному стилю</p><p>Создание логотипа</p><p>Ценностные предложения</p></div><div class='capability-item'><h3>Веб и Приложения</h3><p>UX/UI Дизайн</p><p>Внедрение CMS</p><p>Веб дизайн</p><p>Разработка</p><p>Webflow</p></div><div class='capability-item'><h3>Маргетинг</h3><p>Контент</p><p>Социальный</p><p>Платная реклама</p><p>SEO</p><p>Операции маркетинга</p><p>Аналитика</p></div>"
             },
             "contact": {
                 "title": "Давайте создадим Вашу новую невероятную историю вместе."

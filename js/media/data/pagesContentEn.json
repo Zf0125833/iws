@@ -14,7 +14,6 @@
                 "id": "pj-a-stroll-on-the-beach",
                 "title": "A Stroll On The Beach",
                 "image": "pr1/intro1.webp",
-                "favorite": true,
                 "imageMenuColorChange": true,
                 "description": "Creating a 3D model and poster in the style of cartoons from the Pixar Animation Studios.",
                 "workingProcess": "Working Process",
@@ -82,6 +81,7 @@
                 "id": "pj-js-planet-lightning",
                 "title": "A Planet Wreathed In Lightning",
                 "image": "pr9/p-009.webp",
+                "favorite": true,
                 "description": "This work spans a series of multimedia projects where motion design, 3D modeling, and graphic design come together to produce visually engaging and technically polished content. Each project is driven by a strong creative vision, technical precision, and a well-structured workflow across industry-standard software tools.",
                 "workingProcess": "Working Process",
                 "fullDescriptionOne": "<div class='target-soft-info'><div><p><b>Target:</b></p></div><div><p>Produce two intro animations. The first should feature planet Earth being enveloped by lightning bolts that converge to reveal the company logo. The second will serve as a 'viewer recommendation' or disclaimer video.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Soft:</b></p></div><div><p>Blender, Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop.</p></div></div><br/> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr9/script-1.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work2.webp' alt='Image' data-alt='Process of work (Adobe After Effects)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr9/work1.webp' alt='Image' data-alt='Process of work (Adobe After Effects, Adobe Premiere Pro)' data-alt='Create 3D model and texturing - Marshall JCM 800' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr9/work3.webp' alt='Image' data-alt='Frame-by-frame script for intro video (Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /></div>",
@@ -205,6 +205,11 @@
                 "title": "Featured Projects: Where Clarity is Built by Design & Growth is Proven by Result",
                 "text": "text",
                 "button": "<h3>View all projects</h3><p class='project-intro'>See more</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
+            },
+            "capabilities": {
+                "title": "A Versatile & Passionate Creator",
+                "text": "A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.",
+                "list": "<div class='capability-item'><h3>Branding</h3><p>Go-To-Market Strategy</p><p>Brand Strategy</p><p>Visual Identities</p><p>Brand Guidelines</p><p>Logo Creation</p><p>Value Propositions</p></div><div class='capability-item'><h3>Web & Apps</h3><p>UX/UI Design</p><p>CMS Implementation</p><p>Web Design</p><p>Development</p><p>Webflow</p></div><div class='capability-item'><h3>Marketing</h3><p>Content</p><p>Social</p><p>Paid Media</p><p>Campaigns</p><p>SEO</p><p>Marketing Ops</p><p>Analytics</p></div>"
             },
             "contact": {
                 "title": "Let's tell your next untold story together"
