@@ -208,10 +208,6 @@
                 "text": "<p>Blending design and development, I bring concepts to life as finished products.</p><p>My passion for learning makes mastering new technologies as effortless and engaging as watching a favorite series.</p>",
                 "button": "Learn more about"
             },
-            "look": {
-                "title": "I Look At Things From A Slightly Different Angle",
-                "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
-            },
             "favorite": {
                 "title": "Featured Projects: Where Clarity is Built by Design & Growth is Proven by Result",
                 "text": "text",
@@ -220,7 +216,7 @@
             "capabilities": {
                 "title": "A Versatile & Passionate Creator",
                 "text": "A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.",
-                "list": "<div class='capability-item'><h3>Branding</h3><p>Go-To-Market Strategy</p><p>Brand Strategy</p><p>Visual Identities</p><p>Brand Guidelines</p><p>Logo Creation</p><p>Value Propositions</p></div><div class='capability-item'><h3>Web & Apps</h3><p>UX/UI Design</p><p>CMS Implementation</p><p>Web Design</p><p>Development</p><p>Webflow</p></div><div class='capability-item'><h3>Marketing</h3><p>Content</p><p>Social</p><p>Paid Media</p><p>Campaigns</p><p>SEO</p><p>Marketing Ops</p><p>Analytics</p></div>"
+                "list": "<div class='capability-item'><h3>Branding</h3><p>Brand Strategy</p><p>Visual Identities</p><p>Brand Guidelines</p><p>Logo Creation</p><p>Value Propositions</p></div><div class='capability-item'><h3>Web & Apps</h3><p>UX/UI Design</p><p>CMS Implementation</p><p>Web Design</p><p>Development</p><p>Webflow</p><p>Visual effects (VFX) development</p></div><div class='capability-item'><h3>Marketing</h3><p>Content</p><p>Social</p><p>Paid Media</p><p>Campaigns</p><p>SEO</p><p>Marketing Ops</p><p>Analytics</p></div>"
             },
             "contact": {
                 "title": "Let's tell your next untold story together"
