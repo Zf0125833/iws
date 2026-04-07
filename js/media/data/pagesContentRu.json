@@ -57,8 +57,7 @@
                 "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>Стиль театра находится под влиянием супрематизма и Баухауса — двух художественных направлений, которые делали акцент на геометрических формах, цветах и ​​функциональности. Я включил некоторые элементы этих направлений в дизайн сайта, такие как использование черного, белого и желтого цветов, контраст между прямыми и изогнутыми линиями, а также баланс между формой и содержанием. Сайт имеет ретро-стиль, но в то же время и современный оттенок. Он наглядно и увлекательно демонстрирует историю театра, его видение и постановки.</p> <img src='media/images/projects/pr5/tatx1.webp' alt='Image' data-alt='Главная страница (авторизация, навигация, слайдер, постеры, новости)' class='project-image pos-top' />  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr5/tatx3.webp' alt='Image' data-alt='Фотоархив - категории (галерея)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx2.webp' alt='Image' data-alt='Фотоархив - открытая категория (галерея)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx5.webp' alt='Image' data-alt='О театре ATX (История театра ATX)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx8.webp' alt='Image' data-alt='Художественный руководитель и актеры' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx4.webp' alt='Image' data-alt='Авторы (категории)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx6.webp' alt='Image' data-alt='Контакты (форма обратной связи)' data-sizes='(max-width: 1024px) 40vw, 25vw' class='project-image pos-top' /></div> <br/><br/><br/><p>Фотографии взяты с официального сайта. - <a href='https://www.theatre-atx.ru' target='_blank' rel='noopener noreferrer'>Theatre ATX</a></p>",
                 "tags": [
-                    "Веб Дизайн",
-                    "Веб Разработка"
+                    "Веб Дизайн и Разработка"
                 ]
             },
             {
@@ -79,7 +78,7 @@
             },
             {
                 "id": "pj-js-planet-lightning",
-                "title": "Молнии",
+                "title": "Планета в кольце молний",
                 "image": "pr9/p-009.webp",
                 "favorite": true,
                 "description": "Эта работа охватывает серию мультимедийных проектов, в которых моушн-дизайн, 3D-моделирование и графический дизайн объединяются для создания визуально привлекательного и технически совершенного контента. Каждый проект основан на четком творческом замысле, технической точности и хорошо структурированном рабочем процессе с использованием стандартных программных инструментов.",
@@ -108,8 +107,7 @@
                 "fullDescriptionTwo": "<p>Визуальное обновление страниц форума, вдохновленное культовой вселенной Fallout. Этот проект сочетает в себе суровую постапокалиптическую эстетику с современной функциональностью интерфейса.</p> <img src='media/images/projects/pr7/07_DSC_24.webp' alt='Image' data-alt='Главная страница (музыкальный плеер, навигация, авторизация, дата и время, поиск по сайту и множество других компонентов)' class='project-image pos-top' /> <img src='media/images/projects/pr7/08_DSC_24.webp' alt='Image' data-alt='Остальные страницы (личный кабинет, поиск, календарь, сообщения и т.д.)' class='project-image pos-top' />",
                 "tags": [
                     "Графический Дизайн",
-                    "Веб Дизайн",
-                    "Веб Разработка"
+                    "Веб Дизайн и Разработка"
                 ]
             },
             {
@@ -142,8 +140,7 @@
                 "finalResult": "Мобильная версия",
                 "fullDescriptionTwo": "<p>Мобильная версия \"Claycow\" отличается легким, быстрым и интуитивно понятным интерфейсом, оптимизированным для вертикального формата и управления жестами.</p> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr8/clm1.webp' alt='Image' data-alt='Главная страница' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm2.webp' alt='Image' data-alt='Страница с категориями товаров' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm4.webp' alt='Image' data-alt='Новостная страница (блоги и новости)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm5.webp' alt='Image' data-alt='Мобильное выдвижное меню' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm3.webp' alt='Image' data-alt='\"Footer\" мобильной версии' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "tags": [
-                    "Веб Дизайн",
-                    "Веб Разработка"
+                    "Веб Дизайн и Разработка"
                 ]
             },
             {
@@ -191,7 +188,7 @@
     "home": {
         "indexDark": [
             "Дизайн и разработка цифровых решений",
-            "Генерирование идей и воплощение их в жизнь",
+            "Генерация идей и воплощение их в жизнь",
             "Кодинг и логика, лежащие в основе",
             "Создание и развитие цифрового присутствия",
             "Инженерия и исполнение цифровых систем",
@@ -207,7 +204,7 @@
         "content": {
             "secondTitle": "Сочетание творчества и технологий, для разработки полезного и стильного продукта",
             "experience": {
-                "title": "Бесшовный процесс от чертежа до готового продукта",
+                "title": "Сквозной цикл: от прототипа до релиза",
                 "text": "<p>Сочетая дизайн и разработку, воплощаю концепции в жизнь в виде готовых продуктов.</p><p>Моя страсть к обучению делает освоение новых технологий таким же легким и увлекательным, как просмотр любимого сериала.</p>",
                 "button": "Подробнее"
             },
@@ -216,17 +213,17 @@
                 "text": "<p>My main areas of focus include:</p><br/><p>User Interface (UI) and User Experience (UX) Design: I create intuitive and enjoyable digital products, paying close attention to every detail of the interaction.</p><p>Web Development: I specialize in building responsive and high-performance websites and applications using modern technologies.</p><p>I love seeing ideas transform into reality, and I'm always eager for new challenges that allow me to learn and grow.</p>"
             },
             "favorite": {
-                "title": "Cоздание дизайна, который не просто красиво выглядит, а еще работает на результат",
+                "title": "Дизайн, который не просто красиво выглядит, а работает на результат",
                 "text": "текст",
                 "button": "<h3>Все проекты</h3><p class='project-intro'>Увидеть больше</p><div class='load-more-icon'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 5V19M12 19L19 12M12 19L5 12' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'></path></svg></div>"
             },
             "capabilities": {
-                "title": "Увлеченный создатель контента",
+                "title": "Драйвер визуальных и технических смыслов",
                 "text": "Разносторонний и увлеченный своим делом, способный справиться с различными аспектами производства цифрового медиаконтента. Будь то разработка потрясающих визуальных эффектов или создание захватывающей моушн-графики.",
-                "list": "<div class='capability-item'><h3>Брендинг</h3><p>Стратегия выхода на рынок</p><p>Стратегия бренда</p><p>Визуальная идентичность</p><p>Руководство по фирменному стилю</p><p>Создание логотипа</p><p>Ценностные предложения</p></div><div class='capability-item'><h3>Веб и Приложения</h3><p>UX/UI Дизайн</p><p>Внедрение CMS</p><p>Веб дизайн</p><p>Разработка</p><p>Webflow</p></div><div class='capability-item'><h3>Маркетинг</h3><p>Контент</p><p>Социальный</p><p>Платная реклама</p><p>SEO</p><p>Операции маркетинга</p><p>Аналитика</p></div>"
+                "list": "<div class='capability-item'><h3>Брендинг</h3><p>Стратегия бренда</p><p>Визуальная идентичность</p><p>Руководство по фирменному стилю</p><p>Создание логотипа</p><p>Ценностные предложения</p></div><div class='capability-item'><h3>Веб и Приложения</h3><p>UX/UI Дизайн</p><p>Внедрение CMS</p><p>Веб дизайн</p><p>Веб разработка</p><p>Webflow</p></div><div class='capability-item'><h3>Маркетинг</h3><p>Контент</p><p>Социальный</p><p>Платная реклама</p><p>SEO</p><p>Операции маркетинга</p><p>Аналитика</p></div>"
             },
             "contact": {
-                "title": "Давайте создадим Вашу новую невероятную историю вместе."
+                "title": "Давайте вместе создадим вашу следующую цифровую историю"
             }
         }
     },
@@ -249,7 +246,7 @@
             "alt": "About page",
             "className": "about-image"
         },
-        "description": "<h2>Давайте создадим Вашу новую невероятную историю вместе.</h2><br /><br /><p class='project-intro'>* Готовы воплотить свою следующую историю в жизнь? <br/>Заполните форму или напишите мне по электронной почте — и давайте это осуществим.</p>",
+        "description": "<h2>Давайте вместе создадим вашу следующую цифровую историю</h2><br /><br /><p class='project-intro'>* Готовы воплотить свою следующую историю в жизнь? <br/>Заполните форму или напишите мне по электронной почте — и давайте это осуществим.</p>",
         "text": [
             "<b>Спасибо, что заглянули. Надеюсь на скорую связь!</b>"
         ],

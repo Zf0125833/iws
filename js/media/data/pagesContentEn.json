@@ -57,8 +57,7 @@
                 "finalResult": "Final Result",
                 "fullDescriptionTwo": "<p>The theater's style is influenced by Suprematism and Bauhaus, two artistic movements that emphasized geometric shapes, colors and functionality. I incorporated some elements from these movements into the site design, such as the use of black, white and yellow, the contrast between straight and curved lines, and the balance between form and content. The site has a retro feel, but also a modern touch. It showcases the theater's history, vision and performances in a clear and engaging way.</p> <img src='media/images/projects/pr5/tatx1.webp' alt='Image' data-alt='Home page (autorisation, navigation, slider, posters, news)' class='project-image pos-top' />  <div class='project-details-img-two m-t'> <img src='media/images/projects/pr5/tatx3.webp' alt='Image' data-alt='Photo archive - categories (gallery)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx2.webp' alt='Image' data-alt='Photo archive - open categorie (gallery)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx5.webp' alt='Image' data-alt='About (History of Theatre ATX)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx8.webp' alt='Image' data-alt='Artistic director and actors' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx4.webp' alt='Image' data-alt='Authors (categories)' class='project-image pos-top' data-sizes='(max-width: 1024px) 40vw, 25vw' /> <img src='media/images/projects/pr5/tatx6.webp' alt='Image' data-alt='Contact (contact form)' data-sizes='(max-width: 1024px) 40vw, 25vw' class='project-image pos-top' /></div> <br/><br/><br/><p> Photos are taken from the official website of - <a href='https://www.theatre-atx.ru' target='_blank' rel='noopener noreferrer'>Theatre ATX</a></p>",
                 "tags": [
-                    "Web Design",
-                    "Web Development"
+                    "Web Design & Dev"
                 ]
             },
             {
@@ -108,8 +107,7 @@
                 "fullDescriptionTwo": "<p>A visual overhaul of a forum pages inspired by the iconic Fallout universe. This project blends a rugged post-apocalyptic aesthetic with modern interface functionality.</p> <img src='media/images/projects/pr7/07_DSC_24.webp' alt='Image' data-alt='Home page (music player, navigation, autorisation, date & time, news and other components)' class='project-image pos-top' /> <img src='media/images/projects/pr7/08_DSC_24.webp' alt='Image' data-alt='Other pages (profile, search, calendar, messages and other)' class='project-image pos-top' />",
                 "tags": [
                     "Graphic Design",
-                    "Web Design",
-                    "Web Development"
+                    "Web Design & Dev"
                 ]
             },
             {
@@ -142,8 +140,7 @@
                 "finalResult": "Mobile Version",
                 "fullDescriptionTwo": "<p>The Claycow mobile version features a lightweight, fast, and intuitive interface optimized for vertical format and gesture control.</p> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr8/clm1.webp' alt='Image' data-alt='Home page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm2.webp' alt='Image' data-alt='Category page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm4.webp' alt='Image' data-alt='News page' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm5.webp' alt='Image' data-alt='Mobile slide-out menu' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr8/clm3.webp' alt='Image' data-alt='Mobile footer' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "tags": [
-                    "Web Design",
-                    "Web Development"
+                    "Web Design & Dev"
                 ]
             },
             {
