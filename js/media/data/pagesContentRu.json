@@ -103,7 +103,7 @@
                 "workingProcess": "Рабочий процесс",
                 "fullDescriptionOne": "<p>\"Fallout — это серия постапокалиптических ролевых видеоигр, а позже и экшен-ролевых игр, созданных компанией Interplay Entertainment. Действие серии разворачивается в 21, 22 и 23 веках, а её ретрофутуристический сеттинг в стиле атомпанк и художественное оформление вдохновлены послевоенной культурой США 1950-х годов, сочетающей в себе надежду на перспективы технологий и скрытый страх ядерного уничтожения.\" - wikipedia.org</p> <br/><br/> <div class='target-soft-info'><div><p><b>Цель:</b></p></div><div><p>Разработать визуальный дизайн для страницы форума в эстетике Fallout (ретропанк/постапокалиптический мир). Дизайн должен включать в себя характерные элементы, такие как замысловатая проводка, дисплеи терминалов, радиооборудование и робототехника.<br/>Адаптация графических ресурсов и анимация интерфейса, разработанные специально для движка Proboards Tools.</p></div></div> <br/><br/> <div class='target-soft-info'><div><p><b>Софт:</b></p></div><div><p>Adobe Illustrator, Adobe Photoshop, Visual Studio Code, Proboards tools engine</p></div></div><br/><img src='media/images/projects/pr7/01_DSC_24.webp' alt='Image' data-alt='Создание подписи и иконок для форума (Adobe Illustrator, Adobe Photoshop)' class='project-image' /> <div class='project-details-img-two m-t'> <img src='media/images/projects/pr7/02_DSC_24.webp' alt='Image' data-alt='Создание \"header\" для страницы форума (Adobe Illustrator, Adobe Photoshop)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /><img src='media/images/projects/pr7/03_DSC_24.webp' alt='Image' data-alt='Прототип \"header\". Coding: HTML, CSS, JavaScript, PHP (Visual Studio Code)' class='project-image' data-sizes='(max-width: 1024px) 40vw, 25vw' /> </div>",
                 "imageParalax": "pr7/img-prlx.webp",
-                "TextParalax": "<h1>\"Человечество невероятно стойкое, оно способно цепляться за жизнь, несмотря ни на что.\"</h1><p>Fallout (видеоигра)</p> <img src='media/images/projects/pr7/01_DSC_24.webp' alt='Image' class='project-image' />",
+                "TextParalax": "<h1>\"Человек невероятно стойкое существо, оно способно цепляться за жизнь, несмотря ни на что.\"</h1><p>Fallout (видеоигра)</p> <img src='media/images/projects/pr7/01_DSC_24.webp' alt='Image' class='project-image' />",
                 "finalResult": "Результат",
                 "fullDescriptionTwo": "<p>Визуальное обновление страниц форума, вдохновленное культовой вселенной Fallout. Этот проект сочетает в себе суровую постапокалиптическую эстетику с современной функциональностью интерфейса.</p> <img src='media/images/projects/pr7/07_DSC_24.webp' alt='Image' data-alt='Главная страница (музыкальный плеер, навигация, авторизация, дата и время, поиск по сайту и множество других компонентов)' class='project-image pos-top' /> <img src='media/images/projects/pr7/08_DSC_24.webp' alt='Image' data-alt='Остальные страницы (личный кабинет, поиск, календарь, сообщения и т.д.)' class='project-image pos-top' />",
                 "tags": [
@@ -190,18 +190,18 @@
     },
     "home": {
         "indexDark": [
-            "Design & Build Digital Experiences",
-            "Ideate & Solve Digital Hurdles",
-            "Coding & Logic Behind the Apps",
-            "Launch & Grow Digital Presence",
-            "Engine & Craft Digital Systems",
-            "Sketch & Brand Digital Worlds",
-            "Visual & Story Digital Content"
+            "Дизайн и разработка цифровых решений",
+            "Генерирование идей и воплощение их в жизнь",
+            "Кодинг и логика, лежащие в основе",
+            "Создание и развитие цифрового присутствия",
+            "Инженерия и исполнение цифровых систем",
+            "Скетчинг и брендинг цифровых миров",
+            "Визуальный контент и цифровые истории"
         ],
         "indexLight": [
-            "Visual & Story Digital Content",
-            "Sketch & Brand Digital Worlds",
-            "Create & Innovate Digital Solutions"
+            "Визуальный контент и цифровые истории",
+            "Скетчинг и брендинг цифровых миров",
+            "Создание и развитие цифрового присутствия"
         ],
         "scrollDown": "Прокрутите вниз",
         "content": {
@@ -223,7 +223,7 @@
             "capabilities": {
                 "title": "Увлеченный создатель контента",
                 "text": "Разносторонний и увлеченный своим делом, способный справиться с различными аспектами производства цифрового медиаконтента. Будь то разработка потрясающих визуальных эффектов или создание захватывающей моушн-графики.",
-                "list": "<div class='capability-item'><h3>Брендинг</h3><p>Стратегия выхода на рынок</p><p>Стратегия бренда</p><p>Визуальная идентичность</p><p>Руководство по фирменному стилю</p><p>Создание логотипа</p><p>Ценностные предложения</p></div><div class='capability-item'><h3>Веб и Приложения</h3><p>UX/UI Дизайн</p><p>Внедрение CMS</p><p>Веб дизайн</p><p>Разработка</p><p>Webflow</p></div><div class='capability-item'><h3>Маргетинг</h3><p>Контент</p><p>Социальный</p><p>Платная реклама</p><p>SEO</p><p>Операции маркетинга</p><p>Аналитика</p></div>"
+                "list": "<div class='capability-item'><h3>Брендинг</h3><p>Стратегия выхода на рынок</p><p>Стратегия бренда</p><p>Визуальная идентичность</p><p>Руководство по фирменному стилю</p><p>Создание логотипа</p><p>Ценностные предложения</p></div><div class='capability-item'><h3>Веб и Приложения</h3><p>UX/UI Дизайн</p><p>Внедрение CMS</p><p>Веб дизайн</p><p>Разработка</p><p>Webflow</p></div><div class='capability-item'><h3>Маркетинг</h3><p>Контент</p><p>Социальный</p><p>Платная реклама</p><p>SEO</p><p>Операции маркетинга</p><p>Аналитика</p></div>"
             },
             "contact": {
                 "title": "Давайте создадим Вашу новую невероятную историю вместе."

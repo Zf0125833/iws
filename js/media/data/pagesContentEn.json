@@ -189,6 +189,20 @@
         "theme": "change theme"
     },
     "home": {
+        "indexDark": [
+            "Design & Build Digital Experiences",
+            "Ideate & Solve Digital Hurdles",
+            "Coding & Logic Behind the Apps",
+            "Launch & Grow Digital Presence",
+            "Engine & Craft Digital Systems",
+            "Sketch & Brand Digital Worlds",
+            "Visual & Story Digital Content"
+        ],
+        "indexLight": [
+            "Visual & Story Digital Content",
+            "Sketch & Brand Digital Worlds",
+            "Create & Innovate Digital Solutions"
+        ],
         "scrollDown": "Scroll Down",
         "content": {
             "secondTitle": "I Combine Creative Vision With Technical Skills To Craft Functional & Aesthetically Pleasing Solutions",
@@ -272,24 +286,10 @@
         "rightsLinks": "<p className='project-intro'><a href='https://www.termsandconditionsgenerator.com/live.php?token=effI92BXiD47sFqytJkRq2AUrubioRuf' target='_blank' rel='noopener noreferrer'>Terms &amp; Conditions</a>|<a href='https://www.privacypolicygenerator.info/live.php?token=KVgANo77hQk1V8PBjXRnPabPehYqa7uo' target='_blank' rel='noopener noreferrer'>Privacy policy</a></p>",
         "rightsReserved": "All rights reserved"
     },
-    "indexDark": [
-        "Design & Build Digital Experiences",
-        "Ideate & Solve Digital Hurdles",
-        "Coding & Logic Behind the Apps",
-        "Launch & Grow Digital Presence",
-        "Engine & Craft Digital Systems",
-        "Sketch & Brand Digital Worlds",
-        "Visual & Story Digital Content"
-    ],
-    "indexLight": [
-        "Visual & Story Digital Content",
-        "Sketch & Brand Digital Worlds",
-        "Create & Innovate Digital Solutions"
-    ],
     "preloader": "Loading...",
     "consentModal": {
         "title": "Storage and Cookies Usage",
-        "text":"We use technologies like local, session storage and cookies to enhance your experience on our site.<br />This includes remembering your theme preferences, selected filters, positions of elements on the screen, efficient loading of images and other convenient features.<br /><br />By clicking \"Accept\", you agree to the use of these technologies.",
+        "text": "We use technologies like local, session storage and cookies to enhance your experience on our site.<br />This includes remembering your theme preferences, selected filters, positions of elements on the screen, efficient loading of images and other convenient features.<br /><br />By clicking \"Accept\", you agree to the use of these technologies.",
         "btnDecline": "Decline",
         "btnAccept": "Accept"
     }
