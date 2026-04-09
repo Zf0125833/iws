@@ -129,7 +129,7 @@
             },
             {
                 "id": "pj-js-claycow",
-                "title": "Claycow",
+                "title": "Clay Cow",
                 "image": "pr8/img-prlx.webp",
                 "imageMenuColorChange": true,
                 "description": "The official web-based storefront for \"Claycow\", built with a focus on scalable architecture, dynamic inventory management, and a responsive product catalog.",
@@ -216,10 +216,12 @@
             "capabilities": {
                 "title": "A Versatile & Passionate Creator",
                 "text": "A versatile and passionate creator who can handle various aspects of digital media production. Whether it's designing stunning visuals, animating engaging motion graphics.",
-                "list": "<div class='capability-item'><h3>Branding</h3><p>Brand Strategy</p><p>Visual Identities</p><p>Brand Guidelines</p><p>Logo Creation</p><p>Value Propositions</p></div><div class='capability-item'><h3>Web & Apps</h3><p>UX/UI Design</p><p>CMS Implementation</p><p>Web Design</p><p>Development</p><p>Webflow</p><p>Visual effects (VFX) development</p></div><div class='capability-item'><h3>Marketing</h3><p>Content</p><p>Social</p><p>Paid Media</p><p>Campaigns</p><p>SEO</p><p>Marketing Ops</p><p>Analytics</p></div>"
+                "list": "<div class='capability-item'><h3>Branding</h3><p>Brand Strategy</p><p>Visual Identities</p><p>Brand Guidelines</p><p>Logo Creation</p><p>Value Propositions</p></div><div class='capability-item'><h3>Web & Apps</h3><p>UX/UI Design</p><p>CMS Implementation</p><p>Web Design</p><p>Development</p><p>Visual effects (VFX) development</p><p>Webflow</p></div><div class='capability-item'><h3>Marketing</h3><p>Content</p><p>Social</p><p>Paid Media</p><p>Campaigns</p><p>SEO</p><p>Marketing Ops</p><p>Analytics</p></div>"
             },
             "contact": {
-                "title": "Let's tell your next untold story together"
+                "title": "Let's tell your next untold story together",
+                "text": "Fill out the form or email me — and let's make it happen."
+                
             }
         }
     },
@@ -262,7 +264,7 @@
         }
     },
     "moreContent": {
-        "title": "More Content",
+        "title": "More Content:",
         "works": "Works",
         "about": "About",
         "contact": "Contact"
@@ -280,6 +282,7 @@
         "rightsReserved": "All rights reserved"
     },
     "preloader": "Loading...",
+    "preloaderEnd": "Hello!",
     "consentModal": {
         "title": "Storage and Cookies Usage",
         "text": "We use technologies like local, session storage and cookies to enhance your experience on our site.<br />This includes remembering your theme preferences, selected filters, positions of elements on the screen, efficient loading of images and other convenient features.<br /><br />By clicking \"Accept\", you agree to the use of these technologies.",
