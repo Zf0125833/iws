@@ -207,7 +207,6 @@
             "Coding & Logic Behind the Apps",
             "Launch & Grow Digital Presence",
             "Engine & Craft Digital Systems",
-            "Sketch & Brand Digital Worlds",
             "Visual & Story Digital Content"
         ],
         "indexLight": [
@@ -279,7 +278,9 @@
             "sendButton": "Send",
             "sendStatus": "Sending...",
             "successMessage": "Message sent!",
-            "errorMessage": "Error sending message"
+            "errorMessage": "Error sending message",
+            "messageSent": "<h3>Thank you for your message!</h3><p>I will get back to you as soon as possible.</p>",
+            "countdownText": "Sending next message in"
         }
     },
     "moreContent": {
