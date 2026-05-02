@@ -201,7 +201,7 @@
         "theme": "change theme"
     },
     "home": {
-        "indexDark": [
+        "indexDarkTitles": [
             "Design & Build Digital Experiences",
             "Ideate & Solve Digital Hurdles",
             "Coding & Logic Behind the Apps",
@@ -209,13 +209,29 @@
             "Engine & Craft Digital Systems",
             "Visual & Story Digital Content"
         ],
-        "indexLight": [
+        "indexLightTitles": [
             "Visual & Story Digital Content",
             "Sketch & Brand Digital Worlds",
             "Create & Innovate Digital Solutions",
             "Visual & Story Digital Content",
             "Sketch & Brand Digital Worlds",
             "Create & Innovate Digital Solutions"
+        ],
+        "indexDarkImages": [
+            "media/images/home/themeImages/themeOneImages/hzpce_00001.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00002.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00003.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00004.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00005.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00006.webp"
+        ],
+        "indexLightImages": [
+            "media/images/home/themeImages/themeTwoImages/pce_00001.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00002.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00003.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00001.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00002.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00003.webp"
         ],
         "scrollDown": "Scroll Down",
         "content": {

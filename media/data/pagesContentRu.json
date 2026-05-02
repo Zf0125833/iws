@@ -201,7 +201,7 @@
         "theme": "смена темы"
     },
     "home": {
-        "indexDark": [
+        "indexDarkTitles": [
             "Дизайн и разработка цифровых решений",
             "Генерация идей и их воплощение",
             "Кодинг и внутренняя логика приложений",
@@ -209,13 +209,29 @@
             "Образ и огранка цифровых миров",
             "Визуальная оболочка и цифровые сценарии"
         ],
-        "indexLight": [
+        "indexLightTitles": [
             "Образ и огранка цифровых миров",
             "Визуальная оболочка и цифровые сценарии",
             "Создание и развитие цифрового образа",
             "Кодинг и внутренняя логика приложений",
             "Генерация идей и их воплощение",
             "Образ и огранка цифровых миров"
+        ],
+        "indexDarkImages": [
+            "media/images/home/themeImages/themeOneImages/hzpce_00001.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00002.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00003.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00004.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00005.webp",
+            "media/images/home/themeImages/themeOneImages/hzpce_00006.webp"
+        ],
+        "indexLightImages": [
+            "media/images/home/themeImages/themeTwoImages/pce_00001.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00002.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00003.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00001.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00002.webp",
+            "media/images/home/themeImages/themeTwoImages/pce_00003.webp"
         ],
         "scrollDown": "Прокрутите вниз",
         "content": {
