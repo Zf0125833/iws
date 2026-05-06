@@ -1,23 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.56aafa66.css",
-    "main.js": "/static/js/main.519cfe89.js",
+    "main.css": "/static/css/main.6a33f15c.css",
+    "main.js": "/static/js/main.a3eb2307.js",
     "static/js/206.1ab75ccb.chunk.js": "/static/js/206.1ab75ccb.chunk.js",
-    "static/media/pce_00002.webp": "/static/media/pce_00002.5854025f169b3d4c2e2d.webp",
-    "static/media/hzpce_00005.webp": "/static/media/hzpce_00005.2a2375e3d766d723f344.webp",
-    "static/media/hzpce_00002.webp": "/static/media/hzpce_00002.a5de1189c6c43c7dec2d.webp",
-    "static/media/hzpce_00004.webp": "/static/media/hzpce_00004.0699862281cbdf63db1c.webp",
-    "static/media/pce_00003.webp": "/static/media/pce_00003.ee2886c561db40add4d4.webp",
-    "static/media/pce_00001.webp": "/static/media/pce_00001.aaf3b9d95625ffe33a8e.webp",
-    "static/media/hzpce_00003.webp": "/static/media/hzpce_00003.f89aa13ee985f82804c1.webp",
-    "static/media/hzpce_00006.webp": "/static/media/hzpce_00006.c42f9ab0afd100c9a94c.webp",
-    "static/media/hzpce_00001.webp": "/static/media/hzpce_00001.74925d41e1d1545c0486.webp",
     "static/media/Axiforma-Black.woff": "/static/media/Axiforma-Black.a634f74dec109f06dd80.woff",
     "static/media/Axiforma-Black.woff2": "/static/media/Axiforma-Black.20ce8c2d1e4373a9578f.woff2",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.56aafa66.css",
-    "static/js/main.519cfe89.js"
+    "static/css/main.6a33f15c.css",
+    "static/js/main.a3eb2307.js"
   ]
 }
