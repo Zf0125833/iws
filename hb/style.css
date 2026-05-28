@@ -98,6 +98,7 @@ body {
 .box2.animate {
     opacity: 1;
     transition: opacity 3s ease;
+    pointer-events: painted;
 }
 
 .box.animate img {
@@ -126,7 +127,7 @@ body {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 830px) {
     .box.animate img {
         height: 50vh;
 
