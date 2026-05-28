@@ -60,12 +60,15 @@ body {
     left: 0;
     opacity: 0;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .box2 {
     opacity: 0;
     padding: 3rem 0 3rem 0;
     color: #111;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -88,6 +91,7 @@ body {
 
 .box2 h1 {
     margin: 50px 0 5px 0;
+    font-size: 40px;
 }
 
 .box2 h3 {
@@ -102,15 +106,18 @@ body {
 }
 
 .box.animate img {
+    position: relative;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    animation: animate 25s ease infinite;
+    transform: scale(1.1);
+    animation: animate 25s ease-in-out infinite;
 }
 
 .box2 audio {
     position: relative;
     width: 100%;
+    max-width: 500px;
 }
 
 @keyframes animate {
@@ -119,7 +126,7 @@ body {
     }
 
     50% {
-        transform: scale(1);
+        transform: scale(1.008);
     }
 
     100% {
