@@ -12,8 +12,55 @@
     <div class="container">
         <button class="toggle-button">Кликни меня</button>
         <div class="box">
-            <audio id="bg-audio" src="Remastered_2009.mp3" autoplay loop></audio>
             <img src="Untitled.webp" alt="Happy Icon">
+        </div>
+        <div class="box2">
+            <audio id="bg-audio" src="Remastered_2009.mp3" autoplay loop controls></audio>
+            <div>
+                <h1>When I'm Sixty Four</h1>
+                <h3>The Beatles</h3>
+                <p>
+                    When I get older, losing my hair<br />
+                    Many years from now,<br />
+                    Will you still be sending me a valentine,<br />
+                    birthday greetings, bottle of wine?<br /><br />
+
+                    If I'd been out till quarter to three,<br />
+                    Would you lock the door?<br />
+                    Will you still need me, will you still feed me,<br />
+                    When I'm sixty four? Ooh<br /><br />
+
+                    You'll be older too.<br />
+                    Ah, and if you say the word,<br />
+                    I could stay with you.<br /><br />
+
+                    I could be handy mending a fuse<br />
+                    When your lights have gone.<br />
+                    You can knit a sweater by the fireside,<br />
+                    Sunday mornings, go for a ride.<br /><br />
+
+                    Doing the garden, digging the weeds,<br />
+                    Who could ask for more?<br />
+                    Will you still need me, will you still feed me,<br />
+                    When I'm sixty four?<br /><br />
+
+                    Ev'ry summer we can rent a cottage<br />
+                    In the Isle of Wight if it's not too dear.<br />
+                    We shall scrimp and save.<br />
+                    Grandchildren on your knee;<br />
+                    Vera, Chuck and Dave.<br /><br />
+
+                    Send me a postcard, drop me a line,<br />
+                    stating point of view.<br />
+                    Indicate precisely what you mean to say,<br />
+                    yours sincerely, wasting away.<br /><br />
+
+                    Give me your answer, fill in a form,<br />
+                    Mine forevermore.<br />
+                    Will you still need me, will you still feed me,<br />
+                    When I'm sixty four? Ho!<br /><br />
+                </p>
+            </div>
         </div>
     </div>
 </body>
@@ -21,19 +68,22 @@
     function toggleAudio() {
         const toggleButton = document.querySelector('.toggle-button');
         const box = document.querySelector('.box');
+        const box2 = document.querySelector('.box2');
         const audio = document.getElementById('bg-audio');
+        const container = document.querySelector('.container');
 
         if (audio.paused) {
             audio.play().catch(error => console.log("Блокировка браузера обойдена"));
             box.classList.add('animate');
+            box2.classList.add('animate');
             toggleButton.style.display = 'none';
+            container.style.height = 'auto';
         } else {
             audio.pause();
         }
     }
 
     document.addEventListener('click', toggleAudio);
-    document.addEventListener('touchstart', toggleAudio);
 </script>
 
 </html>

@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #e2e1d8;
+    background: #ecece4;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -22,18 +22,18 @@ body {
     align-items: center;
 }
 
-.toggle-button{
+.toggle-button {
     position: absolute;
     z-index: 10;
     padding: 20px 30px;
     background: transparent;
-    color: #e2e1d8;
+    color: #ecece4;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.toggle-button::before{
+.toggle-button::before {
     content: '';
     position: absolute;
     transform: scale(1);
@@ -41,53 +41,103 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ca3d33;
+    background: #222;
     border-radius: 50px;
     z-index: -1;
     transform: scale(1);
     transition: transform 0.3s ease;
 }
 
-.toggle-button:hover::before{
+.toggle-button:hover::before {
     transform: scale(1.1);
 }
 
 .box {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 5s ease;
+    overflow: hidden;
 }
 
-.box.animate {
+.box2 {
+    opacity: 0;
+    padding: 3rem 0 3rem 0;
+    color: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.box2 h1,
+.box2 h3 {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box2 p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.box2 h1 {
+    margin: 50px 0 5px 0;
+}
+
+.box2 h3 {
+    margin-bottom: 25px;
+}
+
+.box.animate,
+.box2.animate {
     opacity: 1;
+    transition: opacity 3s ease;
 }
 
-.box.animate img{
+.box.animate img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     animation: animate 25s ease infinite;
 }
 
-.box.animate audio {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
+.box2 audio {
+    position: relative;
+    width: 100%;
 }
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: scale(1.1);
     }
-    50%{
+
+    50% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .box.animate img {
+        height: 50vh;
+
+    }
+
+    .box2 {
+        padding: 50px 20px;
+    }
+
+    .box2 p {
+        font-size: 18px;
+        line-height: 1.4;
     }
 }
