@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="toggle-button">Кликни меня</button>
+        <div class="box">
+            <audio id="bg-audio" src="Remastered_2009.mp3" autoplay loop></audio>
+            <img src="Untitled.webp" alt="Happy Icon">
+        </div>
+    </div>
+</body>
+<script>
+    function toggleAudio() {
+        const toggleButton = document.querySelector('.toggle-button');
+        const box = document.querySelector('.box');
+        const audio = document.getElementById('bg-audio');
+
+        if (audio.paused) {
+            audio.play().catch(error => console.log("Блокировка браузера обойдена"));
+            box.classList.add('animate');
+            toggleButton.style.display = 'none';
+        } else {
+            audio.pause();
+        }
+    }
+
+    document.addEventListener('click', toggleAudio);
+    document.addEventListener('touchstart', toggleAudio);
+</script>
+
+</html>
