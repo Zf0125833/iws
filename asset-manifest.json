@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb4563d4.css",
+    "main.css": "/static/css/main.bfe9b206.css",
     "main.js": "/static/js/main.8e1ccb06.js",
     "static/js/206.1ab75ccb.chunk.js": "/static/js/206.1ab75ccb.chunk.js",
     "static/media/Axiforma-Black.woff": "/static/media/Axiforma-Black.a634f74dec109f06dd80.woff",
@@ -8,7 +8,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.fb4563d4.css",
+    "static/css/main.bfe9b206.css",
     "static/js/main.8e1ccb06.js"
   ]
 }
