@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9d3fa84.css",
-    "main.js": "/static/js/main.7d6ac413.js",
+    "main.css": "/static/css/main.73b6707d.css",
+    "main.js": "/static/js/main.e58bd51d.js",
     "static/js/206.1ab75ccb.chunk.js": "/static/js/206.1ab75ccb.chunk.js",
     "static/media/Axiforma-Black.woff": "/static/media/Axiforma-Black.a634f74dec109f06dd80.woff",
     "static/media/Axiforma-Black.woff2": "/static/media/Axiforma-Black.20ce8c2d1e4373a9578f.woff2",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.f9d3fa84.css",
-    "static/js/main.7d6ac413.js"
+    "static/css/main.73b6707d.css",
+    "static/js/main.e58bd51d.js"
   ]
 }
